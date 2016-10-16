@@ -1,1 +1,3 @@
-# diegorchagas.github.io
+# Curriculum
+
+https://diegorchagas.github.io/
