@@ -1,3 +1,11 @@
 h1{
 	
 }
+
+.nivel{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 2px;
+	border: 1px solid #000;
+}
