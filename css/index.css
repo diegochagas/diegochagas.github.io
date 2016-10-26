@@ -85,7 +85,7 @@ main li {
 }
 
 main li p {
-	font-size: 15px;
+	font-size: 13px;
 	margin: 0;
 }
 
@@ -96,6 +96,39 @@ main a {
 
 main p.ocupation{
 	font-weight: bold;
+}
+
+main h3.work-title{
+	color: #4173ba;
+	text-align: right;
+}
+
+main div.work-experience {
+	background-color: #4173ba;
+}
+
+h4, h5, h6 {
+	color: #fff;
+	margin: 5px 0;
+}
+
+.work-experience div {
+	margin: 0;
+	padding: 0 10px;
+}
+
+.work-experience p {
+	background-color: #d2d3d7;
+    padding: 2px 4px;
+}
+
+main .skills {
+	background-color: #d2d3d7;
+	padding: 10px;
+}
+
+main .skills h3 {
+	text-align: center;
 }
 
 main span.nivel {
@@ -111,19 +144,6 @@ main span.nivel-completo {
 	background-color: #000;
 }
 
-main h3.work-title{
-	color: #4173ba;
-	text-align: right;
-}
-
-main div.work-experience {
-	background-color: #4173ba;
-}
-
-.work-experience h4 {
-	color: #fff;
-}
-
 footer {
-
+	background-color: #4173ba;
 }
