@@ -107,6 +107,10 @@ main div.work-experience {
 	background-color: #4173ba;
 }
 
+main div.legenda {
+	border: 1px solid #4173ba;
+}
+
 h4, h5, h6 {
 	color: #fff;
 	margin: 5px 0;
