@@ -3,61 +3,70 @@
 <head>
 	<meta charset="utf-8">
 	<title>Diego R Chagas ● Curriculum Vitae</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/swiper.css">
-	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/media-querys.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
-		<div class="profile">
-			<div class="identification">
-				<h1>Diego Rocha Chagas</h1>
-				<div class="subtitulo">
-					<h2>Front-end web development</h2>
-				</div>
-				<div class="about-me">			
-					<p>5 November 1989</p>
-					<p>São Paulo / Brazil</p>
-					<p>+551399132-2882 / +551334775508</p>
-					<p>drochachagas@gmail.com</p>
-				</div>
+	<header class="container">
+		<div class="identification">
+			<h1>Diego Rocha Chagas</h1>
+			<div class="subtitulo">
+				<h2>Front-end web development</h2>
 			</div>
-			<div class="photo">
-				<img src="images/foto-perfil.jpg">
+			<div class="about-me">			
+				<p>5 November 1989</p>
+				<p>São Paulo / Brazil</p>
+				<p>+551399132-2882 / +551334775508</p>
+				<p>drochachagas@gmail.com</p>
 			</div>
+		</div>
+		<div class="photo">
+			<img class="img-responsive img-circle" src="images/foto-perfil.jpg">
 		</div>
 	</header>
-	<main>
-		<div class="education">
-			<ul>
-				<h3 class="education-title">Education</h3>
-				<li>
-					<p class="local">
-						<a href="">
-							<img src="images/logo-etec">
-							<span>Centro Paula Souza – Escola Técnica Estadual - ETEC</span>
-						</a>
-					</p>
-					<p class="ocupation">Computer technician</p>
-					<p class="period">Início em 01/2014 e término em 07/2015</p>
-				</li>
-				<li>
-					<p class="local">
-						<a href="">
-							<img src="images/logo-fals">
-							<span>Faculdade do Litoral Sul Paulista - FALS</span>
-						</a>
-					</p>
-					<p class="ocupation">Information systems</p>
-					<p class="period">Início em 02/2008 e término em 12/2011</p>
-				</li>
-			</ul>
+	<main class="container">
+		<div class="education container-panel row">
+			<h3 class="">Education</h3>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a href="">
+						<img src="images/logo-etec">
+						<h4 class="panel-title">Centro Paula Souza – Escola Técnica Estadual - ETEC</h4>
+					</a>
+				</div>
+				<div class="panel-body">
+					<h5>Computer technician</h5>
+					<h6>January 2014 - July 2015</h6>
+					<p>Grade curricular</p>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a href="">
+						<img src="images/logo-fals">
+						<h4 class="panel-title">Faculdade do Litoral Sul Paulista - FALS</h4>
+					</a>
+				</div>
+				<div class="panel-body">
+					<h5>Information systems</h5>
+					<h6>February 2008 - December 2011</h6>
+					<p>Grade curricular</p>
+				</div>
+			</div>
 		</div>
-		<h3 class="work-title">Work Experience</h3>
-		<div class="work-experience swiper-container">
-			<ul class="swiper-wrapper">
-				<li class="swiper-slide">
+		<div class="work-experience">
+			<h3 class="work-title">Work Experience</h3>
+			<div id="carousel-work-experience" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-work-experience" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-work-experience" data-slide-to="1"></li>
+					<li data-target="#carousel-work-experience" data-slide-to="2"></li>
+				</ol>
+			</div>
+			<div class="carousel-inner">
+				<div class="item active">
 					<div>
 						<a href="">
 							<img src="images/logo-viewit.jpg">
@@ -87,8 +96,8 @@
 						<p>Prestar suporte aos sistemas de gerenciamento e apoio às Administrações 
 		Tributárias, totalmente via web, gerando melhorias na gestão pública.</p>	
 					</div>
-				</li>
-				<li class="swiper-slide">
+				</div>
+				<div class="item">
 					<div>
 						<a href="">
 							<img src="images/logo-viewit.jpg">
@@ -111,18 +120,39 @@
 
 						Os aprendizes nas empresas desenvolvem várias atividades, tanto a nível interno (administrativo) quanto externo, colocando em pratica tudo aquilo que vivenciaram em sala de aula, parceria que sem duvida alguma é de suma importância para a inserção do adolescente no mercado de trabalho, retirando-o da ociosidade e ensinando-lhes alternativas profissionais com visão de progresso sociocultural</p>
 					</div>
-				</li>
-			</ul>
-			<div class="swiper-pagination"></div>
+				</div>
+			</div>
 		</div>
-		<div class="legenda">
-			<h4>Legenda</h4>
-			<span class="nivel nivel-completo">Beginner</span>
-			<span class="nivel">Intermediate</span>
-			<span class="nivel">Advanced</span>
+		<div class="legenda panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title">Legenda</h4>
+			</div>
+			<div class="panel-body">
+				<div>
+				<span>Novice</span>
+				<span>Intermediate</span>	
+				<span>Advanced</span>	
+			</div>
+			<div>
+				<span class="nivel nivel-completo"></span>
+				<span class="nivel"></span>
+				<span class="nivel"></span>
+			</div>
+			<div>
+				<span class="nivel nivel-completo"></span>
+				<span class="nivel nivel-completo"></span>
+				<span class="nivel"></span>
+			</div>
+			<div>
+				<span class="nivel nivel-completo"></span>
+				<span class="nivel nivel-completo"></span>
+				<span class="nivel nivel-completo"></span>
+			</div>			
+			</div>
+			
 		</div>
-		<div>
-			<ul class="skills">
+		<div class="row">
+			<ul class="skills col-md-4">
 				<h3>Front-End</h3>
 				<li>
 					<a href="">
@@ -197,7 +227,7 @@
 					<span class="nivel"></span>
 				</li>
 			</ul>
-			<ul class="skills">
+			<ul class="skills col-md-4">
 				<h3>Desing & UX</h3>
 				<li>
 					<a href="">
@@ -210,7 +240,7 @@
 				</li>
 				<li>
 		 			<a href="">
-						<i"logo-netbenas">
+						<img src="logo-netbenas">
 						<span>After Effects</span>
 					</a>
 					<span class="nivel nivel-completo"></span>
@@ -236,7 +266,7 @@
 					<span class="nivel"></span>
 				</li>
 			</ul>
-			<ul class="skills">
+			<ul class="skills col-md-4">
 				<h3>Developin</h3>
 				<li>
 					<a href="">
@@ -249,7 +279,7 @@
 				</li>
 				<li>
 					<a href="">
-						<imgogo-netbenas">
+						<img src="logo-netbenas">	
 						<span>Eclipse</span>
 					</a>
 					<span class="nivel nivel-completo"></span>
@@ -266,7 +296,7 @@
 					<span class="nivel"></span>
 				</li>
 			</ul>
-			<ul class="skills">
+			<ul class="skills col-md-4">
 				<h3>Infraestrutura</h3>
 				<li>
 					<a href="">
@@ -324,7 +354,7 @@
 					<span class="nivel"></span>
 				</li>
 			</ul>
-			<ul class="skills">
+			<ul class="skills col-md-4">
 				<h3>Business</h3>
 				<li>
 					<a href="">
@@ -337,7 +367,7 @@
 				</li>
 				<li>
 					<a href="">
-						<imgogo-netbenas">
+						<img src="logo-netbenas">
 						<span>Word</span>
 					</a>
 					<span class="nivel nivel-completo"></span>
@@ -377,13 +407,15 @@
 	<footer>
 		Quando tiver do tamanho de um mobile, trocar os textos por ícones das redes sociais
 		<a href="">linkedin.com</a>
+		<a href="youtube.com/diegorchagas">logo youtube</a>
 		<a href="">facebook.com</a>
 		<a href="twitter.com/diegorchagas">@diegorchagas</a>
+		<a href="instagram.com/diegorchagas">@diegorchagas</a>
 		<a href="">drochachagas@gmail.com</a>
 		<a href="">+55(13)99132-2882</a>
 	</footer>
-	<script type="text/javascript" src="js/swiper.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	
 </body>
 </html>

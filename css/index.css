@@ -1,69 +1,54 @@
-body{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-}
 
 header{
 	background-color: #4173ba;
 	color: #fff;	
-	padding: 20px;
 	text-align: right;
-}
-
-h1 {
-	
+	padding-bottom: 15px;
 }
 
 h1, h2, h3 {
 	font-family: "Impact";
     text-transform: uppercase;
-    font-weight: normal;
-    margin: 0;
 }
 
-h2 {
+.container-panel{
+	    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px 15px;
+    border-color: #e5e5e5 #eee #eee;
+    border-style: solid;
+        box-sizing: border-box;
+}
+
+header h2 {
 	background-color: #fff;
 	color: #000;
-	padding-right: 10px;
+	padding-right: 5px;
 }
 
-p {
-	font-family: "Arial";
+.about-me p{
+	margin: 0;
 }
 
-header p {
-	line-height: 4px;
+.photo{
+	border: 2px solid #fff;
+	padding: 5px 0;	
+	border-radius: 50%;
+	width: 174px;
+	margin: 10px auto;
 }
 
-header .photo{
+.photo img{
 	border: 5px solid #fff;
-	border-radius: 50%;
-	background-color: transparent;
-	padding: 10px;
-	max-width: 180px;
-    margin: 0 auto;
-}
-
-header img {
-	width: 100%;
-	border: 10px solid #fff;
-	border-radius: 50%;
-	box-sizing: border-box;
-}
-
-section.objective{
-	background-color: #fff;
-	padding: 20px;
-}
-
-main {
-	padding: 10px;
-}
-
-main div {
-	margin: 10px 0;
-	padding: 10px;
+	margin: 0 auto;	
 }
 
 main .education {
@@ -74,36 +59,22 @@ main .education-title{
 	text-align: right;
 }
 
-main ul {
-	margin: 10px 0px;
-    padding: 0px;
-}
-
-main li {
-	list-style: none;
-	padding: 5px 0;
-}
-
-main li p {
-	font-size: 13px;
-	margin: 0;
-}
-
 main a {
 	text-decoration: none;
 	color: #000;
 }
 
-main p.ocupation{
-	font-weight: bold;
+.work-experience h4, 
+.work-experience h5, 
+.work-experience h6 {
+	color: #fff;
 }
 
 main h3.work-title{
 	color: #4173ba;
-	text-align: right;
 }
 
-main div.work-experience {
+main div.carousel-inner {
 	background-color: #4173ba;
 }
 
@@ -111,28 +82,12 @@ main div.legenda {
 	border: 1px solid #4173ba;
 }
 
-h4, h5, h6 {
-	color: #fff;
-	margin: 5px 0;
-}
-
-.work-experience div {
-	margin: 0;
-	padding: 0 10px;
-}
-
 .work-experience p {
 	background-color: #d2d3d7;
-    padding: 2px 4px;
 }
 
 main .skills {
 	background-color: #d2d3d7;
-	padding: 10px;
-}
-
-main .skills h3 {
-	text-align: center;
 }
 
 main span.nivel {
