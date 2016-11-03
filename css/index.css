@@ -6,13 +6,21 @@ header{
 	padding-bottom: 15px;
 }
 
+.logo-empresa{
+	background-color: #fff;
+}
+
+.logo-empresa img{
+	width: 100px;
+}
+
 h1, h2, h3 {
 	font-family: "Impact";
     text-transform: uppercase;
 }
 
 .container-panel{
-	    margin-right: 0;
+	margin-right: 0;
     margin-left: 0;
     background-color: #fff;
     border-color: #ddd;
@@ -70,20 +78,20 @@ main a {
 	color: #fff;
 }
 
-main h3.work-title{
+.work-experience h3.work-title{
 	color: #4173ba;
 }
 
-main div.carousel-inner {
+.work-experience div {
 	background-color: #4173ba;
-}
-
-main div.legenda {
-	border: 1px solid #4173ba;
 }
 
 .work-experience p {
 	background-color: #d2d3d7;
+}
+
+main div.legenda {
+	border: 1px solid #4173ba;
 }
 
 main .skills {
