@@ -38,7 +38,6 @@ header .photo img{
 	display: inline-block;
     padding: 10px 10px 0 10px;
     font-weight: bold;
-    color: #286090;
 }
 
 .panel a {
@@ -101,9 +100,16 @@ main div.legenda {
 	border: 1px solid #4173ba;
 }
 
-main .skills {
-	background-color: #d2d3d7;
-	height: auto;
+div.legenda .legenda-linha{
+	display: table-row;
+}
+
+.legenda .niveis{
+	display: table-cell;
+	padding: 5px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #4173ba;
 }
 
 main span.nivel {
@@ -117,6 +123,11 @@ main span.nivel {
 
 main span.nivel-completo {
 	background-color: #000;
+}
+
+main .skills {
+	background-color: #d2d3d7;
+	height: auto;
 }
 
 footer {
