@@ -16,6 +16,10 @@ header .about-me p{
 	margin: 0;
 }
 
+header .about-me a {
+	color: #fff;
+}
+
 header .photo{
 	border: 2px solid #fff;
 	padding: 5px 0;	
