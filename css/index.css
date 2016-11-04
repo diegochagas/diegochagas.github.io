@@ -3,15 +3,47 @@ header{
 	background-color: #4173ba;
 	color: #fff;	
 	text-align: right;
-	padding-bottom: 15px;
+	padding: 15px;
 }
 
-.logo-empresa{
+header h2 {
 	background-color: #fff;
+	color: #000;
+	padding-right: 5px;
 }
 
-.logo-empresa img{
-	width: 100px;
+header .about-me p{
+	margin: 0;
+}
+
+header .photo{
+	border: 2px solid #fff;
+	padding: 5px 0;	
+	border-radius: 50%;
+	width: 174px;
+	margin: 10px auto;
+}
+
+header .photo img{
+	border: 5px solid #fff;
+	margin: 0 auto;	
+}
+
+.panel-heading img{
+	display: inline-block;
+	height: 30px;
+}
+
+.panel-heading h4 {
+	display: inline-block;
+    padding: 10px 10px 0 10px;
+    font-weight: bold;
+    color: #286090;
+}
+
+.panel a {
+	font-weight: bold;
+    color: #286090;
 }
 
 h1, h2, h3 {
@@ -29,34 +61,10 @@ h1, h2, h3 {
     -webkit-box-shadow: none;
     box-shadow: none;
     position: relative;
-    padding: 45px 15px 15px;
-    margin: 0 -15px 15px;
+    padding: 15px;
     border-color: #e5e5e5 #eee #eee;
     border-style: solid;
-        box-sizing: border-box;
-}
-
-header h2 {
-	background-color: #fff;
-	color: #000;
-	padding-right: 5px;
-}
-
-.about-me p{
-	margin: 0;
-}
-
-.photo{
-	border: 2px solid #fff;
-	padding: 5px 0;	
-	border-radius: 50%;
-	width: 174px;
-	margin: 10px auto;
-}
-
-.photo img{
-	border: 5px solid #fff;
-	margin: 0 auto;	
+    box-sizing: border-box;
 }
 
 main .education {
@@ -82,7 +90,7 @@ main a {
 	color: #4173ba;
 }
 
-.work-experience div {
+.work-experience > div {
 	background-color: #4173ba;
 }
 
@@ -96,6 +104,7 @@ main div.legenda {
 
 main .skills {
 	background-color: #d2d3d7;
+	height: auto;
 }
 
 main span.nivel {
@@ -104,7 +113,7 @@ main span.nivel {
 	width: 10px;
     height: 10px;
     display: inline-block;
-    box-shadow: 2px 2px 1px #000;
+    box-shadow: 2px 1px 1px #000;
 }
 
 main span.nivel-completo {
