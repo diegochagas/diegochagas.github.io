@@ -80,7 +80,6 @@ main a {
 	color: #000;
 }
 
-.work-experience h4, 
 .work-experience h5, 
 .work-experience h6 {
 	color: #fff;
@@ -90,7 +89,7 @@ main a {
 	color: #4173ba;
 }
 
-.work-experience > div {
+.work-experience .panel {
 	background-color: #4173ba;
 }
 
