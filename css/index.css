@@ -139,6 +139,15 @@ main .skills li{
 	list-style: none;
 }
 
+main .skills .devicons{
+	font-size: 30px;
+}
+
+main .skills span[class^='icon-adb']{
+	font-size: 25px;
+	padding: 3px 0; 
+}
+
 footer {
 	background-color: #4173ba;
 }

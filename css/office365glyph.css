@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: "SPO365Icons";
+    src: url("//cdn.sharepointonline.com/14025/_layouts/15/fonts/Office365Icons.eot");
+    src: url("//cdn.sharepointonline.com/14025/_layouts/15/fonts/Office365Icons.eot?#iefix") format("embedded-opentype"), 
+         url("//cdn.sharepointonline.com/14025/_layouts/15/fonts/Office365Icons.woff") format("woff"), 
+         url("//cdn.sharepointonline.com/14025/_layouts/15/fonts/Office365Icons.ttf") format("truetype"), 
+         url("//cdn.sharepointonline.com/14025/_layouts/15/fonts/Office365Icons.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.office365 {
+  font-family: "SPO365Icons";
+}
+
+.office365-word:before{
+    content: "\e0b9";
+}
+
+.office365-excel:before{
+    content: "\e0b5";
+}
+
+.office365-powerpoint:before{
+    content: "\e0b8";
+}
+
+.outlook:before{
+    content: "\e062";
+}
+ 
