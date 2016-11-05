@@ -96,8 +96,9 @@ main a {
 	background-color: #4173ba;
 }
 
-.work-experience p {
+.work-experience p span {
 	background-color: #d2d3d7;
+	margin: 0 3px;
 }
 
 main div.legenda {
@@ -108,7 +109,7 @@ div.legenda .legenda-linha{
 	display: table-row;
 }
 
-.legenda .niveis{
+main .legenda .niveis{
 	display: table-cell;
 	padding: 5px;
 	vertical-align: middle;
@@ -132,6 +133,10 @@ main span.nivel-completo {
 main .skills {
 	background-color: #d2d3d7;
 	height: auto;
+}
+
+main .skills li{
+	list-style: none;
 }
 
 footer {
