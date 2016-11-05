@@ -143,7 +143,9 @@ main .skills .devicons{
 	font-size: 30px;
 }
 
-main .skills span[class^='icon-adb']{
+main .skills span[class^='icon-adb'],
+main .skills .glyphicon,
+main .skills span[class^='office365-'] {
 	font-size: 25px;
 	padding: 3px 0; 
 }
