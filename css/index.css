@@ -117,8 +117,10 @@ main .legenda .niveis{
 	border: 1px solid #4173ba;
 }
 
-main .skills table {
+main .skills {
 	background-color: #d2d3d7;
+	text-align: center;
+	color: #000;
 }
 
 main .skills th,  
@@ -157,12 +159,13 @@ footer {
 }
 
 footer a {
+	display: inline-block;
 	color: #fff;
 	padding: 0 5px;
 }
 
 footer span {
-	padding-bottom: 10px;
+	padding: 5px;
 }
 
 footer .link-rede {
