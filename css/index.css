@@ -117,18 +117,14 @@ main .legenda .niveis{
 	border: 1px solid #4173ba;
 }
 
-main .skills {
-	display: table;
+main .skills table {
 	background-color: #d2d3d7;
-	height: auto;
 }
 
-main .skills h3{
-	display: table-header-group;
-}
-
-main .skills > div{
-	display: table-row;
+main .skills th,  
+main .skills td {
+	vertical-align: middle;
+	text-align: center;
 }
 
 main .skills .devicons{
@@ -139,12 +135,6 @@ main .skills span[class^='icon-adb'],
 main .skills .glyphicon,
 main .skills span[class^='office365-'] {
 	font-size: 25px;
-	padding: 3px 0; 
-}
-
-main .skills span {
-	display: table-cell;
-	text-align: left;
 }
 
 main span.nivel {
@@ -162,14 +152,21 @@ main span.nivel-completo {
 
 footer {
 	background-color: #4173ba;
+	padding: 15px;
+	text-align: center; 
 }
 
 footer a {
 	color: #fff;
+	padding: 0 5px;
+}
+
+footer span {
+	padding-bottom: 10px;
 }
 
 footer .link-rede {
-	display: none;
+	display: none; 
 }
 
 footer span:before{
