@@ -118,9 +118,23 @@ main .legenda .niveis{
 }
 
 main .skills {
-	background-color: #d2d3d7;
 	text-align: center;
 	color: #000;
+	margin: 15px;
+}
+
+main .skills .row{
+	display: -webkit-box; /* Safari 6.1+ */
+    display: -webkit-flex; /* Safari */
+    display: flex;   
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding-top: 15px;
+}
+
+main .skills table{
+	background-color: #d2d3d7;
 }
 
 main .skills th,  
@@ -173,5 +187,5 @@ footer .link-rede {
 }
 
 footer span:before{
-	font-size: 30px;
+	font-size: 28px;
 }
