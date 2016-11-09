@@ -166,16 +166,21 @@ main span.nivel-completo {
 	background-color: #000;
 }
 
+main .developing-jobs h3 {
+	color: #000;
+}
+
 footer {
 	background-color: #4173ba;
 	padding: 15px;
+	margin-top: 25px;
 	text-align: center; 
 }
 
 footer a {
 	display: inline-block;
 	color: #fff;
-	padding: 0 5px;
+	padding: 5px;
 }
 
 footer span {
