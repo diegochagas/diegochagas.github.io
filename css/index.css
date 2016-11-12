@@ -22,7 +22,7 @@ header .about-me a {
 
 header .photo{
 	border: 2px solid #fff;
-	padding: 5px 0;	
+	padding: 5px;	
 	border-radius: 50%;
 	width: 174px;
 	margin: 10px auto;
@@ -54,7 +54,19 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-.container-panel{
+main .container-columns{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main .container-columns > div{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-width: 320px;
+}
+
+main .container-panel{
 	margin-right: 0;
     margin-left: 0;
     background-color: #fff;
@@ -101,26 +113,10 @@ main a {
 	margin: 0 3px;
 }
 
-main div.legenda {
-	border: 1px solid #4173ba;
-}
-
-div.legenda .legenda-linha{
-	display: table-row;
-}
-
-main .legenda .niveis{
-	display: table-cell;
-	padding: 5px;
-	vertical-align: middle;
-	text-align: center;
-	border: 1px solid #4173ba;
-}
-
 main .skills {
 	text-align: center;
 	color: #000;
-	margin: 15px;
+	padding: 10px;
 }
 
 main .skills table{
@@ -154,6 +150,10 @@ main span.nivel {
 
 main span.nivel-completo {
 	background-color: #000;
+}
+
+main .developing-jobs{
+	margin: 10px;
 }
 
 .developing-jobs .carousel-caption h3 {
