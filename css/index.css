@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "Impact Externa";
-	src: url("..fonts/impact.ttf");	
+	font-family: Impact Externa;
+	src: url("../fonts/impact.woff");	
 }
 
 
@@ -55,7 +55,7 @@ header .photo img{
 }
 
 h1, h2, h3 {
-	font-family: "Impact", "Impact Externa";
+	font-family: Impact, Impact Externa;
     text-transform: uppercase;
 }
 
