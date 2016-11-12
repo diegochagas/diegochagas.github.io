@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Impact Externa";
+	src: url("..fonts/impact.ttf");	
+}
+
 
 header{
 	background-color: #4173ba;
@@ -50,7 +55,7 @@ header .photo img{
 }
 
 h1, h2, h3 {
-	font-family: "Impact";
+	font-family: "Impact", "Impact Externa";
     text-transform: uppercase;
 }
 
@@ -153,7 +158,8 @@ main span.nivel-completo {
 }
 
 main .developing-jobs{
-	margin: 10px;
+	margin: 10px auto;
+	max-width: 1126px;
 }
 
 .developing-jobs .carousel-caption h3 {
