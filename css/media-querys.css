@@ -1,13 +1,5 @@
 
 @media (min-width: 560px){
-	header .photo {
-		position: absolute;
-		top: 5px ;
-	}
-
-	header .subtitulo {
-		padding-left: 30px;
-	}
 	
 	footer .link-rede{
 		display: inline-block;
@@ -15,6 +7,7 @@
 }
 
 @media (min-width: 768px){
+
 	main .developing-jobs .carousel-control .glyphicon{
 		padding: 20px;
 	}
@@ -25,5 +18,4 @@
 	    left: 5px;
 	}	
 }
-
 

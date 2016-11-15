@@ -8,14 +8,28 @@ header{
 	background-color: #4173ba;
 	color: #fff;	
 	text-align: right;
-	padding: 15px;
+}
+
+h2, h3	{
+	font-family: Impact, Impact Externa;
+    text-transform: uppercase;
 }
 
 header h2 {
+	margin: 0 13px 13px;
+}
+
+header h3 {
 	background-color: #fff;
 	color: #000;
-	padding-right: 5px;
+	padding: 5px;
+	margin: 0 13px;
 }
+
+header .about-me{
+	padding: 13px;
+}
+
 
 header .about-me p{
 	margin: 0;
@@ -30,12 +44,11 @@ header .photo{
 	padding: 5px;	
 	border-radius: 50%;
 	width: 174px;
-	margin: 10px auto;
+	margin: 0 auto;
 }
 
 header .photo img{
 	border: 5px solid #fff;
-	margin: 0 auto;	
 }
 
 .panel-heading img{
@@ -52,11 +65,6 @@ header .photo img{
 .panel a {
 	font-weight: bold;
     color: #286090;
-}
-
-h1, h2, h3 {
-	font-family: Impact, Impact Externa;
-    text-transform: uppercase;
 }
 
 main .container-columns{
