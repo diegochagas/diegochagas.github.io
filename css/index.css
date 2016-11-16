@@ -8,6 +8,7 @@ header{
 	background-color: #4173ba;
 	color: #fff;	
 	text-align: right;
+	overflow: hidden;
 }
 
 h2, h3	{
@@ -142,7 +143,7 @@ main .skills td {
 	text-align: center;
 }
 
-main .skills .devicons{
+main .skills span:before {
 	font-size: 30px;
 }
 
@@ -212,3 +213,5 @@ footer .link-rede {
 footer span:before{
 	font-size: 28px;
 }
+
+
