@@ -1,8 +1,4 @@
-/*
-var swiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    spaceBetween: 30
+$("#more-works").click(function(){
+	$("button span.glyphicon").toggleClass("glyphicon-menu-up");
+    $("button span.glyphicon").toggleClass("glyphicon-menu-down");
 });
-  
- */  

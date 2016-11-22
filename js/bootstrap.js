@@ -744,9 +744,7 @@ if (typeof jQuery === 'undefined') {
     var option  = data ? 'toggle' : $this.data()
 
     Plugin.call($target, option)
-
-    $("button span.glyphicon").toggleClass("glyphicon-menu-up");
-    $("button span.glyphicon").toggleClass("glyphicon-menu-down");
+    
   })
 
 }(jQuery);
