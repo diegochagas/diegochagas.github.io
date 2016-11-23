@@ -55,18 +55,14 @@ header .about-me a {
 }
 
 @keyframes photo-animation{
-	0% {
-		width: 0px;
-		
-	}
-	50% {
-		width: 0px;
-		top: 100px;
-	}
-	100% {
-		width: 122px;
-		top: 44px;
-	}
+	0% { width: 0px; top: 100px; }
+	100% { width: 122px; top: 44px; }
+}
+
+@keyframes foto-perfil-animation{
+	0% { top: 100px; max-width: 0%; }
+	80% { top: 100px; max-width: 0%; }
+	100% { top: 0; max-width: 100%; }
 }
 
 header .gear-photo{
@@ -82,7 +78,14 @@ header .photo {
     z-index: 1;
     left: 29px;
     top: 44px;
-    animation: photo-animation 1.5s;
+    animation: photo-animation 1s;
+}
+
+header .photo img {
+	position: relative;
+	top: 0;
+	max-width: 100%;
+	animation: foto-perfil-animation 2s;
 }
 
 header .gear-scale {
@@ -96,7 +99,6 @@ header .gear{
     background-color: #394551;
     border-radius: 50%;
     top: 30px;
-    animation: gear-rotate 5s infinite;
 }
 
 header .bar{
