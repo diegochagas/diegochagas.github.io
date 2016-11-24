@@ -181,6 +181,10 @@ header .bar-small{
 header .bar-small:nth-child(2){ transform: rotate(90deg); }     
 header .bar-small:nth-child(3){ transform: rotate(-150deg); }
 
+.panel-group .panel{
+	margin-bottom: 20px;
+}
+
 .panel-heading img{
 	display: inline-block;
 	height: 30px;
