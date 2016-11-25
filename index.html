@@ -26,6 +26,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/">Diego R Chagas</a>
+					<button class="change-language btn btn-default" onclick="changeLanguage();">Change language</button>
 				</div>
 				<div class="collapse navbar-collapse" id="collapse-navbar">
 					<ul class="nav navbar-nav">
@@ -88,8 +89,23 @@
 					</div>
 					<div class="panel-body">
 						<h5>Computer technician</h5>
+						<h6>Praia Grande/São Paulo - Brazil</h6>
 						<h6>January 2014 - July 2015</h6>
-						<a href="history-etec.html">Academic records</a>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="collapse" id="collapseEtec">
+								<table class="table">
+									<tr>
+										<th>Período</th>
+										<td>Materias</td>
+									</tr>
+									<tr>
+										<td>Período</td>
+										<td>Materias</td>
+									</tr>
+								</table>
+							</div>
+							<button id="records-etec" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseEtec" aria-expanded="false" aria-controls="collapseEtec">Academic records <span class="glyphicon glyphicon-menu-down"></span></button>
+						</div>
 					</div>
 				</div>
 				<div class="panel panel-default">
@@ -101,8 +117,14 @@
 					</div>
 					<div class="panel-body">
 						<h5>Information systems</h5>
+						<h6>Praia Grande/São Paulo - Brazil</h6>
 						<h6>February 2008 - December 2011</h6>
-						<a href="history-fals.html">Academic records</a>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="collapse" id="collapseFals">
+								<h1>Teste</h1>
+							</div>
+							<button id="records-fals" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseFals" aria-expanded="false" aria-controls="collapseFals">Academic records <span class="glyphicon glyphicon-menu-down"></span></button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -117,7 +139,7 @@
 					</div>
 					<div class="panel-body">
 						<h5>Front-end web development</h5>
-						<h6>March 2016 - Actually</h6>
+						<p>March 2016 - Actually</p>
 						<p>
 							<span>Node.js <span class="glyphicon glyphicon-ok"></span></span>
 							<span>Version control <span class="glyphicon glyphicon-ok"></span></span>
@@ -223,7 +245,7 @@
 				</div>
 				<button id="more-works" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseJobs" aria-expanded="false" aria-controls="collapseJobs">More works <span class="glyphicon glyphicon-menu-down"></span></button>
 			</div>
-			<div id="#skills" class="skills">
+			<div id="skills" class="skills">
 				<table class="table">
 					<tr>
 						<th colspan="3">
@@ -705,6 +727,10 @@
 			<span class="icon-github-01"></span>
 			<span class="link-rede">github.com/diegorchagas</span>
 		</a>
+		<a href="skype:diegorocha21?call" target="_blank">
+			<span class="icon-skype"></span>
+			<span class="link-rede">diegorocha21</span>
+		</a>
 		<a href="mailto:drochachagas@gmail.com" target="_blank">
 			<span class="icon-gmail"></span>
 			<span class="link-rede">drochachagas@gmail.com</span>
@@ -716,6 +742,7 @@
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/LanguageSystem.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
