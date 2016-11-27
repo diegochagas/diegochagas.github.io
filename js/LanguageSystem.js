@@ -34,6 +34,7 @@ function LanguageSystem(){
 	this.getText = function(type){
 		if(language == "en"){
 			var array = {
+				"buttonChecked": false,
 				"txtOcupation": "Front-end web development",
 			}
 			return array[type];
@@ -41,6 +42,7 @@ function LanguageSystem(){
 
 		else{
 			var array = {
+				"buttonChecked": true,
 				"txtOcupation": "Desenvolvedor Web Front-end",	
 			}
 			return array[type];
@@ -49,6 +51,7 @@ function LanguageSystem(){
 
 	this.setText = function(){
 		$(".identification h3").text(txt.getText("txtOcupation"));
+		$("#switch-language").prop("checked", txt.getText("buttonChecked"));
 	}
 }
 

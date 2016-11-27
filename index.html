@@ -26,7 +26,6 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/">Diego R Chagas</a>
-					<button class="change-language btn btn-default" onclick="changeLanguage();">Change language</button>
 				</div>
 				<div class="collapse navbar-collapse" id="collapse-navbar">
 					<ul class="nav navbar-nav">
@@ -49,7 +48,6 @@
 					<p><a href="mailto:drochachagas@gmail.com">drochachagas@gmail.com</a></p>
 				</div>
 			</div>
-
 			<div class="col-sm-6">
 				<div class="col-md-6 gear-photo">
 					<div class="photo">
@@ -77,6 +75,16 @@
 		</div>
 	</header>
 	<main>
+		<div class="container-language">
+			<div class="switch-language-container">
+				<span class="change-language">Change language</span>
+				<input id="switch-language" class="switch switch-language" type="checkbox">
+				<label for="switch-language">
+					<span class="idiom">Português</span>
+					<span class="idiom">English</span>
+				</label>
+			</div>
+		</div>
 		<div class="container-columns">
 			<div id="education" class="education container-panel">
 				<h3 class="">Education</h3>
@@ -95,16 +103,18 @@
 							<div class="collapse" id="collapseEtec">
 								<table class="table">
 									<tr>
-										<th>Período</th>
-										<td>Materias</td>
+										<th>Disciplinas</th>
+										<th>Semestre</th>
+										<th>Carga Horária</th>
 									</tr>
 									<tr>
-										<td>Período</td>
-										<td>Materias</td>
+										<td>Lógica de programação</td>
+										<td>2014/1</td>
+										<td>100</td>
 									</tr>
 								</table>
 							</div>
-							<button id="records-etec" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseEtec" aria-expanded="false" aria-controls="collapseEtec">Academic records <span class="glyphicon glyphicon-menu-down"></span></button>
+							<a href="etec.html">Academic records</a>
 						</div>
 					</div>
 				</div>
@@ -119,12 +129,7 @@
 						<h5>Information systems</h5>
 						<h6>Praia Grande/São Paulo - Brazil</h6>
 						<h6>February 2008 - December 2011</h6>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class="collapse" id="collapseFals">
-								<h1>Teste</h1>
-							</div>
-							<button id="records-fals" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseFals" aria-expanded="false" aria-controls="collapseFals">Academic records <span class="glyphicon glyphicon-menu-down"></span></button>
-						</div>
+						<a href="fals.html">Academic records</a>
 					</div>
 				</div>
 			</div>

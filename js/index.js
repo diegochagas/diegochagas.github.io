@@ -26,3 +26,6 @@ function changeLanguage(){
 	txt.setText();
 }
 
+$("#switch-language").click(function(){
+	changeLanguage();
+});
