@@ -6,8 +6,6 @@
 
 	<title>Diego R Chagas ● Curriculum Vitae</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/office365glyph.css">
-	<link rel="stylesheet" type="text/css" href="css/devicons.css">
 	<link rel="stylesheet" type="text/css" href="css/pictonic.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -22,7 +20,7 @@
 					<a class="navbar-brand" href="/">Diego R Chagas</a>
 					<button class="btn btn-primary" onclick="window.location.href='/'">
 						<span class="glyphicon glyphicon-menu-left"></span>
-						<span>Back</span>
+						<span class="back">Back</span>
 					</button>
 				</div>
 			</div>	
@@ -65,7 +63,17 @@
 			</div>
 		</div>
 	</header>
-	<main class="container">
+	<main>
+		<div class="container-language">
+			<div class="switch-language-container">
+				<span class="change-language">Change language</span>
+				<input id="switch-language" class="switch switch-language" type="checkbox">
+				<label for="switch-language">
+					<span class="idiom">English</span>
+					<span class="idiom">Português</span>
+				</label>
+			</div>
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<a href="http://www.fals.com.br/" target="_blank">
@@ -74,15 +82,15 @@
 				</a>
 			</div>
 			<div class="panel-body">
-				<h5>Information systems</h5>
-				<h6>Praia Grande/São Paulo - Brazil</h6>
-				<h6>February 2008 - December 2011</h6>
+				<h5 class="curso-fals">Information systems</h5>
+				<h6 class="local">Praia Grande/São Paulo - Brazil</h6>
+				<h6 class="date-fals">February 2008 - December 2011</h6>
 				<div class="panel-group">
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Princípios de desenvolvimento de algoritimo I</td>
@@ -136,9 +144,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Metodologia da pesquisa II</td>
@@ -187,9 +195,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Estrutura de dados I</td>
@@ -243,9 +251,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Engenharia de software II</td>
@@ -299,9 +307,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Linguagem de programação III</td>
@@ -335,9 +343,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Linguagem de programação IV</td>
@@ -376,9 +384,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Sistemas de informações gerenciais</td>
@@ -422,9 +430,9 @@
 					</table>
 					<table class="table">
 						<tr>
-							<th>Disciplinas</th>
-							<th>Semestre</th>
-							<th>Carga Horária</th>
+							<th class="disciplinas">Subjects</th>
+							<th class="semestres">Semesters</th>
+							<th class="carga-horaria">Workload</th>
 						</tr>
 						<tr>
 							<td>Tópicos em sistemas de informação</td>
@@ -473,11 +481,11 @@
 					</table>
 					<button class="btn btn-primary" onclick="window.location.href='/'">
 						<span class="glyphicon glyphicon-menu-left"></span>
-						<span>Back</span>
+						<span class="back">Back</span>
 					</button>
 					<button class="btn btn-info" onclick="window.location.href='#header'">
 						<span class="glyphicon glyphicon-menu-up"></span>
-						<span>Back</span>
+						<span class="top">Top</span>
 					</button>
 				</div>
 			</div>

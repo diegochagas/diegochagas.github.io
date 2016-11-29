@@ -38,8 +38,8 @@ function LanguageSystem(){
 				"txtEducation": "Education",
 				"txtWorkExperience": "Work Experience",
 				"txtSkills": "Skills",
-				"txtDevelopingJobs": "Developing Jobs",
-				"txtOcupation": "Front-end web development",
+				"txtWorksDeveloped": "Works developed",
+				"txtOcupation": "Front-end web developer",
 				"txtBirtday": "5 November 1989",
 				"txtLocal": "São Paulo / Brazil",
 				"txtChangeLanguage": "Trocar Idioma",
@@ -49,9 +49,9 @@ function LanguageSystem(){
 				"txtCursoFals": "Information systems",
 				"txtDateFals": "February 2008 - December 2011",
 				"txtAcademicRecords": "Academic records",
-				"txtViewitOcupation": "Front-end web development",
+				"txtViewitOcupation": "Front-end web developer",
 				"txtViewitDate": "March 2016 - Actually",
-				"txtViewitResponsibilities": '<span>Node.js <span class="glyphicon glyphicon-ok"></span></span><span>Version control <span class="glyphicon glyphicon-ok"></span></span><span>Java web developing<span class="glyphicon glyphicon-ok"></span></span><span>Mobile web pages <span class="glyphicon glyphicon-ok"></span></span><span>Handlebars.js <span class="glyphicon glyphicon-ok"></span></span><span>Apache Velocity Project<span class="glyphicon glyphicon-ok"></span></span><span>Jetty<span class="glyphicon glyphicon-ok"></span></span><span>Regex<span class="glyphicon glyphicon-ok"></span></span><span>Ajax<span class="glyphicon glyphicon-ok"></span></span><span>Bootstrap<span class="glyphicon glyphicon-ok"></span></span><span>Sass<span class="glyphicon glyphicon-ok"></span></span>',
+				"txtViewitResponsibilities": '<span>Node.js <span class="glyphicon glyphicon-ok"></span></span><span>Version control <span class="glyphicon glyphicon-ok"></span></span><span>Java web development<span class="glyphicon glyphicon-ok"></span></span><span>Mobile web pages <span class="glyphicon glyphicon-ok"></span></span><span>Handlebars.js <span class="glyphicon glyphicon-ok"></span></span><span>Apache Velocity Project<span class="glyphicon glyphicon-ok"></span></span><span>Jetty<span class="glyphicon glyphicon-ok"></span></span><span>Regex<span class="glyphicon glyphicon-ok"></span></span><span>Ajax<span class="glyphicon glyphicon-ok"></span></span><span>Bootstrap<span class="glyphicon glyphicon-ok"></span></span><span>Sass<span class="glyphicon glyphicon-ok"></span></span>',
 				"txtUsatellOcupation": "Computer technician",
 				"txtUsatellDate": "August 2014 - August 2015",
 				"txtUsatellResponsibilities": '<span>SQL Server<span class="glyphicon glyphicon-ok"></span></span><span>Datebase<span class="glyphicon glyphicon-ok"></span></span><span>VPN Security Platforms<span class="glyphicon glyphicon-ok"></span></span><span>Phone systems<span class="glyphicon glyphicon-ok"></span></span><span>Customer support<span class="glyphicon glyphicon-ok"></span></span><span>Computer network<span class="glyphicon glyphicon-ok"></span></span>', 
@@ -65,6 +65,24 @@ function LanguageSystem(){
 				"txtCampDate": "February 2006 - November 2007",
 				"txtCampResponsibilities": '<span>Telephonic service<span class="glyphicon glyphicon-ok"></span></span><span>Marketing<span class="glyphicon glyphicon-ok"></span></span><span>Dactylography<span class="glyphicon glyphicon-ok"></span></span><span>Entrepreneurship<span class="glyphicon glyphicon-ok"></span></span><span>Digitation<span class="glyphicon glyphicon-ok"></span></span><span>Work safety<span class="glyphicon glyphicon-ok"></span></span><span>Business management<span class="glyphicon glyphicon-ok"></span></span>', 
 				"txtMoreWorks": "More works",
+				"txtInfra": "Infrastructure",
+				"txtDev": "Development",
+				"txtBusiness": "Business",
+				"txtUnderArmourTitulo": "Under Armour mobile web page",
+				"txtUnderArmourDescricao": "Sports clothing and equipment company",
+				"txtGiulianaFloresTitulo": "Giuliana Flores mobile web page",
+				"txtGiulianaFloresDescricao": "Company that has been in the floral market for more than two decades",
+				"txtNestleTitulo": "Nestlé mobile web page",
+				"txtNestleDescricao": "World nutrition, health and wellness authority",
+				"txtFloresOnlineTitulo": "Flores Online mobile web page",
+				"txtFloresOnlineDescricao": "Leader in the segment of flowers and gifts on the Internet",
+				"txtMariaVittoriaTitulo": "Maria Vittoria mobile web page",
+				"txtMariaVittoriaDescricao": "Offers an exclusive collection of semi-jewelery and fine accessories",
+				"txtDisciplinas": "Subjects",
+				"txtSemestres": "Semesters",
+				"txtCargaHoraria": "Workload",
+				"txtBack": "Back",
+				"txtTop": "Top",
 			}
 			return array[type];
 		}
@@ -75,7 +93,7 @@ function LanguageSystem(){
 				"txtEducation": "Educação",
 				"txtWorkExperience": "Experiência Profissional",
 				"txtSkills": "Conhecimentos Específicos",
-				"txtDevelopingJobs": "Trabalhos Desenvolvidos",
+				"txtWorksDeveloped": "Trabalhos Desenvolvidos",
 				"txtOcupation": "Desenvolvedor Web Front-end",	
 				"txtBirtday": "5 de Novembro de 1989",
 				"txtLocal": "São Paulo / Brasil",
@@ -102,6 +120,24 @@ function LanguageSystem(){
 				"txtCampDate": "Fevereiro de 2006 - Novembro de 2007",
 				"txtCampResponsibilities": '<span>Atendimento via telefone<span class="glyphicon glyphicon-ok"></span></span><span>Marketing<span class="glyphicon glyphicon-ok"></span></span><span>Datilografia<span class="glyphicon glyphicon-ok"></span></span><span>Empreendorismo<span class="glyphicon glyphicon-ok"></span></span><span>Digitação<span class="glyphicon glyphicon-ok"></span></span><span>Segurança do trabalho<span class="glyphicon glyphicon-ok"></span></span><span>Gestão empresarial<span class="glyphicon glyphicon-ok"></span></span>', 
 				"txtMoreWorks": "Mais trabalhos",
+				"txtInfra": "Infraestrutura",
+				"txtDev": "Programação",
+				"txtBusiness": "Empresarial",
+				"txtUnderArmourTitulo": "Página web mobile da Under Armour",
+				"txtUnderArmourDescricao": "Empresa de roupas e equipamentos esportivos",
+				"txtGiulianaFloresTitulo": "Página web mobile da Giuliana Flores",
+				"txtGiulianaFloresDescricao": "Empresa que está no mercado floral a mais de duas décadas",
+				"txtNestleTitulo": "Página web mobile da Nestlé",
+				"txtNestleDescricao": "Autoridade mundial em nutrição, saúde e bem-estar",
+				"txtFloresOnlineTitulo": "Página web mobile da Flores Online",
+				"txtFloresOnlineDescricao": "Líder no segmento de flores e presentes pela Internet",
+				"txtMariaVittoriaTitulo": "Página web mobile da Maria Vittoria",
+				"txtMariaVittoriaDescricao": "Oferece uma coleção exclusiva de semijoias e acessórios finos",
+				"txtDisciplinas": "Disciplinas",
+				"txtSemestres": "Semestres",
+				"txtCargaHoraria": "Carga Horária",
+				"txtBack": "Voltar",
+				"txtTop": "Topo",
 			}
 			return array[type];
 		}
@@ -111,22 +147,24 @@ function LanguageSystem(){
 		$("#switch-language").prop("checked", txt.getText("buttonChecked"));
 		$(".navbar-nav .education a").text(txt.getText("txtEducation"));
 		$(".navbar-nav .work-experience a").text(txt.getText("txtWorkExperience"));
-		$(".navbar-nav .skills a").text(txt.getText("txtSkills"));
-		$(".navbar-nav .developing-jobs a").text(txt.getText("txtDevelopingJobs"));
+		$(".navbar-nav a.skills").html(txt.getText("txtSkills") + '<span class="caret"></span>');
+		$(".navbar-nav .development a").text(txt.getText("txtDev"));
+		$(".navbar-nav .infrastructure a").text(txt.getText("txtInfra"));
+		$(".navbar-nav .business a").text(txt.getText("txtBusiness"));
+		$(".navbar-nav .works-developed a").text(txt.getText("txtWorksDeveloped"));
 		$(".identification h3").text(txt.getText("txtOcupation"));
 		$(".about-me .birtday").text(txt.getText("txtBirtday"));
 		$(".about-me .local").text(txt.getText("txtLocal"));
 		$(".change-language").text(txt.getText("txtChangeLanguage"));
 		$("div.education h3").text(txt.getText("txtEducation"));
 		$("div.education .curso-etec").text(txt.getText("txtCursoEtec"));
-		$("div.education .local").text(txt.getText("txtLocalEducation"));
-		$("div.education .date-etec").text(txt.getText("txtDateEtec"));
-		$("div.education .curso-fals").text(txt.getText("txtCursoFals"));
-		$("div.education .date-fals").text(txt.getText("txtDateFals"));
-		$("div.education .panel-body a").text(txt.getText("txtAcademicRecords"));
+		$("div .local").text(txt.getText("txtLocalEducation"));
+		$("div .date-etec").text(txt.getText("txtDateEtec"));
+		$("div .curso-fals").text(txt.getText("txtCursoFals"));
+		$("div .date-fals").text(txt.getText("txtDateFals"));
+		$("div .panel-body a").text(txt.getText("txtAcademicRecords"));
 		$("div.work-experience h3").text(txt.getText("txtWorkExperience"));
 		$("div.work-experience .viewit h5").text(txt.getText("txtViewitOcupation"));
-
 		$("div.work-experience .viewit h6").text(txt.getText("txtViewitDate"));
 		$("div.work-experience .viewit p").html(txt.getText("txtViewitResponsibilities"));
 		$("div.work-experience .usatell h5").text(txt.getText("txtUsatellOcupation"));
@@ -142,7 +180,27 @@ function LanguageSystem(){
 		$("div.work-experience .camp h6").text(txt.getText("txtCampDate"));
 		$("div.work-experience .camp p").html(txt.getText("txtCampResponsibilities"));
 		$("#more-works").text(txt.getText("txtMoreWorks"));
-		$("#developing-jobs h3").text(txt.getText("txtDevelopingJobs"));
+		$(".infrastructure h3").text(txt.getText("txtInfra"));
+		$(".development h3").text(txt.getText("txtDev"));
+		$(".business h3").text(txt.getText("txtBusiness"));
+		$("#works-developed > h3").text(txt.getText("txtWorksDeveloped"));
+		$(".underarmour h3").text(txt.getText("txtUnderArmourTitulo"));
+		$(".underarmour p").text(txt.getText("txtUnderArmourDescricao"));
+		$(".giulianaflores h3").text(txt.getText("txtGiulianaFloresTitulo"));
+		$(".giulianaflores p").text(txt.getText("txtGiulianaFloresDescricao"));
+		$(".nestle h3").text(txt.getText("txtNestleTitulo"));
+		$(".nestle p").text(txt.getText("txtNestleDescricao"));
+		$(".floresonline h3").text(txt.getText("txtFloresOnlineTitulo"));
+		$(".floresonline p").text(txt.getText("txtFloresOnlineDescricao"));
+		$(".mariavittoria h3").text(txt.getText("txtMariaVittoriaTitulo"));
+		$(".mariavittoria p").text(txt.getText("txtMariaVittoriaDescricao"));
+
+		// Telas de histórico escolar
+		$(".panel-body .disciplinas").text(txt.getText("txtDisciplinas"));
+		$(".panel-body .semestres").text(txt.getText("txtSemestres"));
+		$(".panel-body .carga-horaria").text(txt.getText("txtCargaHoraria"));
+		$(".back").text(txt.getText("txtBack"));
+		$(".top").text(txt.getText("txtTop"));
 	}
 }
 

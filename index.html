@@ -31,8 +31,17 @@
 					<ul class="nav navbar-nav">
 						<li class="education"><a href="#education">Education</a></li>
 						<li class="work-experience"><a href="#work-experience">Work experience</a></li>
-						<li class="skills"><a href="#skills">Skills</a></li>
-						<li class="developing-jobs"><a href="#developing-jobs">Developing jobs</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle skills" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skills <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#front-end">Front-End</a></li>
+								<li><a href="#desing">Desing & UX</a></li>
+								<li class="development"><a href="#development">Development</a></li>
+								<li class="infrastructure"><a href="#infrastructure">Infrastructure</a></li>
+								<li class="business"><a href="#business">Business</a></li>
+							</ul>
+						</li>
+						<li class="works-developed"><a href="#works-developed">Works developed</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -40,7 +49,7 @@
 		<div class="row">
 			<div class="identification col-sm-6">
 				<h2>Diego Rocha Chagas</h2>
-				<h3>Front-end web development</h3>
+				<h3>Front-end web developer</h3>
 				<div class="about-me">			
 					<p class="birtday">5 November 1989</p>
 					<p class="local">São Paulo / Brazil</p>
@@ -127,12 +136,12 @@
 						</a>
 					</div>
 					<div class="panel-body">
-						<h5>Front-end web development</h5>
+						<h5>Front-end web developer</h5>
 						<h6>March 2016 - Actually</h6>
 						<p>
 							<span>Node.js <span class="glyphicon glyphicon-ok"></span></span>
 							<span>Version control <span class="glyphicon glyphicon-ok"></span></span>
-							<span>Java web developing<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Java web development<span class="glyphicon glyphicon-ok"></span></span>
 							<span>Mobile web pages <span class="glyphicon glyphicon-ok"></span></span>
 							<span>Handlebars.js <span class="glyphicon glyphicon-ok"></span></span>
 							<span>Apache Velocity Project<span class="glyphicon glyphicon-ok"></span></span>
@@ -236,8 +245,8 @@
 				<button id="more-works" class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseJobs" aria-expanded="false" aria-controls="collapseJobs">More works <span class="glyphicon glyphicon-menu-down"></span></button>
 			</div>
 			<div id="skills" class="skills">
-				<table class="table">
-					<tr>
+				<table id="front-end" class="table">
+					<tr >
 						<th colspan="3">
 							<h3>Front-End</h3>
 						</th>
@@ -347,7 +356,7 @@
 						</td>
 					</tr>
 				</table>
-				<table class="table">
+				<table id="desing" class="table">
 					<tr>
 						<th colspan="3">
 							<h3>Desing & UX</h3>
@@ -419,10 +428,10 @@
 						</td>
 					</tr>
 				</table>
-				<table class="table">
+				<table id="development" class="table development">
 					<tr>
 						<th colspan="3">
-							<h3>Developin</h3>
+							<h3>Development</h3>
 						</th>
 					</tr>
 					<tr>
@@ -465,10 +474,10 @@
 						</td>
 					</tr>
 				</table>
-				<table class="table">
+				<table id="infrastructure" class="table infrastructure">
 					<tr>
 						<th colspan="3">
-							<h3>Infraestrutura</h3>
+							<h3>Infrastructure</h3>
 						</th>
 					</tr>
 					<tr>
@@ -550,7 +559,7 @@
 						</td>
 					</tr>
 				</table>
-				<table class="table">
+				<table id="business" class="table business">
 					<tr>
 						<th colspan="3">
 							<h3>Business</h3>
@@ -624,8 +633,8 @@
 				</table>
 			</div>
 		</div>
-		<div id="developing-jobs" class="developing-jobs container">
-			<h3>Developing jobs</h3>
+		<div id="works-developed" class="works-developed container">
+			<h3>Works developed</h3>
 			<div id="carousel-jobs" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-jobs" data-slide-to="0" class="active"></li>
@@ -638,8 +647,8 @@
 					<div class="item active">
 						<a href="http://m.underarmour.com.br/" target="_blank">
 							<img class="img-responsive" src="images/banner1.jpg" alt="mobile web page image" alt="institution logo">	
-							<div class="carousel-caption">
-								<h3>Under Armour's mobile web page</h3>
+							<div class="carousel-caption underarmour">
+								<h3>Under Armour mobile web page</h3>
 								<p>Empresa de roupas e equipamentos esportivos</p>
 							</div>
 						</a>
@@ -647,7 +656,7 @@
 					<div class="item">
 						<a href="http://m2.giulianaflores.com.br/" target="_blank">
 							<img class="img-responsive" src="images/banner2.jpg" alt="mobile web page image">	
-							<div class="carousel-caption">
+							<div class="carousel-caption giulianaflores">
 								<h3>Giuliana Flores mobile web page</h3>
 								<p>Empresa que está no mercado floral a mais de duas décadas</p>
 							</div>
@@ -656,16 +665,16 @@
 					<div class="item">
 						<a href="http://m.nestle.com.br/site/home.aspx" target="_blank">
 							<img class="img-responsive" src="images/banner3.jpg" alt="mobile web page image">		
-							<div class="carousel-caption">
+							<div class="carousel-caption nestle">
 								<h3>Nestlé mobile web page</h3>
-								<p>Autoridade Mundial em Nutrição, Saúde e Bem-Estar</p>
+								<p>Autoridade mundial em nutrição, saúde e bem-estar</p>
 							</div>
 						</a>
 					</div>
 					<div class="item">
 						<a href="http://m.floresonline.com.br/" target="_blank">
 							<img class="img-responsive" src="images/banner4.jpg" alt="mobile web page image">	
-							<div class="carousel-caption">
+							<div class="carousel-caption floresonline">
 								<h3>Flores Online mobile web page</h3>
 								<p>Líder no segmento de flores e presentes pela Internet</p>
 							</div>
@@ -674,7 +683,7 @@
 					<div class="item">
 						<a href="http://m.mariavittoria.com.br/" target="_blank">
 							<img class="img-responsive" src="images/banner5.jpg" alt="mobile web page image">	
-							<div class="carousel-caption">
+							<div class="carousel-caption mariavittoria">
 								<h3>Maria Vittoria mobile web page</h3>
 								<p>Oferece uma coleção exclusiva de semijoias e acessórios finos</p>
 							</div>
