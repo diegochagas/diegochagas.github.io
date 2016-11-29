@@ -333,7 +333,7 @@ function LanguageSystem(){
 		$(".about-me .local").text(txt.getText("txtLocal"));
 		$(".change-language").text(txt.getText("txtChangeLanguage"));
 		$("div.education h3").text(txt.getText("txtEducation"));
-		$("div.education .curso-etec").text(txt.getText("txtCursoEtec"));
+		$("div .curso-etec").text(txt.getText("txtCursoEtec"));
 		$("div .local").text(txt.getText("txtLocalEducation"));
 		$("div .date-etec").text(txt.getText("txtDateEtec"));
 		$("div .curso-fals").text(txt.getText("txtCursoFals"));
