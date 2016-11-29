@@ -64,7 +64,6 @@ function LanguageSystem(){
 				"txtCampOcupation": "Young apprentice",
 				"txtCampDate": "February 2006 - November 2007",
 				"txtCampResponsibilities": '<span>Telephonic service<span class="glyphicon glyphicon-ok"></span></span><span>Marketing<span class="glyphicon glyphicon-ok"></span></span><span>Dactylography<span class="glyphicon glyphicon-ok"></span></span><span>Entrepreneurship<span class="glyphicon glyphicon-ok"></span></span><span>Digitation<span class="glyphicon glyphicon-ok"></span></span><span>Work safety<span class="glyphicon glyphicon-ok"></span></span><span>Business management<span class="glyphicon glyphicon-ok"></span></span>', 
-				"txtMoreWorks": "More works",
 			}
 			return array[type];
 		}
@@ -101,7 +100,6 @@ function LanguageSystem(){
 				"txtCampOcupation": "Jovem Aprendiz",
 				"txtCampDate": "Fevereiro de 2006 - Novembro de 2007",
 				"txtCampResponsibilities": '<span>Atendimento via telefone<span class="glyphicon glyphicon-ok"></span></span><span>Marketing<span class="glyphicon glyphicon-ok"></span></span><span>Datilografia<span class="glyphicon glyphicon-ok"></span></span><span>Empreendorismo<span class="glyphicon glyphicon-ok"></span></span><span>Digitação<span class="glyphicon glyphicon-ok"></span></span><span>Segurança do trabalho<span class="glyphicon glyphicon-ok"></span></span><span>Gestão empresarial<span class="glyphicon glyphicon-ok"></span></span>', 
-				"txtMoreWorks": "Mais trabalhos",
 			}
 			return array[type];
 		}
@@ -141,8 +139,6 @@ function LanguageSystem(){
 		$("div.work-experience .camp h5").text(txt.getText("txtCampOcupation"));
 		$("div.work-experience .camp h6").text(txt.getText("txtCampDate"));
 		$("div.work-experience .camp p").html(txt.getText("txtCampResponsibilities"));
-		$("#more-works").text(txt.getText("txtMoreWorks"));
-		$("#developing-jobs h3").text(txt.getText("txtDevelopingJobs"));
 	}
 }
 

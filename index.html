@@ -29,10 +29,10 @@
 				</div>
 				<div class="collapse navbar-collapse" id="collapse-navbar">
 					<ul class="nav navbar-nav">
-						<li><a href="#education">Education</a></li>
-						<li><a href="#work-experience">Work experience</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#developing-jobs">Developing jobs</a></li>
+						<li class="education"><a href="#education">Education</a></li>
+						<li class="work-experience"><a href="#work-experience">Work experience</a></li>
+						<li class="skills"><a href="#skills">Skills</a></li>
+						<li class="developing-jobs"><a href="#developing-jobs">Developing jobs</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -42,8 +42,8 @@
 				<h2>Diego Rocha Chagas</h2>
 				<h3>Front-end web development</h3>
 				<div class="about-me">			
-					<p>5 November 1989</p>
-					<p>São Paulo / Brazil</p>
+					<p class="birtday">5 November 1989</p>
+					<p class="local">São Paulo / Brazil</p>
 					<p><a href="tel:+551399132-2882">+55(13)99132-2882</a> / <a href="tel:+551334775508">+55(13)3477-5508</a></p>
 					<p><a href="mailto:drochachagas@gmail.com">drochachagas@gmail.com</a></p>
 				</div>
@@ -80,8 +80,8 @@
 				<span class="change-language">Change language</span>
 				<input id="switch-language" class="switch switch-language" type="checkbox">
 				<label for="switch-language">
-					<span class="idiom">Português</span>
 					<span class="idiom">English</span>
+					<span class="idiom">Português</span>
 				</label>
 			</div>
 		</div>
@@ -96,26 +96,10 @@
 						</a>
 					</div>
 					<div class="panel-body">
-						<h5>Computer technician</h5>
-						<h6>Praia Grande/São Paulo - Brazil</h6>
-						<h6>January 2014 - July 2015</h6>
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class="collapse" id="collapseEtec">
-								<table class="table">
-									<tr>
-										<th>Disciplinas</th>
-										<th>Semestre</th>
-										<th>Carga Horária</th>
-									</tr>
-									<tr>
-										<td>Lógica de programação</td>
-										<td>2014/1</td>
-										<td>100</td>
-									</tr>
-								</table>
-							</div>
-							<a href="etec.html">Academic records</a>
-						</div>
+						<h5 class="curso-etec">Computer technician</h5>
+						<h6 class="local">Praia Grande / São Paulo - Brazil</h6>
+						<h6 class="date-etec">January 2014 - July 2015</h6>
+						<a href="etec.html">Academic records</a>
 					</div>
 				</div>
 				<div class="panel panel-default">
@@ -126,16 +110,16 @@
 						</a>
 					</div>
 					<div class="panel-body">
-						<h5>Information systems</h5>
-						<h6>Praia Grande/São Paulo - Brazil</h6>
-						<h6>February 2008 - December 2011</h6>
+						<h5 class="curso-fals">Information systems</h5>
+						<h6 class="local">Praia Grande / São Paulo - Brazil</h6>
+						<h6 class="date-fals">February 2008 - December 2011</h6>
 						<a href="fals.html">Academic records</a>
 					</div>
 				</div>
 			</div>
 			<div id="work-experience" class="work-experience container-panel">
 				<h3 class="work-title">Work Experience</h3>
-				<div class="panel panel-default">
+				<div class="panel panel-default viewit">
 					<div class="panel-heading">
 						<a href="http://www.viewit.com.br/" target="_blank">
 							<img class="img-responsive" src="images/logo-viewit.png" alt="institution logo">	
@@ -144,7 +128,7 @@
 					</div>
 					<div class="panel-body">
 						<h5>Front-end web development</h5>
-						<p>March 2016 - Actually</p>
+						<h6>March 2016 - Actually</h6>
 						<p>
 							<span>Node.js <span class="glyphicon glyphicon-ok"></span></span>
 							<span>Version control <span class="glyphicon glyphicon-ok"></span></span>
@@ -160,7 +144,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="panel panel-default">
+				<div class="panel panel-default usatell">
 					<div class="panel-heading">
 						<a href="http://www.usatell.com.br/" target="_blank">
 							<img class="img-responsive" src="images/logo-usatell.png" alt="institution logo">	
@@ -171,15 +155,16 @@
 						<h5>Computer technician</h5>
 						<h6>August 2014 - August 2015</h6>
 						<p>
-							<span>Banco de dados<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Plataformas de segurança VPN<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Sistemas de telefonia<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Suporte ao cliente<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Redes de computadores<span class="glyphicon glyphicon-ok"></span></span>
+							<span>SQL Server<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Datebase<span class="glyphicon glyphicon-ok"></span></span>
+							<span>VPN Security Platforms<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Phone systems<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Customer support<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Computer network<span class="glyphicon glyphicon-ok"></span></span>
 						</p>
 					</div>
 				</div>
-				<div class="panel panel-default">
+				<div class="panel panel-default nota-control">
 					<div class="panel-heading">
 						<a href="https://www.notacontrol.com.br/" target="_blank">
 							<img class="img-responsive" src="images/logo-nota-control.png" alt="institution logo">	
@@ -187,20 +172,20 @@
 						</a>
 					</div>
 					<div class="panel-body">
-						<h5>Técnico de Suporte ao Cliente</h5>
+						<h5>Customer Support Technician</h5>
 						<h6>December 2011 - May 2012</h6>
 						<p>
-							<span>Administração tributária<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Suporte ao cliente<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Gestão pública<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Planilhas em Excel<span class="glyphicon glyphicon-ok"></span></span>
-							<span>Aplicação de fórmulas do Excel<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Tributary administration<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Customer support<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Public administration<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Excel spreadsheets<span class="glyphicon glyphicon-ok"></span></span>
+							<span>Applying formulas in Excel<span class="glyphicon glyphicon-ok"></span></span>
 						</p>
 					</div>
 				</div>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					<div class="collapse" id="collapseJobs">
-						<div class="panel panel-default">
+						<div class="panel panel-default prefeitura">
 							<div class="panel-heading">
 								<a href="http://www.praiagrande.sp.gov.br/" target="_blank">
 									<img class="img-responsive" src="images/logo-prefeitura-pg.png" alt="institution logo">	
@@ -208,24 +193,24 @@
 								</a>
 							</div>
 							<div class="panel-body">
-								<h5>Agente Administrativo</h5>
+								<h5>Administrative assistant</h5>
 								<h6>August 2009 - December 2011</h6>
 								<p>
-									<span>Redigir memorandos e ofícios<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Protocolar entrada e saída de documentos<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Digitação<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Planilhas em Excel<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Atendimento ao cliente<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Sistemas educacionais<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Controle de estoque<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Recebimento de matrículas<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Atendimeto telefônico<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Envio e recebimento de e-mails<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Cadastro de alunos<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Writing memos and crafts<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Protocol document input and output<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Digitation<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Excel spreadsheets<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Customer service<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Educational systems<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Inventory control<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Receipt of enrollment<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Telephonic service<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Sending and receiving email<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Student registration<span class="glyphicon glyphicon-ok"></span></span>
 								</p>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						<div class="panel panel-default camp">
 							<div class="panel-heading">
 								<a href="http://www.camppraiagrande.com.br/" target="_blank">
 									<img class="img-responsive" src="images/logo-camp.png" alt="institution logo">	
@@ -233,16 +218,16 @@
 								</a>
 							</div>
 							<div class="panel-body">
-								<h5>Aprendiz</h5>
+								<h5>Young apprentice</h5>
 								<h6>February 2006 - November 2007</h6>
 								<p>
-									<span>Atendimento via telefone<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Telephonic service<span class="glyphicon glyphicon-ok"></span></span>
 									<span>Marketing<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Datilografia<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Empreendorismo<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Digitação<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Segurança do trabalho<span class="glyphicon glyphicon-ok"></span></span>
-									<span>Gestão empresarial<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Dactylography<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Entrepreneurship<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Digitation<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Work safety<span class="glyphicon glyphicon-ok"></span></span>
+									<span>Business management<span class="glyphicon glyphicon-ok"></span></span>
 								</p>
 							</div>
 						</div>
