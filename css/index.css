@@ -14,22 +14,12 @@ h2, h3	{
 	text-transform: uppercase;
 }
 
-.container-language {
-	width: 100%;
-	overflow: hidden;
-}
-
-.switch-language-container {
-    margin: 10px auto;
-    width: 310px;
-    padding-left: 120px;
-    position: relative;
-}
-
-span.change-language {
-	position: absolute;
-    left: 0;
-    top: 4px;
+.container-resources {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 /* Esconde o checkbox e joga para fora da tela */
@@ -40,11 +30,12 @@ span.change-language {
 }
 
 .switch + label {
-	display: block;
+	display: inline-block;
 	position: relative;
 	cursor: pointer;
 	outline: none;
 	user-select: none;
+	vertical-align: middle;
 }
 
 /* Estilo customizado */
@@ -99,9 +90,7 @@ span.change-language {
 
 main .curriculo {
 	font-weight: bold;
-	width: 100%;
 	text-align: center;
-	margin-bottom: 10px;
 }
 
 main .curriculo a {
