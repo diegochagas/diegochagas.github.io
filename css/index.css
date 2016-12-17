@@ -370,6 +370,10 @@ main .skills span[class^='office365-'] {
 	font-size: 25px;
 }
 
+main .skills .icon-webdriver{
+	height: 30px;
+}
+
 main span.nivel {
 	border: 1px solid #000;
 	border-radius: 50%;
