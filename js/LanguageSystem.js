@@ -39,7 +39,7 @@ function LanguageSystem(){
 				"txtWorkExperience": "Work Experience",
 				"txtSkills": "Skills",
 				"txtWorksDeveloped": "Works developed",
-				"txtOcupation": "Front-end developer",
+				"txtOcupation": "Front-end web developer",
 				"txtBirtday": "5 November 1989",
 				"txtLocal": "São Paulo / Brazil",
 				"txtChangeLanguage": "Trocar Idioma",
@@ -49,7 +49,7 @@ function LanguageSystem(){
 				"txtCursoFals": "Information systems",
 				"txtDateFals": "February 2008 - December 2011",
 				"txtAcademicRecords": "Academic records",
-				"txtViewitOcupation": "Front-end developer",
+				"txtViewitOcupation": "Front-end web developer",
 				"txtViewitDate": "March 2016 - Actually",
 				"txtViewitResponsibilities": '<span>Node.js <span class="glyphicon glyphicon-ok"></span></span><span>Version control <span class="glyphicon glyphicon-ok"></span></span><span>Java web development<span class="glyphicon glyphicon-ok"></span></span><span>Mobile web pages <span class="glyphicon glyphicon-ok"></span></span><span>Handlebars.js <span class="glyphicon glyphicon-ok"></span></span><span>Apache Velocity Project<span class="glyphicon glyphicon-ok"></span></span><span>Jetty<span class="glyphicon glyphicon-ok"></span></span><span>Regex<span class="glyphicon glyphicon-ok"></span></span><span>Ajax<span class="glyphicon glyphicon-ok"></span></span><span>Bootstrap<span class="glyphicon glyphicon-ok"></span></span><span>Sass<span class="glyphicon glyphicon-ok"></span></span>',
 				"txtUsatellOcupation": "Computer technician",
@@ -328,7 +328,7 @@ function LanguageSystem(){
 		$(".navbar-nav .infrastructure a").text(txt.getText("txtInfra"));
 		$(".navbar-nav .business a").text(txt.getText("txtBusiness"));
 		$(".navbar-nav .works-developed a").text(txt.getText("txtWorksDeveloped"));
-		$(".identification h3").text(txt.getText("txtOcupation"));
+		$(".identification h1").text(txt.getText("txtOcupation"));
 		$(".about-me .birtday").text(txt.getText("txtBirtday"));
 		$(".about-me .local").text(txt.getText("txtLocal"));
 		$(".change-language").text(txt.getText("txtChangeLanguage"));
