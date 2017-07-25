@@ -321,6 +321,12 @@ main .education-title{
 	text-align: right;
 }
 
+main .education .glyphicon-globe{
+	font-size: 30px;
+	vertical-align: middle;
+	color: #668f69;
+}
+
 main a {
 	text-decoration: none;
 	color: #000;
