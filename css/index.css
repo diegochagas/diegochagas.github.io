@@ -392,7 +392,7 @@ main .developing-jobs{
 	max-width: 1126px;
 }
 
-main .table-footer {
+main tfoot td {
 	font-weight: bold;
 }
 
