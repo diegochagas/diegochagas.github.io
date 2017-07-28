@@ -3,8 +3,19 @@
 $("#more-works, #records-fals, #records-etec").click(function(){
 	$("span.glyphicon", this).toggleClass("glyphicon-menu-up");
     $("span.glyphicon", this).toggleClass("glyphicon-menu-down");
+    var moreWorks = $(this).is("#more-works");
+    if(moreWorks && $(this).attr("aria-expanded") == "true")
+    	$(".text", this).text("More works");
+    if(moreWorks && $(this).attr("aria-expanded") == "false")
+    	$(".text", this).text("Less works");
+
 });
 
+$(document).ready( function() {
+    $('#more-works').on("click", function() {
+        $("#education").load("fals.html");
+    });
+});
 
 // Carrega a animação de rotação da engrenagem após 2 segundos
 setTimeout(function(){
@@ -14,18 +25,3 @@ setTimeout(function(){
 	$(".gear-small .bar-small:last-child").css("animation", "bar-rotate3 10s infinite");
 }, 2000);
 
-
-// Controller do sistem de idiomas
-var txt = new LanguageSystem();
-$(document).ready(function(){
-	txt.verifyLanguage();
-	txt.setText();
-});
-function changeLanguage(){
-	txt.changeLanguage();
-	txt.setText();
-}
-
-$("#switch-language").click(function(){
-	changeLanguage();
-});
