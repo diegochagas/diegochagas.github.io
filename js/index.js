@@ -12,6 +12,9 @@ $("#more-works, #records-fals, #records-etec").click(function(){
 });
 
 $(document).ready( function() {
+
+	$("##content-page").load("home.html");
+
     $('#more-works').on("click", function() {
         $("#education").load("fals.html");
     });
