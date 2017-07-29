@@ -11,12 +11,17 @@ $("#more-works, #records-fals, #records-etec").click(function(){
 
 });
 
+// Load the HTML
 $(document).ready( function() {
 
 	$("#content-page").load("home.html");
 
-    $('#more-works').on("click", function() {
-        $("#education").load("fals.html");
+    $('#fals').on("click", function() {
+        $("#content-page").load("fals.html");
+    });
+
+    $('#etec').on("click", function() {
+        $("#content-page").load("etec.html");
     });
 });
 
