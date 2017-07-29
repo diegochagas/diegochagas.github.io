@@ -12,17 +12,14 @@ $("#more-works, #records-fals, #records-etec").click(function(){
 });
 
 // Load the HTML
-$(document).ready( function() {
+$("#content-page").load("home.html");
 
-	$("#content-page").load("home.html");
+$('#fals').on("click", function() {
+    $("#content-page").load("fals.html");
+});
 
-    $('#fals').on("click", function() {
-        $("#content-page").load("fals.html");
-    });
-
-    $('#etec').on("click", function() {
-        $("#content-page").load("etec.html");
-    });
+$('#etec').on("click", function() {
+    $("#content-page").load("etec.html");
 });
 
 // Carrega a animação de rotação da engrenagem após 2 segundos
