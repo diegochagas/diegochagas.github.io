@@ -16,12 +16,12 @@ $(document).ready( function() {
 
 	$("#content-page").load("home.html");
 
-    $('#fals').click(e) {
+    $('#fals').click(function(e){
         e.preventDefault();
         $("#content-page").load("fals.html");
     });
 
-    $('#etec').click(e) {
+    $('#etec').click(function(e){
         e.preventDefault();
         $("#content-page").load("etec.html");
     });
