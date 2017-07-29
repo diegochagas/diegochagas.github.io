@@ -16,11 +16,13 @@ $(document).ready( function() {
 
 	$("#content-page").load("home.html");
 
-    $('#fals').on("click", function() {
+    $('#fals').click(e) {
+        e.preventDefault();
         $("#content-page").load("fals.html");
     });
 
-    $('#etec').on("click", function() {
+    $('#etec').click(e) {
+        e.preventDefault();
         $("#content-page").load("etec.html");
     });
 });
