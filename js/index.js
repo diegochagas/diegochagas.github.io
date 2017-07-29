@@ -14,7 +14,7 @@ $("#more-works, #records-fals, #records-etec").click(function(){
 // Load the HTML
 $("#content-page").load("home.html");
 
-$('#fals').on("click", function() {
+$('#fals').on("click", function() { 
     $("#content-page").load("fals.html");
 });
 
