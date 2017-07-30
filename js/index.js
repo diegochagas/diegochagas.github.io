@@ -12,7 +12,9 @@ $("#more-works, #records-fals, #records-etec").click(function(){
 });
 
 // Load the HTML
-loadHome();
+$(document).ready(function(){
+    loadHome();
+});
 
 // Carrega a animação de rotação da engrenagem após 2 segundos
 setTimeout(function(){
