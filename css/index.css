@@ -214,7 +214,7 @@ header .bar-small:nth-child(3){ transform: rotate(-150deg); }
 	font-weight: bold;
 }
 
-.panel span {
+.panel a {
 	font-weight: bold;
 	color: #286090;
 }

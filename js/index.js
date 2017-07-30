@@ -12,15 +12,7 @@ $("#more-works, #records-fals, #records-etec").click(function(){
 });
 
 // Load the HTML
-$("#content-page").load("home.html");
-
-$('#fals').on("click", function() { 
-    $("#content-page").load("fals.html");
-});
-
-$('#etec').on("click", function() {
-    $("#content-page").load("etec.html");
-});
+loadHome();
 
 // Carrega a animação de rotação da engrenagem após 2 segundos
 setTimeout(function(){
@@ -30,3 +22,14 @@ setTimeout(function(){
 	$(".gear-small .bar-small:last-child").css("animation", "bar-rotate3 10s infinite");
 }, 2000);
 
+function loadHome(){
+    $("#content-page").load("home.html");   
+}
+
+function loadFals(){
+    $("#content-page").load("fals.html");
+}
+
+function loadEtec(){
+    $("#content-page").load("etec.html");
+}
