@@ -35,3 +35,8 @@ function loadFals(){
 function loadEtec(){
     $("#content-page").load("etec.html");
 }
+
+function goToHeader(){
+    var headerTop =  $("header").offset().top;
+    $(window).scrollTop(headerTop);
+}
