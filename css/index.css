@@ -310,7 +310,8 @@ main .skills span[class^='office365-'] {
 	font-size: 25px;
 }
 
-main .skills .icon-webdriver{
+main .skills .icon-webdriver,
+main .skills .icon-sap-hybris {
 	height: 30px;
 }
 
