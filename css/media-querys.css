@@ -1,21 +1,13 @@
+@media (min-width: 560px) {
+  footer .link-rede {
+    display: inline-block; } }
+@media (min-width: 768px) {
+  main .developing-jobs .carousel-control .glyphicon {
+    padding: 20px; }
 
-@media (min-width: 560px){
-	
-	footer .link-rede{
-		display: inline-block;
-	}
-}
+  main .developing-jobs .carousel-control .glyphicon:before {
+    position: absolute;
+    top: 5px;
+    left: 5px; } }
 
-@media (min-width: 768px){
-
-	main .developing-jobs .carousel-control .glyphicon{
-		padding: 20px;
-	}
-
-	main .developing-jobs .carousel-control .glyphicon:before{
-		position: absolute;
-	    top: 5px;
-	    left: 5px;
-	}	
-}
-
+/*# sourceMappingURL=media-querys.css.map */
