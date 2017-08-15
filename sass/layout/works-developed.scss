@@ -1,0 +1,34 @@
+.works-developed{
+	margin: 10px auto;
+	max-width: 1126px;
+
+	.carousel-caption {
+		h3 {
+			-webkit-text-stroke: 1px rgba(0, 0, 0, .7);
+		}
+		p {
+			background-color: rgba(0, 0, 0, .4);
+		}
+	}
+	.carousel-control {
+		.glyphicon{
+			background-color: rgba(65, 115, 186, .7);
+			border-radius: 50%;	
+			padding: 5px;
+			@media (min-width: 768px){
+				padding: 20px;
+
+				&:before{
+					position: absolute;
+				    top: 5px;
+				    left: 5px;
+				}	
+			}
+		}
+	}
+	.carousel-indicators {
+		li {
+			border: 1px solid #4173ba;
+		}
+	}
+}
