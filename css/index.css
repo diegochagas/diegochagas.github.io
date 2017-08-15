@@ -8329,25 +8329,6 @@ a[class^="icon-"], a[class*=" icon-"], span[class^="icon-"], span[class*=" icon-
 .icon-netlog:before {
   content: ""; }
 
-footer {
-  background-color: #4173ba;
-  padding: 15px;
-  margin-top: 25px;
-  text-align: center; }
-  footer a {
-    display: inline-block;
-    color: #fff;
-    padding: 5px; }
-  footer span {
-    padding: 5px; }
-    footer span:before {
-      font-size: 28px; }
-  footer .link-rede {
-    display: none; }
-    @media (min-width: 560px) {
-      footer .link-rede {
-        display: inline-block; } }
-
 @font-face {
   font-family: Impact Externa;
   src: url("../fonts/impact.woff"); }
@@ -8631,5 +8612,24 @@ main nav .btn-primary {
           left: 5px; } }
   .works-developed .carousel-indicators li {
     border: 1px solid #4173ba; }
+
+footer {
+  background-color: #4173ba;
+  padding: 15px;
+  margin-top: 25px;
+  text-align: center; }
+  footer a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px; }
+  footer span {
+    padding: 5px; }
+    footer span:before {
+      font-size: 28px; }
+  footer .link-rede {
+    display: none; }
+    @media (min-width: 560px) {
+      footer .link-rede {
+        display: inline-block; } }
 
 /*# sourceMappingURL=index.css.map */

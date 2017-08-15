@@ -5,7 +5,7 @@ module.exports = function(grunt){
 			dist: {
 				files: [{
 					expand: true,
-					cwd: "sass",
+					cwd: "_sass/",
 					src: ["*.scss"],
 					dest: "css",
 					ext: ".css"
@@ -17,7 +17,7 @@ module.exports = function(grunt){
 				option: {
 					event: ["added", "changed"]
 				},
-				files: "sass/*.scss",
+				files: "_sass/*.scss",
 				tasks: "sass:dist"
 			}
 		}
