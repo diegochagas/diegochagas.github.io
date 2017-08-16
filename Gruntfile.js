@@ -17,8 +17,27 @@ module.exports = function(grunt){
 				option: {
 					event: ["added", "changed"]
 				},
-				files: "_sass/*.scss",
+				files: [
+					"_sass/*.scss",
+					"_sass/**/*.scss"
+				],
 				tasks: "sass:dist"
+			}
+		},
+		browserSync: {
+			bsFiles: {
+				src: [
+					"css/index.css",
+					"js/*.js",
+					"views/*.html",
+					"*.html"
+				]
+			},
+			options: {
+				watchTask: true,
+				server: {
+					baseDir: "./"
+				}
 			}
 		}
 
@@ -26,6 +45,7 @@ module.exports = function(grunt){
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks("grunt-browser-sync");
 
-	grunt.registerTask("server", ["watch"]);
+	grunt.registerTask("default", ["browserSync","watch"]);
 }

@@ -8592,26 +8592,26 @@ main nav .btn-primary {
   background-color: #d2d3d7;
   margin: 0 3px; }
 
-.works-developed {
+.works-developed.container {
   margin: 10px auto;
   max-width: 1126px; }
-  .works-developed .carousel-caption h3 {
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7); }
-  .works-developed .carousel-caption p {
-    background-color: rgba(0, 0, 0, 0.4); }
-  .works-developed .carousel-control .glyphicon {
-    background-color: rgba(65, 115, 186, 0.7);
-    border-radius: 50%;
-    padding: 5px; }
-    @media (min-width: 768px) {
-      .works-developed .carousel-control .glyphicon {
-        padding: 20px; }
-        .works-developed .carousel-control .glyphicon:before {
-          position: absolute;
-          top: 5px;
-          left: 5px; } }
-  .works-developed .carousel-indicators li {
-    border: 1px solid #4173ba; }
+.works-developed .carousel-caption h3 {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7); }
+.works-developed .carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.4); }
+.works-developed .carousel-control .glyphicon {
+  background-color: rgba(65, 115, 186, 0.7);
+  border-radius: 50%;
+  padding: 5px; }
+  @media (min-width: 768px) {
+    .works-developed .carousel-control .glyphicon {
+      padding: 20px; }
+      .works-developed .carousel-control .glyphicon:before {
+        position: absolute;
+        top: 5px;
+        left: 5px; } }
+.works-developed .carousel-indicators li {
+  border: 1px solid #4173ba; }
 
 footer {
   background-color: #4173ba;

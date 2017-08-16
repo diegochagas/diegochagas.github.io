@@ -1,6 +1,8 @@
 .works-developed{
-	margin: 10px auto;
-	max-width: 1126px;
+	&.container{
+		margin: 10px auto;
+		max-width: 1126px;
+	}
 
 	.carousel-caption {
 		h3 {

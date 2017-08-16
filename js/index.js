@@ -25,15 +25,15 @@ setTimeout(function(){
 }, 2000);
 
 function loadHome(){
-    $("#content-page").load("home.html");   
+    $("#content-page").load("views/home.html");   
 }
 
 function loadFals(){
-    $("#content-page").load("fals.html");
+    $("#content-page").load("views/fals.html");
 }
 
 function loadEtec(){
-    $("#content-page").load("etec.html");
+    $("#content-page").load("views/etec.html");
 }
 
 function goToHeader(){
