@@ -22,6 +22,10 @@ main{
 		a {
 			font-weight: bold;
 			color: #286090;
+
+			&:hover{
+				text-decoration: none;
+			}
 		}
 	}
 
