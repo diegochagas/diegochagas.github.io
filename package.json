@@ -1,8 +1,8 @@
 {
-  "homepage": "diegochagas.github.io",
   "name": "diegochagas.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "diegochagas.github.io",
   "dependencies": {
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.1",
