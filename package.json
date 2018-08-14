@@ -1,29 +1,19 @@
 {
-  "name": "diegorchagas.github.io",
-  "version": "1.0.0",
-  "description": "personal web page",
-  "main": "index.js",
+  "name": "diegochagas.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.2",
+    "react-ga": "^2.5.3",
+    "react-scripts": "1.1.4",
+    "typed.js": "^2.0.9"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/diegorchagas/diegorchagas.github.io.git"
-  },
-  "author": "diego",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/diegorchagas/diegorchagas.github.io/issues"
-  },
-  "homepage": "https://github.com/diegorchagas/diegorchagas.github.io#readme",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-usemin": "^3.1.1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
