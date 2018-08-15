@@ -20,7 +20,7 @@ export default function Portfolio(){
 							<div className="textbox">
 								<h4>Carrefour</h4>
 								<p>FRONT-END</p>
-								<div className="button"><a href="https://www.carrefour.com.br/" className="swipebox" target="_blank" rel="noopener noreferrer">VIEW</a></div>
+								<div className="button"><a href="https://www.carrefour.com.br/" target="_blank" rel="noopener noreferrer">VIEW</a></div>
 							</div>
 						</div>
 						<div className="col-md-4 gallery-grid gallery1">
@@ -28,7 +28,7 @@ export default function Portfolio(){
 							<div className="textbox">
 								<h4>Grand Optical</h4>
 								<p>FRONT-END</p>
-								<div className="button"><a href="https://www.grandoptical.com/fr/" className="swipebox" target="_blank" rel="noopener noreferrer">VIEW</a></div>
+								<div className="button"><a href="https://www.grandoptical.com/fr/" target="_blank" rel="noopener noreferrer">VIEW</a></div>
 							</div>
 						</div>
 						<div className="col-md-4 gallery-grid gallery1">
@@ -36,7 +36,7 @@ export default function Portfolio(){
 							<div className="textbox">
 								<h4>Underarmour</h4>
 								<p>MOBILE DEVELOPING</p>
-								<div className="button"><a href="https://www.underarmour.com.br/pt-br/" className="swipebox" target="_blank" rel="noopener noreferrer">VIEW</a></div>
+								<div className="button"><a href="https://www.underarmour.com.br/pt-br/" target="_blank" rel="noopener noreferrer">VIEW</a></div>
 							</div>
 						</div>
 						<div className="col-md-4 gallery-grid gallery1">
@@ -44,7 +44,7 @@ export default function Portfolio(){
 							<div className="textbox">
 								<h4>Giuliana Flores</h4>
 								<p>MOBILE DEVELOPING</p>
-								<div className="button"><a href="http://m2.giulianaflores.com.br/" className="swipebox" target="_blank" rel="noopener noreferrer">VIEW</a></div>
+								<div className="button"><a href="http://m2.giulianaflores.com.br/" target="_blank" rel="noopener noreferrer">VIEW</a></div>
 							</div>
 						</div>
 						<div className="col-md-4 gallery-grid gallery1">
@@ -52,7 +52,7 @@ export default function Portfolio(){
 							<div className="textbox">
 								<h4>Nestlé</h4>
 								<p>MOBILE DEVELOPING</p>
-								<div className="button"><a href="https://www.nestle.com.br/" className="swipebox" target="_blank" rel="noopener noreferrer">VIEW</a></div>
+								<div className="button"><a href="https://www.nestle.com.br/" target="_blank" rel="noopener noreferrer">VIEW</a></div>
 							</div>
 						</div>
 						<div className="col-md-4 gallery-grid gallery1">
@@ -60,7 +60,7 @@ export default function Portfolio(){
 							<div className="textbox">
 								<h4>Pacifika</h4>
 								<p>FRONT-END</p>
-								<div className="button"><a href="https://www.pacifika.com/" className="swipebox" target="_blank" rel="noopener noreferrer">VIEW</a></div>
+								<div className="button"><a href="https://www.pacifika.com/" target="_blank" rel="noopener noreferrer">VIEW</a></div>
 							</div>
 						</div>
 						<div className="clearfix"> </div>

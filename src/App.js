@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './style/style.css';
-import './style/swipebox.css';
 import ReactGA from 'react-ga';
 import Header from './components/header';
 import About from './components/about';
