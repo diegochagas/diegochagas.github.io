@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-scroll';
 
 export default function Footer(){
 	return(
@@ -8,7 +9,9 @@ export default function Footer(){
 					<p>Copyright &copy; 2018 Diego Chagas. Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
 				</div>
 			</div>
-			<a href="#home" id="toTop"><span id="toTopHover"></span>To Top</a>
+			<Link className="toTop" to="home" spy={true} smooth={true} duration={1000}>
+				<span className="toTopHover"></span>To Top
+			</Link>
 		</footer>
 	);
 }

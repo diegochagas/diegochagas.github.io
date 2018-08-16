@@ -1,71 +1,59 @@
-import React from 'react';
+import React, {Component} from 'react';
 import iconEdu from "../images/edu.png";
 import upArrow from '../images/arrow.png';
 
-export default function Education(){
-	return(
-		<div className="education">
-			<div className="education text-center">
-				<div className="container">
-					<div className="edu-info">
-						<h3>EDUCATION</h3>
-					</div>
-					<div className="strip text-center"><img src={iconEdu} alt="icon education"/></div>
-					<div className="edu-grids">
-						<div className="col-md-6 edu-grid">
-							<p>2008 - 2011</p><span>Graduated</span>
-							<img src={upArrow} alt="up arrow"/>
-							<div className="edu-border">
-								<div className="edu-grid-master">
-									<h3>BACHELOR DEGREE OF INFORMATION SYSTEMS</h3>
-									<h4>Coast South Paulista University</h4>
-								</div>
-								<div className="edu-grid-info">
-									<h5>
-										<div>Faculdade do Litoral Sul Paulista (FALS)</div>
-										<div>Praia Grande / Sao Paulo - Brazil</div>
-									</h5>
-									<a href="http://www.fals.com.br/" target="_blank" rel="noopener noreferrer">http://www.fals.com.br/</a>
-								</div>
-							</div>
+export default class Education extends Component {
+	render(){
+		let graduations = [
+			{beginYear: "2008", endYear: "2011", status: "Graduated", degree: "BACHELOR DEGREE OF INFORMATION SYSTEMS",
+				institution: "Coast South Paulista University", local: "Praia Grande / Sao Paulo - Brazil",
+				url: "http://www.fals.com.br/"},
+			{beginYear: "2014", endYear: "2015", status: "Graduated", degree: "CERTIFICATE OF COMPUTER ENGINEER",
+				institution: "State Technical School", local: "Praia Grande / Sao Paulo - Brazil",
+				url: "http://www.cps.sp.gov.br/etec/escolas/baixada-santista/etec-praia-grande.asp"},
+			/*{beginYear: "2012", endYear: "2013", status: "Graduated", degree: "MASTER DEGREE OF COMPUTER SCIENCE",
+				institution: "Auckalnd University", local: "Auckland - New Zealand",
+				url: "https://www.auckland.ac.nz/en.html"},*/
+		];
+
+		return(
+			<div className="education">
+				<div className="education text-center">
+					<div className="container">
+						<div className="edu-info">
+							<h3>EDUCATION</h3>
 						</div>
-						<div className="col-md-6 edu-grid">
-							<p>2014 - 2015</p><span>Graduated</span>
-							<img src={upArrow} alt="up arrow"/>
-							<div className="edu-border">
-								<div className="edu-grid-master">
-									<h3>CERTIFICATE OF COMPUTER ENGINEER</h3>
-									<h4>State Technical School</h4>
-								</div>
-								<div className="edu-grid-info">
-									<h5>
-										<div>Escola Técnica Estadual (ETEC) de Praia Grande</div>
-										<div>Praia Grande / Sao Paulo - Brazil</div>
-									</h5>
-									<a href="http://www.cps.sp.gov.br/etec/escolas/baixada-santista/etec-praia-grande.asp" target="_blank" rel="noopener noreferrer">http://www.cps.sp.gov.br/</a>
-								</div>
-							</div>
+						<div className="strip text-center"><img src={iconEdu} alt="icon education"/></div>
+						<div className="edu-grids">
+							{graduations.map(graduation => {
+								return(
+									<div className="col-md-6 edu-grid" key={graduation.degree}>
+										<p>{`${graduation.beginYear} - ${graduation.endYear}`}</p>
+										<span>{graduation.status}</span>
+										<img src={upArrow} alt="up arrow"/>
+										<div className="edu-border">
+											<div className="edu-grid-master">
+												<h3>{graduation.degree}</h3>
+												<h4>{graduation.institution}</h4>
+											</div>
+											<div className="edu-grid-info">
+												<h5>
+													<div>{graduation.local}</div>
+													<div>
+														<a href={graduation.url} target="_blank" rel="noopener noreferrer">Institution Website</a>
+													</div>
+												</h5>
+											</div>
+										</div>
+									</div>
+								)
+							})}
+							<div className="clearfix"></div>
 						</div>
-						{/*<div className="col-md-4 edu-grid">
-							<p>2012 - 2013</p><span>Graduated</span>
-							<img src={upArrow} alt="up arrow"/>
-							<div className="edu-border">
-								<div className="edu-grid-master">
-									<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-									<h4>Oxford University</h4>
-								</div>
-								<div className="edu-grid-info">
-									<h5>This is Photoshop's version Lorem Ipsum. 
-									Well, the way they make shows is, they make one show.</h5>
-								</div>
-							</div>
-						</div>*/}
-						<div className="clearfix"></div>
 					</div>
 				</div>
-				
+				<div className="strip-border"><p></p></div>
 			</div>
-			<div className="strip-border"><p></p></div>
-		</div>
-	);
+		);
+	}
 }

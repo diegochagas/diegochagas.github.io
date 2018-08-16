@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './style/style.css';
+import './App.css';
 import ReactGA from 'react-ga';
 import Header from './components/header';
 import About from './components/about';
-import MySkill from './components/my-skill';
+import MySkill from './components/my_skill';
 import Education from './components/education';
 import Work from './components/work';
 import Portfolio from './components/portfolio';
