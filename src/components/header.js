@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Typed from 'typed.js';
-import {Navbar} from 'react-bootstrap';
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import photoProfile from '../images/photo-profile.jpeg';
 import {Link} from 'react-scroll'
 
@@ -31,30 +31,30 @@ export default class Header extends Component {
 		document.getElementById("buttonMenu").click();
 	}
 
-	renderNavItem(item){
+	renderNavItem(item, number){
 		return(
-			<li role="presentation">
+			<NavItem eventKey={number} componentClass="span">
 				<Link className="" to={item} spy={true} smooth={true} duration={1000} onClick={this.triggerClick}>
 					{item}
 		        </Link>
-			</li>
+			</NavItem>
 		);
 	}
 
 	render(){
 		return(
 			<header className="banner" id="home">
-				<Navbar className="box_content_center">
+				<Navbar className="box_content_center" fixedTop>
 					<Navbar.Header>
 						<Navbar.Toggle id="buttonMenu"/>
 					</Navbar.Header>
 					<Navbar.Collapse>
-						<ul className="menu_box_list nav navbar-nav">
-							{this.renderNavItem("home")}
-							{this.renderNavItem("about")}
-							{this.renderNavItem("portfolio")}
-							{this.renderNavItem("contact")}
-						</ul>
+						<Nav className="menu_box_list">
+							{this.renderNavItem("home", 1)}
+							{this.renderNavItem("about", 2)}
+							{this.renderNavItem("portfolio", 3)}
+							{this.renderNavItem("contact", 4)}
+						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
 				<div className="banner-info">

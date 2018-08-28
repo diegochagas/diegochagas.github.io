@@ -34,9 +34,6 @@ padding-top:50px;
 	left:0px;
  }
 .box_content_center{
-  position: fixed;
-  width: 100%;
-  z-index: 50;
 	background-color: #337ab7;
 }
 a.boxclose{
@@ -57,6 +54,22 @@ a.boxclose{
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
   background-color: #6c99ff !important;
 }
+
+.navbar-nav li {
+	margin: 0 10px;
+}
+
+.navbar-nav li ~ li a {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-nav span[role=button] a {
+  	padding: 10px 15px;
+  	display: block;
+  	line-height: 20px;
+	position: relative;
+}
+
 .menu_box_list li a{
 	color: #fff !important;
 	font-size: 16px;
