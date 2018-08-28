@@ -1,0 +1,35 @@
+/*--my skill--*/
+.my-skills {
+  background: #1abc9c;
+  padding: 60px 0; }
+
+.my-skills h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 18px; }
+
+.skill-grids {
+  margin-top: 50px; }
+
+.skills-grid p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.circle {
+  color: #ffffff;
+  font-size: 36px; }
+
+span.circles-number {
+  font-size: 36px; }
+
+span.circles-text {
+  font-size: 36px; }
+
+.circles-text-wrp {
+  line-height: 142px !important; }
+
+/*--//my skill--*/
