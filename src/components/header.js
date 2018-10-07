@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Typed from 'typed.js';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import photoProfile from '../images/photo-profile.jpeg';
-import {Link} from 'react-scroll'
+import {Link} from 'react-scroll';
 
 class TypedTitle extends Component{
 	componentDidMount(){
