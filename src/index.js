@@ -8,10 +8,9 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
 	<BrowserRouter>
 		<Switch>
-			<Route path="/certificates/abacus-english" component={certificateAbacus}/>
-			<Route path="/" component={App}/>
+			<Route path="/certificates/abacus-english" component={certificateAbacus} />
+			<Route path="/" component={App} />
 		</Switch>
 	</BrowserRouter>
-	, document.getElementById('root')
-);
+	, document.getElementById('root'));
 registerServiceWorker();
