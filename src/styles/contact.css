@@ -1,0 +1,127 @@
+/*-- contact --*/
+.contact {
+  background: #52edc7;
+  padding: 60px 0 0 0; }
+
+.contact-info h3 {
+  margin: 0;
+  color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 18px; }
+
+.contact-grids {
+  margin-top: 50px; }
+
+.contact-grids h3 {
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 25px 0; }
+
+.stripb {
+  background: #2b2b2b;
+  width: 30%;
+  height: 1px;
+  margin: 0 auto 40px auto; }
+
+.contact-left {
+  text-align: center; }
+
+.contact-left ul {
+  margin: 0px 0 0 0;
+  padding: 0; }
+
+.contact-left ul li {
+  list-style-type: none;
+  font-size: 18px;
+  color: #2b2b2b;
+  font-weight: 500;
+  line-height: 1.8em;
+  font-family: 'Lato', sans-serif; }
+
+.contact-left ul li a {
+  text-decoration: none;
+  color: #2b2b2b; }
+
+.contact-left ul li a:hover {
+  color: #ffffff; }
+
+.contact-left ul li:nth-child(4) {
+  font-size: 20px;
+  margin: 30px 0;
+  font-weight: 800; }
+
+.contact-left ul li:nth-child(6) {
+  margin: 30px 0 0 0;
+  font-weight: 800; }
+
+.contact-right input[type="text"]:hover, .contact-right textarea:hover {
+  border: 3px solid #40c4a4; }
+
+.contact-right input[type="text"] {
+  border: 3px solid transparent;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  width: 47.65%;
+  outline: none;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #c9c9cb;
+  margin: 0 24px 24px 0; }
+
+.contact-right textarea {
+  border: 3px solid transparent;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 200px;
+  outline: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #c9c9cb;
+  resize: none;
+  padding: 14px;
+  margin-bottom: 24px; }
+
+.contact-right input[type="text"]:nth-child(2), .coment-form input[type="text"]:nth-child(2) {
+  margin-right: 0; }
+
+.contact-right form input[type="submit"] {
+  color: #2b2b2b;
+  font-family: 'Lato', sans-serif;
+  background: url("./images/mess.png") no-repeat 81px 14px;
+  width: 49%;
+  border-radius: 4px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0;
+  border: 3px solid #2b2b2b; }
+
+.contact-right form input[type="submit"]:hover {
+  border: 3px solid #ffffff; }
+
+.resume {
+  background: #eeeeee;
+  padding: 32px 0 60px 0; }
+
+.resume a {
+  font-family: 'Lato', sans-serif;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  background: #f1c40f;
+  padding: 16px 30px;
+  border-radius: 4px;
+  border-bottom: 2px solid #b8950a; }
+
+.resume a:hover {
+  color: #fff; }
+
+.down {
+  margin-top: 50px; }
+
+/*-- contact --*/
