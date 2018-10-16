@@ -10,7 +10,7 @@ export default class Education extends Component {
 				url: "http://www.fals.com.br/"},
 			{beginYear: "2014", endYear: "2015", status: "Graduated", degree: "CERTIFICATE OF COMPUTER ENGINEER",
 				institution: "State Technical School", local: "Praia Grande / Sao Paulo - Brazil",
-				url: "http://www.cps.sp.gov.br/etec/escolas/baixada-santista/etec-praia-grande.asp"},
+				url: "https://www.cps.sp.gov.br/"},
 			/*{beginYear: "2012", endYear: "2013", status: "Graduated", degree: "MASTER DEGREE OF COMPUTER SCIENCE",
 				institution: "Auckalnd University", local: "Auckland - New Zealand",
 				url: "https://www.auckland.ac.nz/en.html"},*/
