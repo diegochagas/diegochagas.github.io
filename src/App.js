@@ -3,7 +3,7 @@ import './App.css';
 import ReactGA from 'react-ga';
 import Header from './components/header';
 import About from './components/about';
-import MySkill from './components/my_skill';
+import Skills from './components/skills';
 import Education from './components/education';
 import Work from './components/work';
 import Portfolio from './components/portfolio';
@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         <About/>
-        <MySkill/>
+        <Skills/>
         <Education/>
         <Work/>
         <Portfolio/>

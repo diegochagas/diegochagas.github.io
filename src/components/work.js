@@ -20,7 +20,7 @@ export default class Work extends Component{
 
 	render(){
 		return(
-			<div className="work-experience text-center">
+			<div className="work text-center">
 				<div className="container">
 					<div className="work-info">
 						<h3>WORK EXPERIENCE</h3>

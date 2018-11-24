@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import iconSkill from "../images/skill.png";
 
-export default class MySkill extends Component {
+export default class Skills extends Component {
 
 	renderSkill(name, value){
 		const percentage = `${value}%`;
@@ -23,10 +23,10 @@ export default class MySkill extends Component {
 
 	render(){
 		return(
-			<div className="my-skill">
-				<div className="my-skills text-center">
+			<div className="skill">
+				<div className="skills text-center">
 					<div className="container">
-						<h3>MY SKILLS</h3>
+						<h3>SKILLS</h3>
 						<div className="strip text-center">
 							<img src={iconSkill} alt="icon skill"/>
 						</div>
@@ -52,7 +52,7 @@ export default class MySkill extends Component {
 			            </div>
 						</div>
 					</div>
-				<div className="my-skill-back"></div>
+				<div className="skill-back"></div>
 			</div>
 		);
 	}

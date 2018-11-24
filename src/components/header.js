@@ -52,8 +52,11 @@ export default class Header extends Component {
 						<Nav className="menu_box_list">
 							{this.renderNavItem("home", 1)}
 							{this.renderNavItem("about", 2)}
-							{this.renderNavItem("portfolio", 3)}
-							{this.renderNavItem("contact", 4)}
+							{this.renderNavItem("skills", 3)}
+							{this.renderNavItem("education", 4)}
+							{this.renderNavItem("work", 5)}
+							{this.renderNavItem("portfolio", 6)}
+							{this.renderNavItem("contact", 7)}
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

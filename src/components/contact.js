@@ -15,10 +15,10 @@ export default function Contact(){
 							<h3>Say Hi to Me</h3>
 							<div className="stripb"></div>
 							<ul>
-								<li>Central City </li>
-								<li>Auckland 1010</li>
-								<li>New Zealand</li>
-								<li><a href="tel:+642102524435">02102524435</a></li>
+								{/* <li>Praia Grande</li> */}
+								<li>Sao Paulo</li>
+								<li>Brazil</li>
+								<li><a href="tel:+5513991322882">+5513991322882</a></li>
 								<li><a href="mailto:drochachagas@gmail.com">drochachagas@gmail.com</a></li>
 							</ul>
 						</div>
