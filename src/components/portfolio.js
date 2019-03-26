@@ -10,14 +10,14 @@ import portfolio8 from "../images/banner8.jpg";
 export default class Portfolio extends Component{
 	renderWork(portfolio, company, role, site){
 		return(
-			<div className="col-md-4 gallery-grid gallery1">
+			<figure className="col-md-4 gallery-grid gallery1">
 				<img src={portfolio} className="img-responsive" alt="print of the page"/>
-				<div className="textbox">
+				<figcaption className="textbox">
 					<h4>{company}</h4>
 					<p>{role}</p>
 					<div className="button"><a href={site} target="_blank" rel="noopener noreferrer">VIEW</a></div>
-				</div>
-			</div>
+				</figcaption>
+			</figure>
 		);
 	}
 

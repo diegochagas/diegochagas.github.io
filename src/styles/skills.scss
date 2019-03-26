@@ -33,4 +33,23 @@ span.circles-text {
 .circles-text-wrp {
   line-height: 142px !important;
 }
+
+.progress {
+  position: relative;
+}
+
+.progress-percent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+}
+
+.progress-bar{
+  background-color: initial;
+  float: initial;
+  width: 100%;
+}
 /*--//skills--*/

@@ -12,9 +12,9 @@ export default class Skills extends Component {
 				</div>
                 <div className="col-md-8">
                     <div className="progress">
-                        <div className="progress-bar" role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100" style={{width: percentage}}>
-                            <span>{percentage}</span>
-                        </div>
+						<span className="progress-percent">{percentage}</span>
+						<progress className="progress-bar" value={value} max="100">
+						</progress>
                     </div>
                 </div>
             </div>
