@@ -35,8 +35,8 @@ export default class Education extends Component {
 										<div className="edu-grid-body">
 										  <img src={upArrow} alt="up arrow"/>
 											<div className="edu-grid-master edu-border">
-												<h3>{graduation.degree}</h3>
-												<h4>{graduation.institution}</h4>
+												<h4>{graduation.degree}</h4>
+												<h5>{graduation.institution}</h5>
 											</div>
 											<div className="edu-grid-info">
 												<h5>

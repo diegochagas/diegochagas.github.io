@@ -736,26 +736,6 @@ border:none;
 	.my-skills h3 {
 	  font-size: 32px;
 	}  
-	.work-info h3 {
-	  font-size: 32px;
-	  }
-	.work-grids {
-	  margin-top: 40px;
-	}
-	.work-grid h3 {
-	  padding: 11px 0;
-	  font-size: 16px;
-	  }
-	.work-grid-info h4 {
-	  font-size: 18px;
-	  }
-	.work-grid-info h5 {
-	  font-size: 16px;
-	  margin: 12px 0 12px 0;
-	  }
-	.work-grid-info p {
-	  font-size: 16px;
-	  }
 	.services-back {
 	  min-height: 53px;
 	}
@@ -1043,25 +1023,6 @@ border:none;
 	.education {
 	  padding: 40px 0;
 	}
-	.work-experience {
-	  padding: 40px 0;
-	  }
-	.work-info h3 {
-	  font-size: 30px;
-	}
-	.work-grid-info h4 {
-	  font-size: 16px;
-	}
-	.work-grid-info h5 {
-	  font-size: 14px;
-	  margin: 10px 0 10px 0;
-	}
-	.work-grid-info p {
-	  font-size: 14px;
-	}
-	.work-grid-info {
-	  padding: 16px 10px;
-	}
 	.services-back {
 	  min-height: 40px;
 	}
@@ -1323,15 +1284,6 @@ border:none;
 	}
 	.my-skill-back {
 	  min-height: 35px;
-	}
-	.edu-grid {
-	  float: left;
-	  width: 32.3% !important;
-	  padding: 0;
-	  margin-right: 9px;
-	}
-	.edu-grid:nth-child(3) {
-	  margin: 0;
 	}
 	.services-back {
 	  min-height: 33px;
@@ -1678,43 +1630,12 @@ border:none;
 	.my-skill-back {
 	  min-height: 27px;
 	}
-	.edu-info h3 {
+
+	.ser-info h3,.gallery-section h3,.process h3,.testimonials h3 ,.blog-info h3,.contact-info h3,.sam-head h3{
 	  font-size: 28px;
 		letter-spacing: 11px;
-	}
-	.edu-grid {
-	  float: left;
-	  width: 100% !important;
-	  padding: 0;
-	  margin-right: 0px;
-	  margin-bottom: 30px;
 	}
 	
-	.work-info h3,.ser-info h3,.gallery-section h3,.process h3,.testimonials h3 ,.blog-info h3,.contact-info h3,.sam-head h3{
-	  font-size: 28px;
-		letter-spacing: 11px;
-	}
-	.edu-grid p, .edu-grid span {
-	  font-size: 13px;
-	}
-	.edu-grid-master h3, .edu-grid-master h4 {
-	  font-size: 13px;
-	}
-	.edu-grid-info h5 {
-	  font-size: 13px;
-	}
-	.work-grid h3 {
-	  font-size: 13px;
-	}
-	.work-grid-info h4 {
-	  font-size: 13px;
-	}
-	.work-grid-info h5 {
-	  font-size: 13px;
-	  }
-	.work-grid-info p {
-	  font-size: 13px;
-	}
 	.services-back {
 	  min-height: 24px;
 	}
@@ -1853,7 +1774,7 @@ border:none;
 .banner.page-head {
   min-height: 66px;
 }
-.work-info h3, .ser-info h3, .gallery-section h3, .process h3, .testimonials h3, .blog-info h3, .contact-info h3, .sam-head h3 {
+.ser-info h3, .gallery-section h3, .process h3, .testimonials h3, .blog-info h3, .contact-info h3, .sam-head h3 {
   font-size: 21px;
   letter-spacing: 5px;
 }
