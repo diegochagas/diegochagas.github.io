@@ -4,20 +4,20 @@ import upArrow from '../images/arrow.png';
 
 export default class Education extends Component {
 	render(){
-		let graduations = [
+		const graduations = [
 			{beginYear: "2008", endYear: "2011", status: "Graduated", degree: "BACHELOR DEGREE OF INFORMATION SYSTEMS",
 				institution: "Coast South Paulista University", local: "Praia Grande / Sao Paulo - Brazil",
 				url: "http://www.fals.com.br/"},
 			{beginYear: "2014", endYear: "2015", status: "Graduated", degree: "CERTIFICATE OF COMPUTER ENGINEER",
 				institution: "State Technical School", local: "Praia Grande / Sao Paulo - Brazil",
 				url: "https://www.cps.sp.gov.br/"},
-			/*{beginYear: "2012", endYear: "2013", status: "Graduated", degree: "MASTER DEGREE OF COMPUTER SCIENCE",
+			/*{beginYear: "2012", endYear: "2013", status: "Graduated", degree: "DOCTOR DEGREE OF COMPUTER SCIENCE",
 				institution: "Auckalnd University", local: "Auckland - New Zealand",
 				url: "https://www.auckland.ac.nz/en.html"},*/
 		];
 
 		return(
-			<div className="education">
+			<section className="education">
 				<div className="education text-center">
 					<div className="container">
 						<div className="edu-info">
@@ -53,7 +53,7 @@ export default class Education extends Component {
 					</div>
 				</div>
 				<div className="strip-border"><p></p></div>
-			</div>
+			</section>
 		);
 	}
 }

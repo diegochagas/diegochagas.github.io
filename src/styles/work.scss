@@ -13,18 +13,30 @@
 }
 .work-grids {
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-grid {
+  background:white;
+  //margin: 0px 15px;
+  margin-bottom: 50px;
+}
+
+.work-grid p {
+  max-width: 300px;
 }
 .work-grid h3{
-margin:0;
-color:#ffffff;
-background:#52edc7;
-padding: 9px 0;
-font-size: 18px;
-font-weight: 600;
+  margin:0;
+  color:#ffffff;
+  background:#52edc7;
+  padding: 9px 0;
+  font-size: 18px;
+  font-weight: 600;
 }
 .work-grid-info {
-background:#ffffff;
-padding: 20px 18px;
+  padding: 20px 18px;
 }
 .work-grid-info h4{
   font-family: 'Lato', sans-serif;
@@ -49,8 +61,8 @@ padding: 20px 18px;
   font-weight: 300;
 }
 .work-grid{
-border:1px solid #e2e2e2;
-border-radius: 6px;
-border-bottom: 2px solid #c3c3c3;
+  border:1px solid #e2e2e2;
+  border-radius: 6px;
+  border-bottom: 2px solid #c3c3c3;
 }
 /*--//work--*/

@@ -3,7 +3,7 @@ import iconContact from "../images/con1.png";
 
 export default function Contact(){
 	return(
-		<div className="contact-div">
+		<section className="contact-div">
 			<div className="contact" id="contact">
 				<div className="container">
 					<div className="contact-info text-center">
@@ -27,6 +27,6 @@ export default function Contact(){
 				</div>
 			</div>
 			<div className="footer-top"></div>
-		</div>
+		</section>
 	);
 }

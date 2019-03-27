@@ -17,7 +17,7 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <article>
         <Header/>
         <About/>
         <Skills/>
@@ -27,7 +27,7 @@ class App extends Component {
         <Contact/>
         <Resume/>
         <Footer/>
-      </div>
+      </article>
     );
   }
 }

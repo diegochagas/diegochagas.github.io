@@ -23,7 +23,7 @@ export default class Portfolio extends Component{
 
 	render(){
 		return(
-			<div className="gallery-section text-center" id="portfolio">
+			<section className="gallery-section text-center" id="portfolio">
 				<div className="container">
 					<h3>PORTFOLIO</h3>
 					<div className="strip text-center"><img src={iconPort} alt="icon portfolio"/></div>
@@ -39,7 +39,7 @@ export default class Portfolio extends Component{
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }
