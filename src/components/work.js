@@ -22,7 +22,7 @@ export default class Work extends Component{
 					<div className="work-grids">
             {jobs.map(job => {
               return (
-                <div className="work-grid">
+                <div className="work-grid" key={job.company}>
                   <h4>{`${job.beginYear} - ${job.endYear}`}</h4>
                   <div className="work-grid-info">
                     <h3>{job.company}</h3>
