@@ -736,39 +736,6 @@ border:none;
 	.my-skills h3 {
 	  font-size: 32px;
 	}  
-	.edu-info h3 {
-	  font-size: 32px;
-	}  
-	.edu-grids {
-	  margin-top: 40px;
-	} 
-	.edu-grid p {
-	  font-size: 16px;
-	}  
-	.edu-grid span {
-	  font-size: 16px;
-	  }
-	.edu-grid p,.edu-grid span {
-	  width: 38%;
-	}  
-	.edu-grid img {
-	  left: 43%;
-	} 
-	.edu-grid-master h3 {
-	  font-size: 16px;
-	  }
-	.edu-grid-master h4 {
-	  font-size: 16px;
-	  }
-	.edu-grid-info h5 {
-	  font-size: 16px;
-	  }
-	.edu-grid-info {
-	  padding: 25px 22px;
-	}
-	.education {
-	  padding: 45px 0;
-	  }
 	.work-info h3 {
 	  font-size: 32px;
 	  }
@@ -1068,13 +1035,7 @@ border:none;
 	.my-skill-back {
 	  min-height: 43px;
 	}
-	.edu-info h3 {
-	  font-size: 30px;
-	}
-	.edu-grid {
-	  float: left;
-	  width: 33.3% !important;
-	}
+
 	.skills-grid p {
 	  margin: 3px 0 0 0;
 	  font-size: 14px;
@@ -1082,38 +1043,11 @@ border:none;
 	.education {
 	  padding: 40px 0;
 	}
-	.edu-grid p, .edu-grid span {
-	  width: 51%;
-	}
-	.edu-border {
-	  margin-top: 38px;
-	  }
-	.edu-grid p ,.edu-grid span{
-	  font-size: 14px;
-	}
-	.edu-grid-master h3,.edu-grid-master h4 {
-	  font-size: 14px;
-	}
-	.edu-grid-info {
-	  padding: 12px 10px;
-	}
-	.edu-grid-info h5 {
-	  font-size: 14px;
-	}
 	.work-experience {
 	  padding: 40px 0;
 	  }
 	.work-info h3 {
 	  font-size: 30px;
-	}
-	.w-grid {
-	  float: left;
-	  width: 31.4%;
-	  padding: 0;
-	  margin-right: 20px;
-	}
-	.w-grid:nth-child(3) {
-	margin-right:0;
 	}
 	.work-grid-info h4 {
 	  font-size: 16px;
@@ -1179,10 +1113,7 @@ border:none;
 	  margin: 0 auto;
 	  background-size: 319% !important;
 	}
-	.edu-grid img {
-	  top: 25%;
-	  left: 36%;
-	}
+
 	.gallery-section {
 	  padding: 68px 0 0px 0;
 	}
@@ -1401,12 +1332,6 @@ border:none;
 	}
 	.edu-grid:nth-child(3) {
 	  margin: 0;
-	}
-	.w-grid {
-	  float: left;
-	  width: 32.3%;
-	  padding: 0;
-	  margin-right: 9px;
 	}
 	.services-back {
 	  min-height: 33px;
@@ -1764,20 +1689,10 @@ border:none;
 	  margin-right: 0px;
 	  margin-bottom: 30px;
 	}
-	.edu-grid img {
-	  top: 29%;
-	  left: 42%;
-	}
+	
 	.work-info h3,.ser-info h3,.gallery-section h3,.process h3,.testimonials h3 ,.blog-info h3,.contact-info h3,.sam-head h3{
 	  font-size: 28px;
 		letter-spacing: 11px;
-	}
-	.w-grid {
-	  float: left;
-	  width: 100%;
-	  padding: 0;
-	  margin-right: 0;
-	  margin-bottom: 30px;
 	}
 	.edu-grid p, .edu-grid span {
 	  font-size: 13px;
@@ -2030,9 +1945,6 @@ border:none;
 }
 .my-skill-back {
   min-height: 17px;
-}
-.edu-grid img {
-  left: 38%;
 }
 .services-back {
   min-height: 18px;

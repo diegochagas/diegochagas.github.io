@@ -27,12 +27,14 @@ export default class Education extends Component {
 						<div className="edu-grids">
 							{graduations.map(graduation => {
 								return(
-									<div className="col-md-6 edu-grid" key={graduation.degree}>
-										<p>{`${graduation.beginYear} - ${graduation.endYear}`}</p>
-										<span>{graduation.status}</span>
-										<img src={upArrow} alt="up arrow"/>
-										<div className="edu-border">
-											<div className="edu-grid-master">
+									<div className="edu-grid" key={graduation.degree}>
+                    <div className="edu-grid-header">
+                      <p>{`${graduation.beginYear} - ${graduation.endYear}`}</p>
+                      <span>{graduation.status}</span>
+                    </div> 
+										<div className="edu-grid-body">
+										  <img src={upArrow} alt="up arrow"/>
+											<div className="edu-grid-master edu-border">
 												<h3>{graduation.degree}</h3>
 												<h4>{graduation.institution}</h4>
 											</div>
@@ -48,7 +50,6 @@ export default class Education extends Component {
 									</div>
 								)
 							})}
-							<div className="clearfix"></div>
 						</div>
 					</div>
 				</div>
