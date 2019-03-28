@@ -24,20 +24,17 @@ export default class Portfolio extends Component{
 					<h3>PORTFOLIO</h3>
 					<div className="strip text-center"><img src={iconPort} alt="icon portfolio"/></div>
 					<div className="gallery-grids">
-						<div className="top-gallery">
-              {portfolios.map(portfolio => {
-                return(
-                  <figure className="col-md-4 gallery-grid gallery1" key={portfolio.company}>
-                    <img src={portfolio.imgSrc} className="img-responsive" alt="print of the page"/>
-                    <figcaption className="textbox">
-                      <h4>{portfolio.company}</h4>
-                      <p>{portfolio.role}</p>
-                      <div className="button"><a href={portfolio.url} target="_blank" rel="noopener noreferrer">VIEW</a></div>
-                    </figcaption>
-                  </figure>
-                )})}
-							<div className="clearfix"> </div>
-						</div>
+            {portfolios.map(portfolio => {
+              return(
+                <figure className="gallery-grid gallery1" key={portfolio.company}>
+                  <img src={portfolio.imgSrc} className="img-responsive" alt="print of the page"/>
+                  <figcaption className="textbox">
+                    <h4>{portfolio.company}</h4>
+                    <p>{portfolio.role}</p>
+                    <div className="button"><a href={portfolio.url} target="_blank" rel="noopener noreferrer">VIEW</a></div>
+                  </figcaption>
+                </figure>
+            )})}
 					</div>
 				</div>
 			</section>

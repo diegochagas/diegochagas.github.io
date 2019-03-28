@@ -13,12 +13,12 @@ export default class Work extends Component{
     ];
 
 		return(
-			<section className="work text-center">
+			<section className="work">
 				<div className="container">
 					<div className="work-info">
 						<h3>WORK EXPERIENCE</h3>
 					</div>
-					<div className="strip text-center"><img src={iconWork} alt="icon work"/></div>
+					<div className="strip"><img src={iconWork} alt="icon work"/></div>
 					<div className="work-grids">
             {jobs.map(job => {
               return (
