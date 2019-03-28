@@ -9,7 +9,7 @@
   padding: 140px 0 0px 0;
 
   @media (max-width: 1024px){
-    min-height: 750px;
+    //min-height: 750px;
   }
 }
 #portfolio p {
@@ -39,11 +39,11 @@
   max-width: 380px;
 
   @media (max-width: 1024px) {
-    max-width: 145px;
+    max-width: 360px;
   }
 }
 .gallery1 {
-  position:relative;
+  position: relative;
   
   .textbox {
     width:100%;
