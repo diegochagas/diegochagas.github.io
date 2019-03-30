@@ -5,11 +5,11 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	text-align: center;
-	min-height:1404px;
+  min-height: 2000px;
   padding: 140px 0 0px 0;
-
-  @media (max-width: 1024px){
-    //min-height: 750px;
+  
+  @media (min-width: $tablet-size){
+    min-height:1404px;
   }
 }
 #portfolio p {
@@ -38,8 +38,8 @@
   padding: 0;
   max-width: 380px;
 
-  @media (max-width: 1024px) {
-    max-width: 360px;
+  @media (max-width: $laptop-size) {
+    max-width: 284px;
   }
 }
 .gallery1 {
