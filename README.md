@@ -2,7 +2,7 @@
 
 Personal web page.
 
-## Technologies used
+## Used technologies
 
 - React.js
 - Sass
