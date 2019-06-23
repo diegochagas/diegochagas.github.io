@@ -1,0 +1,121 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+.abacus {
+    max-width: 957px;
+    margin: 0 auto;
+}
+
+.abacus-header {
+    background-color: #f16236;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.abacus-logo {
+    padding-right: 80px;
+}
+
+.abacus-subtitle {
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 10px;
+    text-align: center;
+}
+
+.abacus-subtitle span {
+    display: block;
+}
+
+.abacus-body {
+    text-align: center;
+}
+
+.abacus-paragraph {
+    font-size: 18px;
+}
+
+.abacus-title {
+    font-weight: normal;
+    margin: 65px 0 40px 0;
+}
+
+.abacus-certificate {
+    background-color: #f16236;
+    display: inline-block;
+    padding: 5px 46px;
+    margin-bottom: 130px;
+}
+
+.abacus-certificate-description {
+    font-size: 20px;
+    margin: 0;
+    padding: 2px;
+}
+
+.abacus-signatures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.signatures {
+    position: relative;
+    width: 200px;
+}
+
+.teacher-signature-image {
+    width: 180px;
+}
+
+.teacher-signature-description {
+    position: absolute;
+    top: 12px;
+}
+
+.director-signature-image {
+    width: 130px;
+    position: absolute;
+    top: -55px;
+    left: 60px;
+}
+
+.director-signature-description {
+    position: absolute;
+    top: -5px;
+}
+
+.signatures hr {
+    margin: 12px 0;
+    width: 200px;
+}
+
+.signatures p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.abacus-starburst {
+    margin-bottom: 80px;
+}
+
+.abacus-starburst img {
+    width: 100px;
+}
+
+.footer-line {
+    background-color: black;
+    height: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-line {
+        margin-top: 60px;
+    }
+}
