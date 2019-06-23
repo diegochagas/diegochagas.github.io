@@ -30,8 +30,8 @@ export default class Skills extends Component {
             </div>
             <div className="row skill-grids">
               <div className="col-sm-6">
-                {this.renderSkill("HTML/HTML5", "90")}
-                {this.renderSkill("CSS/CC3", "90")}
+                {this.renderSkill("HTML", "90")}
+                {this.renderSkill("CSS", "90")}
                 {this.renderSkill("JavaScript", "80")}
                 {this.renderSkill("React/Redux", "60")}
                 {this.renderSkill("Node.js", "70")}

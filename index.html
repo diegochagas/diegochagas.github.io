@@ -17,95 +17,68 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <title>FrontEnd Developer | Resumé - Diego Chagas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e41dbe62b1.js"></script>
     <link href="static/css/main.css" rel="stylesheet" />
 </head>
 <body>
     <header class="banner" id="home">
-        <nav class="navbar navbar-expand-lg navbar-light box_content_center">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <button
+                id="buttonMenu"
+                class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbar-menu" 
+                aria-controls="navbar-menu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav menu_box_list">
-                    <a class="nav-item nav-link" href="#">
-                        <span>Home</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span>About</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span>Skills</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span>Education</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span>Work</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span>Portfolio</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span>Contact</span>
-                    </a>
+            <hr/>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">
+                            <span>Education</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">
+                            <span>Work</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <span>Contact</span>
+                        </a>
+                    </li>
                 </div>
             </div>
         </nav>
-        <!-- <nav class="box_content_center navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" id="buttonMenu" class="navbar-toggler collapsed"
-                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="menu_box_list nav navbar-nav">
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="active">home</a>
-                            </span>
-                        </li>
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="">about</a>
-                            </span>
-                        </li>
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="">skills</a>
-                            </span>
-                        </li>
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="">education</a>
-                            </span>
-                        </li>
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="">work</a>
-                            </span>
-                        </li>
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="">portfolio</a>
-                            </span>
-                        </li>
-                        <li role="presentation" class="">
-                            <span role="button" href="#">
-                                <a class="">contact</a>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
         <div class="banner-info">
             <div class="banner-left">
-                <img src="static/media/photo-profile.jpeg" alt="">
+                <img src="static/media/photo-profile.jpeg" alt="diego picture">
             </div>
             <div class="banner-right">
                 <h1>
@@ -114,17 +87,17 @@
                     <span class="typed-cursor">|</span>
                 </h1>
                 <div class="border"></div>
-                    <h2>Front-End Developer</h2>
-                    <a 
-                        href="https://docs.google.com/document/d/1SKq80vMuMWFXN91nby5mb--XB6p7bghghZ6R9TM1cJk/edit#heading=h.gjdgxs" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                    >Download my resume</a>
-                </div>
-                <div class="clearfix"></div>
+                <h2>Front-End Developer</h2>
+                <a 
+                    href="https://docs.google.com/document/d/1SKq80vMuMWFXN91nby5mb--XB6p7bghghZ6R9TM1cJk/edit#heading=h.gjdgxs" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >Download my resume</a>
             </div>
-        </header>
-    <div class="about-me">
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <div class="about-me" id="about">
         <div class="about text-center" id="about">
             <div class="container">
                 <h3>ABOUT ME</h3>
@@ -138,108 +111,49 @@
                     <li>Created landing pages with layouts constructed in HTML, CSS, JavaScript and SASS/LESS.</li>
                     <li>Utilize agile methodology.</li>
                 </ul>
-                <ul>
-                    {this.renderSocialLinks("fb", "https://www.facebook.com/diegorochachagas")}
-                    {this.renderSocialLinks("twit", "https://twitter.com/diegorchagas")}
-                    {this.renderSocialLinks("in", "https://www.linkedin.com/in/diegorchagas/")}
-                    {this.renderSocialLinks("insta", "https://www.instagram.com/diegorchagas/")}
-                    {this.renderSocialLinks("git", "https://github.com/diegochagas")}
-                    {this.renderSocialLinks("you", "https://www.youtube.com/diegorchagas")}
+                <ul id="social-media">
+                    <!-- load social media links -->
                 </ul>
             </div>
         </div>
         <div class="about-back"></div>
     </div>
-    <div class="skill">
+    <div class="skill" id="skills">
         <div class="skills text-center">
-          <div class="container">
-            <h3>SKILLS</h3>
-            <div class="strip text-center">
-              <img src="static/media/skill.png" alt="icon skill"/>
+            <div class="container">
+                <h3>SKILLS</h3>
+                <div class="strip text-center">
+                    <img src="static/media/skill.png" alt="icon skill"/>
+                </div>
+                <div class="row skill-grids" id="skill-grids">
+                    <!-- load skills -->
+                </div>
             </div>
-            <div class="row skill-grids">
-              <div class="col-sm-6">
-                {this.renderSkill("HTML/HTML5", "90")}
-                {this.renderSkill("CSS/CC3", "90")}
-                {this.renderSkill("JavaScript", "80")}
-                {this.renderSkill("React/Redux", "60")}
-                {this.renderSkill("Node.js", "70")}
-                {this.renderSkill("Sass/Less", "90")}
-                {this.renderSkill("jQuery/Ajax", "80")}
-              </div>
-              <div class="col-sm-6">
-                {this.renderSkill("Angular", "40")}
-                {this.renderSkill("Java", "60")}
-                {this.renderSkill("MySQL", "50")}
-                {this.renderSkill("Photoshop", "90")}
-                {this.renderSkill("Premiere", "80")}
-                {this.renderSkill("After Effects", "60")}
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </div>
         </div>
         <div class="skill-back"></div>
-      </div>
-      <div class="education">
+    </div>
+    <div class="education" id="education">
         <div class="education text-center">
             <div class="container">
                 <div class="edu-info">
                     <h3>EDUCATION</h3>
                 </div>
                 <div class="strip text-center"><img src="static/media/edu.png" alt="icon education"/></div>
-                <div class="edu-grids">
-                    {graduations.map(graduation => {
-                        return(
-                            <div class="edu-grid" key={graduation.degree}>
-            <div class="edu-grid-header">
-              <p>{`${graduation.beginYear} - ${graduation.endYear}`}</p>
-              <span>{graduation.status}</span>
-            </div> 
-                                <div class="edu-grid-body">
-                                  <img src="static/media/arrow.png" alt="up arrow"/>
-                                    <div class="edu-grid-master edu-border">
-                                        <h4>{graduation.degree}</h4>
-                                        <h5>{graduation.institution}</h5>
-                                    </div>
-                                    <div class="edu-grid-info">
-                                        <h5>
-                                            <div>{graduation.local}</div>
-                                            <div>
-                                                <a href={graduation.url} target="_blank" rel="noopener noreferrer">Institution Website</a>
-                                            </div>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
+                <div class="edu-grids" id="education-grids">
+                    <!-- load education -->
                 </div>
             </div>
         </div>
         <div class="strip-border"><p></p></div>
     </div>
-    <div class="work">
+    <div class="work" id="work">
         <div class="container">
             <div class="work-info">
                 <h3>WORK EXPERIENCE</h3>
             </div>
             <div class="strip"><img src="static/media/work.png" alt="icon work"/></div>
-            <div class="work-grids">
-    {jobs.map(job => {
-      return (
-        <div class="work-grid" key={job.company}>
-          <h4>{`${job.beginYear} - ${job.endYear}`}</h4>
-          <div class="work-grid-info">
-            <h3>{job.company}</h3>
-            <h5>{job.role}</h5>
-            <p>{job.local}</p>
-            <p>{job.description}</p>
-            <a href={job.url} target="_blank" rel="noopener noreferrer">Company Website</a>
-            <p>{job.tools}</p>
-          </div>
-        </div>
-    )})}
+            <div class="work-grids" id="work-grids">
+                <!-- load work -->
             </div>
         </div>
     </div>
@@ -247,11 +161,13 @@
         <div class="container">
             <h3>PORTFOLIO</h3>
             <div class="strip text-center"><img src="static/media/port.png" alt="icon portfolio"/></div>
-            <div class="gallery-grids"></div>
+            <div class="gallery-grids" id="portfolio-grids">
+                <!-- load portofolio -->
+            </div>
         </div>
     </div>
-    <div class="contact-div">
-        <div class="contact" id="contact">
+    <div class="contact-div" id="contact">
+        <div class="contact">
             <div class="container">
                 <div class="contact-info text-center">
                     <h3>CONTACT</h3>
@@ -291,10 +207,10 @@
                 <p>Copyright &copy; 2018 Diego Chagas. Template based on <a href="http://w3layouts.com/"> W3layouts</a></p>
             </div>
         </div>
-        <aside>
-            <Link class="toTop" to="home" spy={true} smooth={true} duration={1000}>
+        <aside id="anchor-top">
+            <button class="toTop" onclick="goToTop()">
                 <span class="toTopHover"></span>To Top
-            </Link>
+            </button>
         </aside>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -308,7 +224,13 @@
 			backSpeed: 100,
 			loop: true
         });
-        </script>
+    </script>
+    <script src="static/js/datas.js"></script>
+    <script src="static/js/socialMedia.js"></script>
+    <script src="static/js/skills.js"></script>
+    <script src="static/js/education.js"></script>
+    <script src="static/js/work.js"></script>
+    <script src="static/js/portfolio.js"></script>
     <script src="static/js/main.js"></script>
 </body>
 </html>
