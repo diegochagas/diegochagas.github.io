@@ -56,12 +56,43 @@ button#showRightPush img {
     padding: 0;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 376px) {
+    
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
     .navbar {
         flex-direction: column-reverse;
-    }    
+    }
+    .navbar-expand-lg .navbar-collapse {    
+        display: flex!important;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 838px) {
+    .navbar-nav .nav-item span {
+        font-size: 10px!important;
+    }
+    .gallery-grid {
+        max-width: 345px!important;
+    }
+}
+
+@media (min-width: 1024px) {
     .navbar .nav-link {
         padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #portfolio .container {
+        max-width: 1146px;
     }
 }
 
@@ -227,6 +258,7 @@ a.boxclose {
   
 .border {
     background: #52edc7;
+    border: none !important;
     width: 70%;
     margin: 0 auto;
     padding: 1px; 
@@ -1279,7 +1311,13 @@ margin-top: 50px; }
     .footer-top {
       min-height: 147px; } }
   
-  @media (max-width: 1024px) {
+@media (max-width: 1025px) {
+}
+
+@media (max-width: 1024px) {
+    .gallery-section {
+        min-height: 1700px;
+    }
     .top-nav {
       margin-top: 8px; }
     .banner.page-head {
@@ -1486,10 +1524,7 @@ margin-top: 50px; }
     .clients {
       padding: 0 0 45px 0; } }
   
-@media (max-width: 768px) {
-    .navbar-nav .nav-item ~ .nav-item span {
-        border-top: 1px solid rgba(255, 255, 255, 0.3); 
-    }    
+@media (max-width: 768px) {    
     .navbar .nav-link {
         padding: 0;
     }
@@ -1721,6 +1756,12 @@ margin-top: 50px; }
       font-size: 14px; } }
   
   @media (max-width: 640px) {
+    .gallery-grid {
+        max-width: 228px!important;
+    }
+    .navbar-nav .nav-item ~ .nav-item span {
+        border-top: 1px solid rgba(255, 255, 255, 0.3); 
+    }
     .contact-right {
       float: right;
       width: 61% !important; }

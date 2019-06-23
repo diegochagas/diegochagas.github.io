@@ -37,7 +37,7 @@
             </button>
             <hr/>
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">
                             <span>Home</span>
@@ -83,8 +83,7 @@
             <div class="banner-right">
                 <h1>
                     <span>I’M </span>
-                    <span style="white-space: pre;">Video editor</span>
-                    <span class="typed-cursor">|</span>
+                    <span id="typed-titles"></span>
                 </h1>
                 <div class="border"></div>
                 <h2>Front-End Developer</h2>
@@ -107,8 +106,8 @@
                 <ul class="highlights-list">
                     <li>Utilize extensive software development skills to develop components in React and Redux.</li>
                     <li>Back-end development with Node.js and MongoDB.</li>
-                    <li>Constructed web page components with Angular.</li>
-                    <li>Created landing pages with layouts constructed in HTML, CSS, JavaScript and SASS/LESS.</li>
+                    <li>Constructed components for ATMs to millions of users.</li>
+                    <li>Created landing pages with layouts constructed in HTML, CSS, JavaScript and SAAS/LESS.</li>
                     <li>Utilize agile methodology.</li>
                 </ul>
                 <ul id="social-media">
@@ -178,7 +177,6 @@
                         <h3>Say Hi to Me</h3>
                         <div class="stripb"></div>
                         <ul>
-                            {/* <li>Praia Grande</li> */}
                             <li>Sao Paulo</li>
                             <li>Brazil</li>
                             <li><a href="tel:+5513991322882">+5513991322882</a></li>
@@ -194,17 +192,33 @@
     <div class="resume text-center">
         <div class="container">
             <div class="strip text-center">
-                <a href="https://docs.google.com/document/d/1MNtyoAhvLY5H_Sy8gfAwZgpaMJ4dlOln7Nftb9InOw8/" target="_blank" rel="noopener noreferrer"><img src="static/media/down.png" alt="icon download"/></a>
+                <a 
+                    href="https://docs.google.com/document/d/1SKq80vMuMWFXN91nby5mb--XB6p7bghghZ6R9TM1cJk/edit#heading=h.gjdgxs" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <img src="static/media/down.png" alt="icon download"/>
+                </a>
             </div>
             <div class="down">
-                <a href="https://docs.google.com/document/d/1MNtyoAhvLY5H_Sy8gfAwZgpaMJ4dlOln7Nftb9InOw8/" target="_blank" rel="noopener noreferrer">Download My Resume</a>
+                <a 
+                    href="https://docs.google.com/document/d/1SKq80vMuMWFXN91nby5mb--XB6p7bghghZ6R9TM1cJk/edit#heading=h.gjdgxs" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    Download My Resume
+                </a>
             </div>
         </div>
     </div>
     <footer>
         <div class="footer">
             <div class="container">
-                <p>Copyright &copy; 2018 Diego Chagas. Template based on <a href="http://w3layouts.com/"> W3layouts</a></p>
+                <p>Copyright &copy; 2018 Diego Chagas. Template based on 
+                    <a href="http://w3layouts.com/" target="_blank" rel="noopener noreferrer">
+                        W3layouts
+                    </a>
+                </p>
             </div>
         </div>
         <aside id="anchor-top">
@@ -217,15 +231,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="static/js/datas.js"></script>
     <script>
-        var typed = new Typed('.banner-right h1', {
-            strings: ['Diego Chagas', 'Developer', 'Video editor', 'Freelancer'],
+        var typed = new Typed('#typed-titles', {
+            strings: getTitlesData(),
 			typeSpeed: 100,
 			backSpeed: 100,
 			loop: true
         });
     </script>
-    <script src="static/js/datas.js"></script>
     <script src="static/js/socialMedia.js"></script>
     <script src="static/js/skills.js"></script>
     <script src="static/js/education.js"></script>

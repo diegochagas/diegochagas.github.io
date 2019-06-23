@@ -1,10 +1,15 @@
+const getTitlesData = () => {
+    const titles = ['Diego Chagas', 'Developer', 'Video editor', 'Freelancer'];
+    return titles;
+}
+
 const getSocialMediaLinksData = () => {
     const socialMedia = [
+        {className: "in", url: "https://www.linkedin.com/in/diegorchagas/"},
+        {className: "git", url: "https://github.com/diegochagas"},
         {className: "fb", url: "https://www.facebook.com/diegorochachagas"},
         {className: "twit", url: "https://twitter.com/diegorchagas"},
-        {className: "in", url: "https://www.linkedin.com/in/diegorchagas/"},
         {className: "insta", url: "https://www.instagram.com/diegorchagas/"},
-        {className: "git", url: "https://github.com/diegochagas"},
         {className: "you", url: "https://www.youtube.com/diegorchagas"}
     ];
     return socialMedia;
