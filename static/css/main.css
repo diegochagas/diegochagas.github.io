@@ -1230,7 +1230,6 @@ margin-top: 50px; }
     height: 32px;
     display: block;
     overflow: hidden;
-    float: right;
     opacity: 0;
     -moz-opacity: 0;
     filter: alpha(opacity=0); }
