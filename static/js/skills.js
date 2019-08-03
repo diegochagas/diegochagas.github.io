@@ -6,7 +6,6 @@ const loadSkills = () => {
 
 const buildSkillElements = skills => {
     const skillElements = skills.reduce((previousValue, skill, index, arr) => {
-        const percentage = `${skill.value}%`;
         const element = `
             ${index === 0 || index === 7 ? `<div class="col-sm-6">` : ""}
                 <div class="row">
@@ -15,8 +14,8 @@ const buildSkillElements = skills => {
                     </div>
                     <div class="col-md-8">
                         <div class="progress">
-                            <span class="progress-percent">${percentage}</span>
-                            <progress class="progress-bar" value=${skill.value} max="100"></progress>
+                            <span class="progress-percent">${skill.yearsOfExperience} years of experience</span>
+                            <progress class="progress-bar" value=${skill.yearsOfExperience} max="6"></progress>
                         </div>
                     </div>
                 </div>

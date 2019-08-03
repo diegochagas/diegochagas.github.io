@@ -18,21 +18,38 @@ const getSocialMediaLinksData = () => {
 
 const getSkillsData = () => {
     const skills = [
-        {name: "HTML/HTML5", value: "90"},
-        {name: "CSS/CC3", value: "90"},
-        {name: "JavaScript", value: "80"},
-        {name: "React/Redux", value: "60"},
-        {name: "Node.js", value: "70"},
-        {name: "Sass/Less", value: "90"},
-        {name: "jQuery/Ajax", value: "80"},
-        {name: "Angular", value: "40"},
-        {name: "Java", value: "60"},
-        {name: "MySQL", value: "50"},
-        {name: "Photoshop", value: "90"},
-        {name: "Premiere", value: "80"},
-        {name: "After Effects", value: "60"}
+        { name: "HTML/HTML5", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
+        { name: "CSS/CC3", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
+        { name: "JavaScript", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
+        { name: "React/Redux", yearsOfExperience: calcTimeOfExperience(1, 6, 2018) },
+        { name: "Node.js", yearsOfExperience: calcTimeOfExperience(12, 11, 2018) },
+        { name: "Sass/Less", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
+        { name: "jQuery/Ajax", yearsOfExperience: calcTimeOfExperience(1, 4, 2016, 4, 5, 2018) },
+        { name: "Angular", yearsOfExperience: calcTimeOfExperience(12, 11, 2018) },
+        { name: "Bootstrap/ Materialize", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
+        { name: "Photoshop", yearsOfExperience: calcTimeOfExperience(1, 6, 2012) },
+        { name: "Premiere", yearsOfExperience: calcTimeOfExperience(6, 9, 2012) },
+        { name: "After Effects", yearsOfExperience: calcTimeOfExperience(6, 9, 2013) },
+        { name: "Java/JSTL", yearsOfExperience: calcTimeOfExperience(1, 4, 2016, 7, 4, 2017) },
+        { name: "MySQL/SQL", yearsOfExperience: calcTimeOfExperience(1, 4, 2016, 7, 4, 2017) },
     ];
     return skills;
+}
+
+const calcTimeOfExperience = (
+        startDay, 
+        startMonth, 
+        startYear, 
+        endDay = new Date().getDate(),
+        endMonth = new Date().getMonth() + 1,
+        endYear = new Date().getFullYear()
+    ) => {
+    const startDate = new Date(startYear, startMonth - 1, startDay);
+    const endDate = new Date(endYear, endMonth - 1, endDay);
+    const differenceBetweenDates = endDate - startDate;
+    const differenceInDays = Math.ceil(differenceBetweenDates / (1000 * 60 * 60 * 24));
+    const differenceInYears = Math.ceil(differenceInDays / 365);
+    return differenceInYears;
 }
 
 const getGraduationsData = () => {
