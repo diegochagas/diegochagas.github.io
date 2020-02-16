@@ -245,7 +245,29 @@ a.boxclose {
 }
   
 .banner-left {
-    float: left; 
+  float: left; 
+}
+
+.banner-left .certifications {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner-left .certifications div {
+  display: flex;
+}
+
+.banner-left .certifications h2 {
+  text-transform: uppercase;
+  margin: 20px;
+  color: white;
+  text-align: center;
+}
+
+.banner-left .certifications img {
+  max-width: 150px;
 }
   
 .banner-left img {
