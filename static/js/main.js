@@ -1,4 +1,5 @@
 window.onload = () => {
+    loadCertifications();
     loadSocialMedia();
     loadWork();
     loadPortfolio();

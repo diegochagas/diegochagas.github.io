@@ -3,6 +3,28 @@ const getTitlesData = () => {
     return titles;
 }
 
+const getCertificationsData = () => {
+    const certifications = [
+        {
+            url: "https://www.youracclaim.com/badges/23085f89-d2da-4db0-ab8f-adc8037fdc21/linked_in_profile",
+            img: "static/media/Programming_in_HTML5_with_JavaScript_and_Css3-01.png",
+            description: "microsoft certification"
+        },
+        {
+            url: "https://certificates.cs50.io/8d5d4b5f-5ebd-451d-a46b-e8dd93338bf6.png?size=letter",
+            img: "static/media/harvard-logo.png",
+            description: "Harvard certification"
+        },
+        {
+            url: "https://diegochagas.com/certificates/abacus",
+            img: "static/media/abacus/abacus-logo.png",
+            description: "Abacus Institute of Studies certification"
+        },
+
+    ];
+    return certifications;
+}
+
 const getSocialMediaLinksData = () => {
     const socialMedia = [
         {className: "in", url: "https://www.linkedin.com/in/diegorchagas/"},
@@ -81,12 +103,12 @@ const getJobsData = () => {
 
 const getPortfoliosData = () => {
     const portfolios = [
-        {imgSrc: "static/media/banner2.jpg", company: "Santander", role: "SOFTWARE ENGINEER", url: "https://www.santander.com.br/"},
+        {imgSrc: "static/media/banner2.jpg", company: "Site Blidnado", role: "SENIOR FRONT-END DEVELOPER", url: "https://app.siteblindado.com/"},
         {imgSrc: "static/media/banner5.jpg", company: "Carrefour", role: "FRONT-END", url: "https://www.carrefour.com.br/"},
         {imgSrc: "static/media/banner4.jpg", company: "Grand Optical", role: "FRONT-END", url: "https://www.grandoptical.com/fr/"},
+        {imgSrc: "static/media/banner6.jpg", company: "Pacifika", role: "FRONT-END", url: "https://www.pacifika.com/"},
         {imgSrc: "static/media/banner1.jpg", company: "Underarmour", role: "FRONT-END", url: "https://www.underarmour.com.br/pt-br/"},
         {imgSrc: "static/media/banner3.jpg", company: "Nestlé", role: "FRONT-END", url: "https://www.nestle.com.br/"},
-        {imgSrc: "static/media/banner6.jpg", company: "Pacifika", role: "FRONT-END", url: "https://www.pacifika.com/"}
     ];
     return portfolios;
 }

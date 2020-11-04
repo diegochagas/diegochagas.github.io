@@ -257,6 +257,7 @@ a.boxclose {
 
 .banner-left .certifications div {
   display: flex;
+  align-items: center;
 }
 
 .banner-left .certifications h2 {
@@ -271,11 +272,11 @@ a.boxclose {
 }
   
 .banner-left img {
-    border-radius: 50%; 
+  margin: 0 5px;
 }
   
 .banner-right {
-    float: right; 
+  float: right; 
 }
   
 .border {
