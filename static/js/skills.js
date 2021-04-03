@@ -14,7 +14,7 @@ const buildSkillElements = skills => {
                     </div>
                     <div class="col-md-8">
                         <div class="progress">
-                            <span class="progress-percent">${skill.yearsOfExperience} years of experience</span>
+                            <span class="progress-percent">${skill.yearsOfExperience} year${skill.yearsOfExperience > 1 ? 's' : ''} of experience</span>
                             <progress class="progress-bar" value=${skill.yearsOfExperience} max="6"></progress>
                         </div>
                     </div>

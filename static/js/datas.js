@@ -40,20 +40,20 @@ const getSocialMediaLinksData = () => {
 
 const getSkillsData = () => {
     const skills = [
+        { name: "React/Redux", yearsOfExperience: calcTimeOfExperience(1, 6, 2018) },
+        { name: "Angular", yearsOfExperience: 1 },
+        { name: "Node.js", yearsOfExperience: calcTimeOfExperience(12, 11, 2018) },
         { name: "HTML/HTML5", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
         { name: "CSS/CC3", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
         { name: "JavaScript", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
-        { name: "React/Redux", yearsOfExperience: calcTimeOfExperience(1, 6, 2018) },
-        { name: "Node.js", yearsOfExperience: calcTimeOfExperience(12, 11, 2018) },
-        { name: "Sass/Less", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
-        { name: "jQuery/Ajax", yearsOfExperience: calcTimeOfExperience(1, 4, 2016, 4, 5, 2018) },
-        { name: "Angular", yearsOfExperience: calcTimeOfExperience(12, 11, 2018) },
+        { name: "Sass/Less", yearsOfExperience: 2 },
+        { name: "jQuery/Ajax", yearsOfExperience: 2 },
         { name: "Bootstrap/ Materialize", yearsOfExperience: calcTimeOfExperience(1, 4, 2016) },
-        { name: "Photoshop", yearsOfExperience: calcTimeOfExperience(1, 6, 2012) },
-        { name: "Premiere", yearsOfExperience: calcTimeOfExperience(6, 9, 2012) },
-        { name: "After Effects", yearsOfExperience: calcTimeOfExperience(6, 9, 2013) },
-        { name: "Java/JSTL", yearsOfExperience: calcTimeOfExperience(1, 4, 2016, 7, 4, 2017) },
-        { name: "MySQL/SQL", yearsOfExperience: calcTimeOfExperience(1, 4, 2016, 7, 4, 2017) },
+        { name: "Photoshop", yearsOfExperience: 3 },
+        { name: "Premiere", yearsOfExperience: 2 },
+        { name: "After Effects", yearsOfExperience: 2 },
+        { name: "Java/JSTL", yearsOfExperience: 1 },
+        { name: "MySQL/SQL", yearsOfExperience: 1 },
     ];
     return skills;
 }
@@ -91,12 +91,12 @@ const getGraduationsData = () => {
 
 const getJobsData = () => {
     const jobs = [
-        {beginYear: "2019", endYear: "Present", company: "B2W Digital", role: "Senior Front-End Developer", local: "Sao Paulo / Sao Paulo - Brazil", description: "Offers a suite of solutions for e-commerce, enterprise demands, and PCI requirements.", url: "https://ri.b2w.digital/", tools: "React, React Redux, React Native, AWS, JavaScript, Node.js, Materialize"},
+        {beginYear: "2020", endYear: "Present", company: "Camino Education", role: "Senior Front-End Developer", local: "Sao Paulo / Sao Paulo - Brazil", description: "An educational group which integrates educators, managers, parents and students of different regions of the world, whose mission is to enrich Learning.", url: "https://caminoeducation.com/en/home-english/", tools: "React, Context, React Redux, JavaScript, GraphQL, Node.js, Bitbucket"},
+        {beginYear: "2019", endYear: "2020", company: "B2W Digital", role: "Senior Front-End Developer", local: "Sao Paulo / Sao Paulo - Brazil", description: "Offers a suite of solutions for e-commerce, enterprise demands, and PCI requirements.", url: "https://ri.b2w.digital/", tools: "React, React Redux, AWS, JavaScript, Node.js, Materialize"},
         {beginYear: "2019", endYear: "2019", company: "Atlas Quantum", role: "Senior Front-End Developer", local: "Sao Paulo / Sao Paulo - Brazil", description: "The largest crypto-currency company in Latin America.", url: "https://atlasquantum.com/", tools: "Angular, AWS, Firebase, Sass, JavaScript, Node.js, Materialize"},
         {beginYear: "2018", endYear: "2019", company: "Avanade", role: "Software Engineer", local: "Sao Paulo / Sao Paulo - Brazil", description: "Avanade is the leading provider of innovative digital and cloud services, business solutions and design-led experiences for its clients, delivered through the power of people and the Microsoft ecosystem.", url: "https://www.avanade.com/en", tools: "React, Angular, Version control, Scrum, Sass, JavaScript, Node.js, Bootstrap"},
         {beginYear: "2017", endYear: "2018", company: "Keyrus", role: "Front-end Developer", local: "Sao Paulo / Sao Paulo - Brazil", description: "An international player in performance management consultancy and technologies.", url: "http://www.keyrus.com/", tools: "Java web development, Spring, JSTL, Version control, Scrum, Less, Grunt, Regex, Node.js, Bootstrap"},
         {beginYear: "2016", endYear: "2017", company: "Viewit Mobile", role: "Developer", local: "Sao Paulo / Sao Paulo - Brazil", description: "Work with focus on improving m-commerce performance.", url: "http://www.viewit.com.br/", tools: "Node.js, Version control, Java web development, Mobile web pages, Handlebars.js, Apache Velocity Project, Jetty, Regex, Bootstrap, SASS"},
-        {beginYear: "2014", endYear: "2015", company: "Usatell Telecom", role: "Computer engineer", local: "Praia Grande / Sao Paulo - Brazil", description: "Consultancy for the corporate market, focused on reducing the costs of phone calls.", url: "http://www.usatell.com.br/usatell/", tools: "JavaScript, SQL Server, Datebase, VPN Security Platforms, Phone systems, Customer support, Computer network"},
     ];
     return jobs;
 }
