@@ -77,9 +77,9 @@ const calcTimeOfExperience = (
 const getGraduationsData = () => {
     const graduations = [
         {beginYear: "2008", endYear: "2011", status: "Graduated", degree: "BACHELOR DEGREE OF INFORMATION SYSTEMS",
-            institution: "Coast South Paulista University", local: "Praia Grande / Sao Paulo - Brazil",
+            institution: "South Coast Paulista University", local: "Praia Grande / Sao Paulo - Brazil",
             url: "http://www.fals.com.br/"},
-        {beginYear: "2014", endYear: "2015", status: "Graduated", degree: "CERTIFICATE OF COMPUTER ENGINEER",
+        {beginYear: "2014", endYear: "2015", status: "Graduated", degree: "CERTIFICATE OF COMPUTER TECHNICIAN",
             institution: "State Technical School", local: "Praia Grande / Sao Paulo - Brazil",
             url: "https://www.cps.sp.gov.br/"},
         /*{beginYear: "2012", endYear: "2013", status: "Graduated", degree: "DOCTOR DEGREE OF COMPUTER SCIENCE",

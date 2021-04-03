@@ -248,6 +248,11 @@ a.boxclose {
   float: left; 
 }
 
+.banner-left .profile-picture {
+  width: 200px;
+  border-radius: 50%;
+}
+
 .banner-left .certifications {
   display: flex;
   margin: 20px;
