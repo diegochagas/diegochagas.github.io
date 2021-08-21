@@ -1,260 +1,805 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="static/media/logo-bps.png" />
-    <meta name="description" content="A hardworking front-end web developer, he has worked on many projects. Graduated in 2011 in the course of Information Systems." />
-    <meta property="og:site_name" content="Diego Chagas" />
-    <meta property="og:title" content="Diego Chagas" />
-    <meta property="og:description" content="Front-End Developer" />
-    <meta property="og:image" content="/logo-bps-background-white.png" />
-    <meta property="og:type" content="website" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    <title>FrontEnd Developer | Resumé - Diego Chagas</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/e41dbe62b1.js"></script>
-    <link href="static/css/main.css" rel="stylesheet" />
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<title>Front-End Developer | Diego Chagas</title>
+		<link rel="stylesheet" href="src/styles/fonts.css">
+		<link rel="stylesheet" href="src/styles/bootstrap.min.css">
+		<link rel="stylesheet" href="src/styles/main.css">
+	</head>
 <body>
-    <header class="banner" id="home">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-            <button
-                id="buttonMenu"
-                class="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbar-menu" 
-                aria-controls="navbar-menu" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"
-            >
-                <i class="fas fa-bars"></i>
-            </button>
-            <hr/>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">
-                            <span>Skills</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">
-                            <span>Education</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">
-                            <span>Work</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <span>Portfolio</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="banner-info">
-            <div class="banner-left">
-                <img class="profile-picture" src="static/media/photo-profile.jpg" alt="diego picture">
+	<div class="container">
+		<!-- START OF PROFILE INFO  -->
+		<div class="cards-container profile">
+			<div class="card image-container">
+				<img class="profile-picture" src="src/images/photo-profile.jpg" alt="Profile photo">
+			</div>
 
-                
-                <div class="certifications">
-                    <h2>Certifications</h2>
+			<div class="card border-0 header-description">
+				<h1>
+					<span>Front-End Developer</span>
+					
+					<i class="card-icon icn-user"></i>
+				</h1>
+				
+				<div class="info-line">
+					<div class="info">
+						<span class="info-title">Name</span>
+						<span class="pull-right">Diego Chagas</span>
+					</div>
 
-                    <div id="certifications">
-                        <!-- load certifications -->
-                    </div>
-                </div>
-            </div>
-            <div class="banner-right">
-                <h1>
-                    <span>I’M </span>
-                    <span id="typed-titles"></span>
-                </h1>
-                <div class="border"></div>
-                <h2>Front-End Developer</h2>
-                <a 
-                    href="https://1drv.ms/w/s!AiYTg7df-nbkgZIm-wVp7MVfqdxLfA?e=pzwNfw" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >Download my resume</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </header>
-    <div class="about-me" id="about">
-        <div class="about text-center">
-            <div class="container">
-                <h3>ABOUT ME</h3>
-                <div class="strip text-center"><img src="static/media/about.png" alt="icon about"/></div>
-                <p>Started as a developer professional in March 2016, but began the studies in developer technology in 2008, where worked on many projects, focused on web development. Advanced knowledge in front-end and intermediate knowledge in back-end. Before that, worked with public administration and as a freelancer in video editing and motion design. Major works using Node and Java platforms.</p>
-                <p>Other highlights of my career would be:</p>
-                <ul class="highlights-list">
-                    <li>Utilize extensive software development skills to develop components in React and Redux.</li>
-                    <li>Back-end development with Node.js and MongoDB.</li>
-                    <li>Constructed components for ATMs to millions of users.</li>
-                    <li>Created landing pages with layouts constructed in HTML, CSS, JavaScript and SAAS/LESS.</li>
-                    <li>Utilize agile methodology.</li>
-                </ul>
-                <ul id="social-media">
-                    <!-- load social media links -->
-                </ul>
-            </div>
-        </div>
-        <div class="about-back"></div>
-    </div>
-    <div class="skill" id="skills">
-        <div class="skills text-center">
-            <div class="container">
-                <h3>SKILLS</h3>
-                <div class="strip text-center">
-                    <img src="static/media/skill.png" alt="icon skill"/>
-                </div>
-                <div class="row skill-grids" id="skill-grids">
-                    <!-- load skills -->
-                </div>
-            </div>
-        </div>
-        <div class="skill-back"></div>
-    </div>
-    <div class="education" id="education">
-        <div class="education text-center">
-            <div class="container">
-                <div class="edu-info">
-                    <h3>EDUCATION</h3>
-                </div>
-                <div class="strip text-center"><img src="static/media/edu.png" alt="icon education"/></div>
-                <div class="edu-grids" id="education-grids">
-                    <!-- load education -->
-                </div>
-            </div>
-        </div>
-        <div class="strip-border"><p></p></div>
-    </div>
-    <div class="work" id="work">
-        <div class="container">
-            <div class="work-info">
-                <h3>WORK EXPERIENCE</h3>
-            </div>
-            <div class="strip"><img src="static/media/work.png" alt="icon work"/></div>
-            <div class="work-grids" id="work-grids">
-                <!-- load work -->
-            </div>
-        </div>
-    </div>
-    <div class="gallery-section text-center" id="portfolio">
-        <div class="container">
-            <h3>PORTFOLIO</h3>
-            <div class="strip text-center"><img src="static/media/port.png" alt="icon portfolio"/></div>
-            <div class="gallery-grids" id="portfolio-grids">
-                <!-- load portofolio -->
-            </div>
-        </div>
-    </div>
-    <div class="contact-div" id="contact">
-        <div class="contact">
-            <div class="container">
-                <div class="contact-info text-center">
-                    <h3>CONTACT</h3>
-                    <div class="strip text-center"><img src="static/media/con1.png" alt="icon contact"/></div>
-                </div>
-                <div class="contact-grids">
-                    <div class="contact-left">
-                        <h3>Say Hi to Me</h3>
-                        <div class="stripb"></div>
-                        <ul>
-                            <li>Sao Paulo</li>
-                            <li>Brazil</li>
-                            <li><a href="tel:+5513991322882">+5513991322882</a></li>
-                            <li><a href="mailto:drochachagas@gmail.com">drochachagas@gmail.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-top"></div>
-    </div>
-    <div class="resume text-center">
-        <div class="container">
-            <div class="strip text-center">
-                <a 
-                    href="https://1drv.ms/w/s!AiYTg7df-nbkgZIm-wVp7MVfqdxLfA?e=pzwNfw" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    <img src="static/media/down.png" alt="icon download"/>
-                </a>
-            </div>
-            <div class="down">
-                <a 
-                    href="https://1drv.ms/w/s!AiYTg7df-nbkgZIm-wVp7MVfqdxLfA?e=pzwNfw" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    Download My Resume
-                </a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <p>Copyright &copy; 2020 Diego Chagas. Template based on 
-                    <a href="http://w3layouts.com/" target="_blank" rel="noopener noreferrer">
-                        W3layouts
-                    </a>
-                </p>
-            </div>
-        </div>
-        <aside id="anchor-top">
-            <button class="toTop" onclick="goToTop()">
-                <span class="toTopHover"></span>To Top
-            </button>
-        </aside>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script src="static/js/datas.js"></script>
-    <script>
-        var typed = new Typed('#typed-titles', {
-            strings: getTitlesData(),
-			typeSpeed: 100,
-			backSpeed: 100,
-			loop: true
-        });
-    </script>
-    <script src="static/js/certifications.js"></script>
-    <script src="static/js/socialMedia.js"></script>
-    <script src="static/js/skills.js"></script>
-    <script src="static/js/education.js"></script>
-    <script src="static/js/work.js"></script>
-    <script src="static/js/portfolio.js"></script>
-    <script src="static/js/main.js"></script>
+
+					<div class="info">
+						<span class="info-title">Age</span>
+						<span class="pull-right" id="age">0</span>
+					</div>
+
+
+					<div class="info">
+						<span class="info-title">Gender</span>
+						<span class="pull-right">Male</span>
+					</div>
+
+					<div class="info">
+						<span class="info-title">Contact</span>
+						<span class="pull-right">
+							<a class="mail" href="mailto:drochachagas@gmail.com">drochachagas@gmail.com</a>
+						</span>
+					</div>							
+				</div>
+
+				<div class="certifications">
+					<h4>Certifications</h4>
+
+					<div class="certifications-items">
+						<a href="https://www.youracclaim.com/badges/23085f89-d2da-4db0-ab8f-adc8037fdc21/linked_in_profile" target="_blank" rel="noopener noreferrer">
+								<img src="src/images/Programming_in_HTML5_with_JavaScript_and_Css3-01.png" alt="microsoft" certification="">
+						</a>
+
+						<a href="https://certificates.cs50.io/8d5d4b5f-5ebd-451d-a46b-e8dd93338bf6.png?size=letter" target="_blank" rel="noopener noreferrer">
+								<img src="src/images/harvard-logo.png" alt="Harvard" certification="">
+						</a>
+
+						<a href="https://diegochagas.com/certificates/abacus" target="_blank" rel="noopener noreferrer">
+								<img src="certificates/abacus/images/abacus-logo.png" alt="Abacus" institute="" of="" studies="" certification="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--- START OF WORK EXPERIENCE INFO --->					
+		<div class="cards-container">
+			<div class="card border-0 work-experience">
+				<h2>
+					<span>Work experience</span>
+					
+					<i class="card-icon icn-suitcase"></i>
+				</h2>
+
+				<div class="row mb-2 justify-content-center text-justify mt-3">
+					<a
+						class="col-lg-6 col-sm-12 mb-1 px-md-3 px-1 mb-3"
+						href="https://caminoeducation.com/en/home-english/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div>
+							<h3>Camino education</h3>
+
+							<h4>Senior Front-End Developer</h4>
+
+							<span>Sao Paulo/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2020 - Present</small>
+
+							<p>An educational group which integrates educators, managers, parents and students of different regions of the world, whose mission is to enrich Learning.</p>
+
+							<div class="mb-3 my-auto mx-0 text-center tags">
+								<h4>Technologies</h4>
+								
+								<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">React</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">GraphQL</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bitbucket</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Storybook</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Material design</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Jest</span>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="col-lg-6 col-sm-12 mb-1 px-md-3 px-1 mb-3"
+						href="https://ri.americanas.com/en/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div>
+							<h3>B2W Digital</h3>
+
+							<h4>Senior Front-End Developer</h4>
+
+							<span>Sao Paulo/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2019 - 2020</small>
+
+							<p>Offers a suite of solutions for e-commerce, enterprise demands, and PCI requirements. It owns companies such as Americanas and Submarino</p>
+
+							<div class="mb-3 my-auto mx-0 text-center tags">
+								<h4>Technologies</h4>
+								
+								<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">React</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Redux</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bitbucket</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Storybook</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Material design</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Jest</span>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="col-lg-6 col-sm-12 mb-1 px-md-3 px-1 mb-3"
+						href="https://www.atlasquantum.com.br/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div>
+							<h3>Atlas Quantum</h3>
+
+							<h4>Senior Front-End Developer</h4>
+
+							<span>Sao Paulo/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2019 - 2019</small>
+
+							<p>The largest crypto-currency company in Latin America.</p>
+
+							<div class="mb-3 my-auto mx-0 text-center tags">
+								<h4>Technologies</h4>
+								
+								<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Angular</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Redux</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Firebase</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bitbucket</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Storybook</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Sass</span>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="col-lg-6 col-sm-12 mb-1 px-md-3 px-1 mb-3"
+						href="https://www.avanade.com/en"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div>
+							<h3>Avanade</h3>
+
+							<h4>Software engineer</h4>
+
+							<span>Sao Paulo/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2018 - 2019</small>
+
+							<p>Avanade is the leading provider of innovative digital and cloud services, business solutions and design-led experiences for its clients, delivered through the power of people and the Microsoft ecosystem.</p>
+
+							<div class="mb-3 my-auto mx-0 text-center tags">
+								<h4>Technologies</h4>
+								
+								<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Angular</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Sass</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Git</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Storybook</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Scrum</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bootstrap</span>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="col-lg-6 col-sm-12 mb-1 px-md-3 px-1 mb-3"
+						href="https://www.keyrus.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div>
+							<h3>Keyrus</h3>
+
+							<h4>Front-End Developer</h4>
+
+							<span>Sao Paulo/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2017 - 2018</small>
+
+							<p>An international player in performance management consultancy and technologies.</p>
+
+							<div class="mb-3 my-auto mx-0 text-center tags">
+								<h4>Technologies</h4>
+								
+								<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">JSTL</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Git</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bootstrap</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Java</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Less</span>
+							</div>
+						</div>
+					</a>
+
+					<a
+						class="col-lg-6 col-sm-12 mb-1 px-md-3 px-1 mb-3"
+						href="http://www.viewit.com.br/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div>
+							<h3>Viewit mobile</h3>
+
+							<h4>Developer</h4>
+
+							<span>Sao Paulo/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2016 - 2017</small>
+
+							<p>Work with focus on improving e-commerce's mobile performance.</p>
+
+							<div class="mb-3 my-auto mx-0 text-center tags">
+								<h4>Technologies</h4>
+								
+								<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Java</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">HandlebarsJs</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Git</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bootstrap</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+
+								<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Sass</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!-- START OF SKILLS -->
+			<div class="card border-0 folders-container">	
+				<h2>
+					<span>Skills</span>
+					
+					<i class="card-icon icn-gear"></i>
+				</h2>
+
+				<ul class="nav nav-pillsno-gutters text-center mt-3 folders">		    
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>React</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>JavaScript</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Node</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>HTML</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>CSS</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>GraphQL</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Sass/Less</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Angular</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Bootstrap</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>SQL/MYSQL</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>jQuery</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Java/JSTL</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Photoshop</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>Premiere</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+					 
+					<li class="nav-item my-1">
+						<span class="btn border-0 folder">
+							<span>After effects</span>
+							
+							<div>
+								<i class="icn-star-fill"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+								<i class="icn-star"></i>
+							</div>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- START OF EDUCATION -->
+		<div class="cards-container">
+			<div class="card border-0 topics">
+				<h2>
+					<span>Education</span>
+
+					<i class="card-icon icn-book"></i>
+				</h2>
+
+				<ul class="mx-3 mt-3 mb-3">
+					<a href="http://www.fals.com.br/" target="_blank" rel="noopener noreferrer">
+						<li class="link-format">
+							<h3 class="title-topic">Bachelor degree of information systems</h3>
+		
+							<h4>South coast paulista university</h4>
+
+							<span>Praia Grande/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2008 - 2011</small>
+						</li>
+					</a>
+					
+					<a href="http://www.fals.com.br/" target="_blank" rel="noopener noreferrer">
+						<li class="link-format">
+							<h3 class="title-topic">Certificate of computer technician</h3>
+		
+							<h4>State technical school</h4>
+
+							<span>Praia Grande/Sao Paulo - Brazil</span>
+							
+							<br />
+
+							<small>2014 - 2015</small>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+
+		<!-- START OF PORTFOLIO -->
+		<div class="cards-container">
+			<div class="card border-0">
+				<h2>
+					<span>Portfolio</span>
+
+					<i class="card-icon icn-camera"></i>
+				</h2>
+
+				<div class="portfolio-items">
+					<a class="hover" href="https://cloeapp.com/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner7.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Cloe</h4>
+	
+									<p>Senior front-end developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">React</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">GraphQL</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Storybook</span>
+						</div>
+					</a>
+	
+					<a class="hover" href="https://app.siteblindado.com/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner2.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Site Blindado</h4>
+	
+									<p>Senior front-end developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">React</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Redux</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Jest</span>
+						</div>
+					</a>
+	
+					<a class="hover" href="https://www.carrefour.com.br/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner5.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Carrefour</h4>
+	
+									<p>Front-end developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Java</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Less</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+						</div>
+					</a>
+	
+					<a class="hover" href="https://www.grandoptical.com/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner4.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Grand optical</h4>
+	
+									<p>front-end developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Java</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Less</span>
+						</div>
+					</a>
+	
+					<a class="hover" href="https://www.pacifika.com.co/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner6.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Pacifika</h4>
+	
+									<p>Front-end developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Java</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Less</span>
+						</div>
+					</a>
+	
+					<a class="hover" href="https://www.underarmour.com.br/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner1.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Underarmour</h4>
+	
+									<p>Developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Java</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Bootstrap</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Sass</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+						</div>
+					</a>
+
+					<a class="hover" href="https://www.nestle.com.br/" target="_blank" rel="noopener noreferrer">
+						<div class="cover-black"></div>
+
+						<figure class="gallery-grid gallery1">
+							<img src="src/images/banner7.jpg" alt="image of the the site">
+							
+							<figcaption>
+									<h4>Nestlé</h4>
+	
+									<p>Developer</p>
+							</figcaption>
+						</figure>
+							
+						<div class="mb-3 my-auto mx-0 text-center tags">
+							<h4>Technologies</h4>
+							
+							<span class="mr-2 px-3 py-1 text-dark badge-pill badge mb-2 tag">Javascript</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">HandlebarsJs</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Node</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">Sass</span>
+	
+							<span class="px-3 py-1 text-dark badge-pill badge mb-2 tag">jQuery</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<script src="src/scripts/main.js"></script>
 </body>
 </html>
