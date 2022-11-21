@@ -180,7 +180,7 @@ h4 {
 }
 
 .folders-container {
-  justify-content: end;
+  justify-content: start;
 }
 
 @media screen and (min-width: 768px) {
