@@ -7,3 +7,5 @@ Personal web page.
 - HTML
 - CSS
 - JavaScript
+
+# God be praised!
