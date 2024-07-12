@@ -25,7 +25,7 @@ export default async function Image() {
           justifyContent: 'center',
         }}
       >
-        <img src={imageURL} alt="Abacus Title" style={{ width: '100%' }} />
+        <img src={imageURL} alt="Abacus Title" style={{ width: '100vh' }} />
       </div>
     ),
     {
