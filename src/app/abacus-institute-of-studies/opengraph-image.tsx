@@ -4,8 +4,8 @@ export const runtime = 'edge'
  
 export const alt = 'Abacus Title'
 export const size = {
-  width: 1200,
-  height: 630,
+  width: 768,
+  height: 768,
 }
  
 export const contentType = 'image/jpg'
