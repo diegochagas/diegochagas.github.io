@@ -71,13 +71,13 @@ export const portfolio: Portfolio[] = [
   },
   {
     title: 'Nestlé',
-    description: 'Food company responsive design',
+    description: 'Food company responsive development',
     startYear: 2016,
     url: 'https://www.nestle.com.br/',
   },
   {
     title: 'Under Armour',
-    description: 'Sportswear company responsive design',
+    description: 'Sportswear company responsive development',
     startYear: 2016,
     url: 'https://www.underarmour.com.br/',
   },

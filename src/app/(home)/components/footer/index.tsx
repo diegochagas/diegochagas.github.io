@@ -34,7 +34,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          <div className="col-span-2 xl:col-span-1">
+          <div className="mt-10 md:mt-0 col-span-2 xl:col-span-1">
             <h3 className="text-lg pt-0.5 pb-1 font-extrabold m-0 ">
               Latest <br className="hidden md:inline" />projects&nbsp;—
             </h3>
@@ -46,7 +46,7 @@ export function Footer() {
               ))}
              </ul>
           </div>
-          <div className="">
+          <div className="mt-10 md:mt-0">
             <h3 className="text-lg pt-0.5 pb-1 font-extrabold">
               Current <br className="hidden md:inline" />availability&nbsp;—
             </h3>
@@ -54,7 +54,7 @@ export function Footer() {
               I&apos;m currently working at a full-time job, but I&apos;d be happy to discuss new opportunities. Let&apos;s get in touch!
             </p>
           </div>
-          <div>
+          <div className="mt-10 md:mt-0">
             <h3 className="text-lg pt-0.5 pb-1 font-extrabold">
               Follow <br className="hidden md:inline" />me on&nbsp;—
             </h3>

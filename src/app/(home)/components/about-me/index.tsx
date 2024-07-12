@@ -21,7 +21,7 @@ export default function AboutMe() {
               id="front-end-title"
               className="opacity-0 mt-0.5 md:mt-5 text-3xl sm:text-4xl md:text-7xl font-extrabold tracking-tighter"
             >
-              Front-End Developer
+              Web Developer
             </h1>
             <h3
               id="front-end-description"
@@ -31,9 +31,10 @@ export default function AboutMe() {
             </h3>
             <Link
               id="curriculum-link"
-              href="/CV-Diego-Chagas.docx"
-              download="CV-Diego-Chagas.docx"
+              href="/CV-Diego-Chagas.pdf"
+              download="CV-Diego-Chagas.pdf"
               className="opacity-0 text-lg font-extrabold mt-2.5 md:mt-5 relative border-b-2 border-transparent hover:border-gray-900 inline-block transition-all duration-200 ease-[cubic-bezier(.3,0,0.5,1)] capitalize"
+              target="_blank"
             >
               Download curriculum
             </Link>
