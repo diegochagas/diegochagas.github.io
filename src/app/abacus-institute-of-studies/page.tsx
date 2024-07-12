@@ -1,13 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-export async function generateMetadata() {
-  return {
-    title: 'New Zealand Certificate in English Language - Abacus Institute Of Studies',
-    description: 'Abacus Institute of Studies is an NZQA approved Category 1 Institution which delivers business, IT & English language qualifications at Christchurch and Auckland Campuses. Our vision is to lead the education sector, demonstrating best practice in teaching, learning and assessment, creating productive, efficient and professional graduates.'
-  }
-}
-
 export default function Abacus() {
   return (
     <div className="font-serif m-5">
