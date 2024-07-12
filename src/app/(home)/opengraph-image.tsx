@@ -25,7 +25,7 @@ export default async function Image() {
           justifyContent: 'center',
         }}
       >
-        <img src={imageURL} alt="Developer Photo'" style={{ height: '100%' }} />
+        <img src={imageURL} alt="Developer Photo'" style={{ height: '100vh' }} />
       </div>
     ),
     {
