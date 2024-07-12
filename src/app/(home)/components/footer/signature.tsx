@@ -8,7 +8,7 @@ export default function Signature() {
   const { isMenuOpen } = useMenu()
 
   return (
-    <div className={`${isMenuOpen ? 'fixed bottom-0 left-0 justify-center' : 'relative justify-end'} w-full flex items-center col-span-4 z-40`}>
+    <div className={`${isMenuOpen ? 'fixed bottom-0 left-0 justify-center' : 'relative justify-end'} w-full flex items-center col-span-4 z-40 mt-10 md:mt-0`}>
       <p className="text-zinc-500 my-0 ml-0 mr-2 text-sm font-normal pt-0.5 pb-1 text-right">
         &copy; {!isMenuOpen ? '2016 — ' : ''}{new Date().getFullYear()} Diego Chagas<br />
         {!isMenuOpen && (
