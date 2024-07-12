@@ -27,7 +27,7 @@ export default function AboutMe() {
               id="front-end-description"
               className="opacity-0 mt-2.5 md:mt-6 font-medium tracking-normal text-zinc-500 text-base xs:text-lg md:text-xl"
             >
-              Started as a developer professional in March 2016, where worked on many projects, focused on web development. Advanced knowledge in front-end and intermediate knowledge in back-end. Major works using React and Next technologies.
+              I began my career as a professional developer in March 2016, specializing in web development. Over the years, I have worked on numerous projects, gaining advanced knowledge in front-end development and intermediate expertise in back-end development. My major projects have utilized React and Next.js technologies.
             </h3>
             <Link
               id="curriculum-link"
