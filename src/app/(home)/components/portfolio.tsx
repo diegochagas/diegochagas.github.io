@@ -1,11 +1,14 @@
-import Image from 'next/image'
-import Icon from '../../components/icons'
-import { portfolio } from '../../data/portfolio'
-import Title from '../../components/title'
+import Image from "next/image";
+import Icon from "../../components/icons";
+import { portfolio } from "../../data/portfolio";
+import Title from "../../components/title";
 
 export default function Portfolio() {
   return (
-    <section className="pt-14 w-full 2xl:max-w-screen-2xl 2xl:my-0 2xl:mx-auto" id="portfolio">
+    <section
+      className="pt-14 w-full 2xl:max-w-screen-2xl 2xl:my-0 2xl:mx-auto"
+      id="portfolio"
+    >
       <div className="px-3.5">
         <Title text="Portfolio" subTitle="Selected projects" />
         <div className="mt-12 md:mt-18 grid md:grid-cols-2 gap-8">
@@ -21,7 +24,9 @@ export default function Portfolio() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                {index === 0  && <Icon className="absolute top-5 right-5 z-20" name="new" />}
+                {index === 0 && (
+                  <Icon className="absolute top-5 right-5 z-20" name="new" />
+                )}
                 <div className="bg-[0_0] transition-all duration-200 delay-300 relative">
                   <Image
                     src={`/portfolio/banner${portfolio.length - 1 - index}.jpg`}
@@ -32,9 +37,12 @@ export default function Portfolio() {
                   />
                 </div>
                 <strong className="opacity-100 absolute block top-9 left-0 z-20 pointer-events-none">
-                  <span className="opacity-70 transition-all duration-200 ease-linear py-1.5 px-8 block text-white text-sm
-                    uppercase pt-1.5 pb-1.5 font-normal tracking-widest">
-                    {item.startYear}{item.endYear && ` - ${item.endYear}`}
+                  <span
+                    className="opacity-70 transition-all duration-200 ease-linear py-1.5 px-8 block text-white text-sm
+                    uppercase pt-1.5 pb-1.5 font-normal tracking-widest"
+                  >
+                    {item.startYear}
+                    {item.endYear && ` - ${item.endYear}`}
                   </span>
                   <span className="text-white px-8 transition-all duration-200 ease-linear max-w-xs block text-2xl py-1 font-extrabold tracking-tight">
                     {item.title} — {item.description}
@@ -43,7 +51,7 @@ export default function Portfolio() {
                     <p className="text-white font-medium py-1 m-0 flex items-center">
                       <span className="capitalize">View project</span>
                       <span className="ml-2.5 w-4 h-4 inline-flex">
-                        <Icon name="arrow-right" size={20}  />
+                        <Icon name="arrow-right" size={20} />
                       </span>
                     </p>
                   </span>
@@ -54,5 +62,5 @@ export default function Portfolio() {
         </div>
       </div>
     </section>
-  )
+  );
 }
