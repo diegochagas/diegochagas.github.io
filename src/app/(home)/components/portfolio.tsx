@@ -11,7 +11,7 @@ export default function Portfolio() {
     >
       <div className="px-3.5">
         <Title text="Portfolio" subTitle="Selected projects" />
-        <div className="mt-12 md:mt-18 grid md:grid-cols-2 gap-8">
+        <div className="mt-12 md:mt-18 grid md:grid-cols-2 xl:grid-cols-4 gap-8">
           {portfolio.map((item, index) => (
             <div
               key={item.title}

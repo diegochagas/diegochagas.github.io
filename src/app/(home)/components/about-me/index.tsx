@@ -24,7 +24,7 @@ export default function AboutMe() {
               id="front-end-title"
               className="opacity-0 mt-0.5 md:mt-5 text-3xl sm:text-4xl md:text-7xl font-extrabold tracking-tighter"
             >
-              Web Developer
+              Senior React/Next.js Developer
             </h1>
             <h3
               id="front-end-description"
