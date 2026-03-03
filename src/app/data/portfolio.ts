@@ -1,84 +1,92 @@
 interface Portfolio {
-  title: string
-  description: string
-  startYear: number
-  endYear?: number
-  url: string
+  title: string;
+  description: string;
+  startYear: number;
+  endYear?: number;
+  url: string;
 }
 
 export const portfolio: Portfolio[] = [
-  // {
-  //   title: 'PIPT: Petrobras',
-  //   description: 'Energy market front-end development',
-  //   startYear: 2024,
-  //   url: 'https://pipt-dsv.petrobras.com.br/',
-  // },
   {
-    title: 'Shell Energy',
-    description: 'Energy market front-end development',
+    title: "Prudential USA",
+    description: "Health insurance market fullstack development",
+    startYear: 2025,
+    // url: "https://simplified-stage.prudential.com/?referrer=SSFM&refaffiliate=123456789&product=SILT&experience=1.5",
+    url: "https://www.prudential.com/",
+  },
+  {
+    title: "PIPT: Petrobras",
+    description: "Energy market front-end development",
     startYear: 2024,
-    url: 'https://gateway.shellenergy.com/',
+    // url: 'https://pipt-dsv.petrobras.com.br/',
+    url: "https://petrobras.com.br/",
   },
   {
-    title: 'Cropwise',
-    description: 'Farm market front-end development',
+    title: "Shell Energy",
+    description: "Energy market front-end development",
+    startYear: 2024,
+    url: "https://gateway.shellenergy.com/",
+  },
+  {
+    title: "Cropwise",
+    description: "Farm market front-end development",
     startYear: 2023,
-    url: 'https://www.cropwise.com/',
+    url: "https://www.cropwise.com/",
   },
   {
-    title: 'Vidua Wonen',
-    description: 'Housing market front-end development',
+    title: "Vidua Wonen",
+    description: "Housing market front-end development",
     startYear: 2022,
-    url: 'https://www.viduawonen.nl/en/particulieren',
+    url: "https://www.viduawonen.nl/en/particulieren",
   },
   {
-    title: 'Vodafone UK',
-    description: 'E-commerce front-end development',
+    title: "Vodafone UK",
+    description: "E-commerce front-end development",
     startYear: 2022,
-    url: 'https://www.vodafone.co.uk/smart-watches-and-wearables',
+    url: "https://www.vodafone.co.uk/smart-watches-and-wearables",
   },
   {
-    title: 'Cloe',
-    description: 'Learning platform front-end development',
+    title: "Cloe",
+    description: "Learning platform front-end development",
     startYear: 2020,
     endYear: 2021,
-    url: 'https://cloeapp.com/',
+    url: "https://cloeapp.com/",
   },
   {
-    title: 'Site Blindado',
-    description: 'Security company front-end development',
+    title: "Site Blindado",
+    description: "Security company front-end development",
     startYear: 2019,
     endYear: 2020,
-    url: 'https://app.siteblindado.com/',
+    url: "https://app.siteblindado.com/",
   },
   {
-    title: 'Carrefour',
-    description: 'E-commerce front-end development',
+    title: "Carrefour",
+    description: "E-commerce front-end development",
     startYear: 2018,
-    url: 'https://www.carrefour.com.br/',
+    url: "https://www.carrefour.com.br/",
   },
   {
-    title: 'Grand Optical',
-    description: 'Eyeglasses manufacturer front-end development',
+    title: "Grand Optical",
+    description: "Eyeglasses manufacturer front-end development",
     startYear: 2017,
-    url: 'https://www.grandoptical.com/',
+    url: "https://www.grandoptical.com/",
   },
   {
-    title: 'Pacifika',
-    description: 'Clothing brand front-end development',
+    title: "Pacifika",
+    description: "Clothing brand front-end development",
     startYear: 2017,
-    url: 'https://www.pacifika.com.co/',
+    url: "https://www.pacifika.com.co/",
   },
   {
-    title: 'Nestlé',
-    description: 'Food company responsive development',
+    title: "Nestlé",
+    description: "Food company responsive development",
     startYear: 2016,
-    url: 'https://www.nestle.com.br/',
+    url: "https://www.nestle.com.br/",
   },
   {
-    title: 'Under Armour',
-    description: 'Sportswear company responsive development',
+    title: "Under Armour",
+    description: "Sportswear company responsive development",
     startYear: 2016,
-    url: 'https://www.underarmour.com.br/',
+    url: "https://www.underarmour.com.br/",
   },
-]
+];
