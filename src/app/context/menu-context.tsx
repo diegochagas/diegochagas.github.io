@@ -8,7 +8,6 @@ import {
   useContext,
   useState,
 } from "react";
-import { scroller } from "react-scroll";
 
 interface MenuContextType {
   isMenuOpen: boolean;
@@ -26,10 +25,13 @@ export function MenuProvider({ children }: { children: ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function scrollTo(section: string) {
-    scroller.scrollTo(section, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
+    const element = document.getElementById(section);
+
+    if (!element) return;
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   }
 
