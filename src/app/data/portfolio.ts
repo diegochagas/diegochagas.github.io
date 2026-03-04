@@ -11,8 +11,7 @@ export const portfolio: Portfolio[] = [
     title: "Prudential USA",
     description: "Health insurance market fullstack development",
     startYear: 2025,
-    // url: "https://simplified-stage.prudential.com/?referrer=SSFM&refaffiliate=123456789&product=SILT&experience=1.5",
-    url: "https://www.prudential.com/",
+    url: "https://simplified.prudential.com/?referrer=SSFM&product=SILT",
   },
   {
     title: "PIPT: Petrobras",
