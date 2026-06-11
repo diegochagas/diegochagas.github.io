@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     description:
       "Senior React & Next.js developer with 9+ years of experience. Open to freelance, contract and remote roles.",
   },
+  verification: {
+    google: "MUF7DGGJNQ_QKJ_Fxyi8KaESXPy88_6ePXsz24CftFA",
+  },
   robots: {
     index: true,
     follow: true,
