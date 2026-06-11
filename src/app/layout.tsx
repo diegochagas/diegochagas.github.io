@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://diegochagas.com"),
+  metadataBase: new URL("https://www.diegochagas.com"),
   title: {
     default: "Diego Chagas | Senior React & Next.js Developer",
     template: "%s | Diego Chagas",
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     "remote developer",
     "web developer Brazil",
   ],
-  authors: [{ name: "Diego Chagas", url: "https://diegochagas.com" }],
+  authors: [{ name: "Diego Chagas", url: "https://www.diegochagas.com" }],
   creator: "Diego Chagas",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
-    url: "https://diegochagas.com",
+    url: "https://www.diegochagas.com",
     siteName: "Diego Chagas — Portfolio",
     title: "Diego Chagas | Senior React & Next.js Developer",
     description:
@@ -65,7 +65,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Diego Chagas",
   alternateName: "Diego Rocha Chagas",
-  url: "https://diegochagas.com",
+  url: "https://www.diegochagas.com",
   email: "mailto:drochachagas@gmail.com",
   jobTitle: "Senior React/Next.js Developer",
   description:

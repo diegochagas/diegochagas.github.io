@@ -11,7 +11,7 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
-  const imageURL = new URL('/bg_home.png', 'https://diegochagas.com').toString()
+  const imageURL = new URL('/bg_home.png', 'https://www.diegochagas.com').toString()
 
   return new ImageResponse(
     (
