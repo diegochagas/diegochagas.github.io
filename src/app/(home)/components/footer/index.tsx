@@ -27,6 +27,7 @@ export function Footer() {
                     className="relative border-0 border-none inline-block no-underline transition-all duration-200"
                     href={contact.url}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {contact.title}
                   </a>
@@ -65,6 +66,7 @@ export function Footer() {
                     href={item.url}
                     className="relative border-0 border-none inline-block no-underline transition-all duration-200"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {item.title}
                   </a>

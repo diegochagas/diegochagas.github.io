@@ -1,13 +1,9 @@
-import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Abacus() {
   return (
     <div className="font-serif m-5">
       <div className="max-w-4xl my-0 mx-auto">
-        <Head>
-          <link rel="shortcut icon" href="/abacus/favicon.ico" />
-        </Head>
         <div className="bg-red-450 flex flex-col items-center p-7">
           <div className="pr-20">
             <Image src="/abacus/abacus-logo.png" alt="abacus institute logo" width={218} height={58} />

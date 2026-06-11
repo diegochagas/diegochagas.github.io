@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <nav className={`${isMenuOpen ? 'flex opacity-100' : 'hidden opacity-0'} transition-opacity duration-500 fixed z-40 w-full h-full items-center justify-center`}>
       <div className="text-zinc-500 text-center">
-        <h5 className="uppercase text-sm px-1.5 tracking-[.4em]">Menu</h5>
+        <p className="uppercase text-sm px-1.5 tracking-[.4em]">Menu</p>
         <ul className="pt-2.5 text-4xl md:text-5xl lg:text-7xl font-extrabold ">
           {menu.map((item, index) => (
             <li key={item.title} className="hover:text-white py-0.5 group">

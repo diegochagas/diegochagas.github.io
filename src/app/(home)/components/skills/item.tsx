@@ -10,7 +10,7 @@ interface ItemProps {
 export default function Item({ skills, title, hasDescription }: ItemProps) {
   return (
     <div className="flex flex-col items-center">
-      <h6 id={`skill-title-${title}`} className="opacity-0 text-2xl md:text-3xl md:text-center mb-5 md:mb-10 font-extrabold capitalize">{title}</h6>
+      <h3 id={`skill-title-${title}`} className="opacity-0 text-2xl md:text-3xl md:text-center mb-5 md:mb-10 font-extrabold capitalize">{title}</h3>
       {hasDescription ? (
         <div className="grid md:grid-cols-3 gap-x-16 gap-y-2.5">
           {skills.map(skill => (
@@ -25,7 +25,7 @@ export default function Item({ skills, title, hasDescription }: ItemProps) {
           {skills.map(skill => (
             <div key={skill.title} id={skill.title.replaceAll(' ', '-')} className="opacity-0 flex items-center gap-1 3xs:gap-2">
               {skill.icon && <Icon className="w-10 3xs:w-12 md:w-14 xl:w-16 h-auto" name={skill.icon} />}
-              <h3 className="font-bold text-sm">{skill.title}</h3>
+              <p className="font-bold text-sm">{skill.title}</p>
             </div>
           ))}
         </div>

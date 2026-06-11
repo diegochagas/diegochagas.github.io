@@ -8,7 +8,9 @@ export default function Blog() {
         href="https://kurumadapro.com/blog/"
         target="_blank"
         rel="noopener noreferrer"
-      ></a>
+      >
+        kurumadapro.com/blog
+      </a>
     </div>
   );
 }

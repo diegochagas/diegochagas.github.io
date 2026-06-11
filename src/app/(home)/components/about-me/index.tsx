@@ -14,19 +14,19 @@ export default function AboutMe() {
       <div className="relative z-20 w-full py-0 px-3.5 md:px-8">
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 lg:w-3/5">
-            <h5
+            <p
               id="diego-chagas-subtitle"
               className="opacity-0 animate-[animation-1st_0.6s_linear] text-sm uppercase text-zinc-500 tracking-[0.4em] py-1.5"
             >
               Diego Chagas
-            </h5>
+            </p>
             <h1
               id="front-end-title"
               className="opacity-0 mt-0.5 md:mt-5 text-3xl sm:text-4xl md:text-7xl font-extrabold tracking-tighter"
             >
               Senior React/Next.js Developer
             </h1>
-            <h3
+            <p
               id="front-end-description"
               className="opacity-0 mt-2.5 md:mt-6 font-medium tracking-normal text-zinc-500 text-base xs:text-lg md:text-xl"
             >
@@ -36,7 +36,7 @@ export default function AboutMe() {
               development and intermediate proficiency in back-end development.
               Many of my major projects have utilized React and Next.js
               technologies.
-            </h3>
+            </p>
             <Link
               id="curriculum-link"
               href="/CV-Diego-Chagas.pdf"

@@ -8,9 +8,9 @@ interface TitleProps {
 export default function Title({ text, subTitle }: TitleProps) {
   return (
     <div className="">
-      <h5 id={`${text}-subtitle`} className="opacity-0 text-sm uppercase leading-5 pt-0.5 pb-1 text-zinc-500 tracking-[0.4em]">
+      <p id={`${text}-subtitle`} className="opacity-0 text-sm uppercase leading-5 pt-0.5 pb-1 text-zinc-500 tracking-[0.4em]">
         {subTitle}
-      </h5>
+      </p>
       <div className="mt-0 pt-0.5 pb-1">
         <ScrollTitle title={text} />
       </div>

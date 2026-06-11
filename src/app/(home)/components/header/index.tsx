@@ -118,12 +118,12 @@ export default function Header() {
           className="ml-1 2xs:ml-3"
           onClick={(e: MouseEvent<HTMLDivElement>) => e.stopPropagation()}
         >
-          <h4 className="font-black text-2xl flex items-center leading-8">
+          <p className="font-black text-2xl flex items-center leading-8">
             Diego Chagas
-          </h4>
-          <h6 className="text-2xs uppercase font-bold tracking-[0.25em] leading-none whitespace-nowrap">
+          </p>
+          <p className="text-2xs uppercase font-bold tracking-[0.25em] leading-none whitespace-nowrap">
             Front-End Developer
-          </h6>
+          </p>
         </div>
       </Link>
       <button

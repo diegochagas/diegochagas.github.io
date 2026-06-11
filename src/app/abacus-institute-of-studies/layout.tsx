@@ -5,7 +5,8 @@ export const metadata: Metadata = {
   title:
     "New Zealand Certificate in English Language - Abacus Institute Of Studies",
   description:
-    "Abacus Institute of Studies is an NZQA approved Category 1 Institution which delivers business, IT & English language qualifications at Christchurch and Auckland Campuses. Our vision is to lead the education sector, demonstrating best practice in teaching, learning and assessment, creating productive, efficient and professional graduates.",
+    "Diego Chagas' NZCEL Level 2 certificate of attendance from Abacus Institute of Studies, an NZQA approved Category 1 institution in Christchurch, New Zealand.",
+  icons: { shortcut: "/abacus/favicon.ico" },
 };
 
 export default function AbacusLayout({ children }: { children: ReactNode }) {
