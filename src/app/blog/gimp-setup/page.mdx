@@ -6,6 +6,7 @@ export const description =
   "Why I built gimp-setup, a one-command installer that turns a fresh GIMP into a Photoshop-like editor with AI plug-ins baked in.";
 export const slug = "gimp-setup";
 export const date = "2026-08-28";
+export const dateModified = "2026-08-29";
 
 export const metadata = {
   title,
@@ -27,6 +28,7 @@ export const metadata = {
     title,
     description,
     publishedTime: date,
+    modifiedTime: dateModified,
     authors: ["https://www.diegochagas.com"],
     images: ["https://www.diegochagas.com/blog/opengraph-image"],
   },
@@ -42,6 +44,7 @@ export const metadata = {
   description={description}
   slug={slug}
   datePublished={date}
+  dateModified={dateModified}
 />
 
 # Turning GIMP Into My Photoshop, One Script at a Time
@@ -58,6 +61,12 @@ it.
 
 After doing this by hand enough times, I wrote it down as a script instead:
 [gimp-setup](https://github.com/diegochagas/gimp-setup).
+
+Before any of that, though, I actually sat down and learned the tool
+properly instead of poking around until something looked right — I
+watched
+[this GIMP tutorials playlist](https://www.youtube.com/watch?v=_wDDqs95TKY&list=PLqazFFzUAPc4vITMJaF3Fnqh3pccSMnC4)
+start to finish before I touched a single shortcut.
 
 ## What it does
 
@@ -141,6 +150,21 @@ resolves from a config value with a sane public default, so the address
 lives in a gitignored `config.sh` instead of the repository. Small fixes,
 but each one made the script something I'd actually trust to run on a
 machine that isn't mine.
+
+## More comfortable in GIMP than I ever was in Photoshop
+
+That's not an exaggeration I expected to be able to make. Between the
+tutorials and having the Photoshop keymap — the community one plus my own
+extras — installed from day one, GIMP stopped feeling like a workaround
+and started feeling like the tool. These days I catch myself reaching for
+GIMP shortcuts out of habit, which is the opposite of how this started.
+
+There's still a real gap, though: Generative Fill. The plug-in is in the
+script and it works, but it's not there yet for me — I'm still figuring
+out how to get results I actually want out of it. Right now my workaround
+is generating full images in ChatGPT and cutting out the parts I need with
+GIMP's Clone tool, which works but isn't exactly a workflow. If I land on
+something better, that's probably its own post.
 
 ## Configuration is optional
 

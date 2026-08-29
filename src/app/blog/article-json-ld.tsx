@@ -3,6 +3,7 @@ interface ArticleJsonLdProps {
   description: string;
   slug: string;
   datePublished: string;
+  dateModified?: string;
 }
 
 export function ArticleJsonLd({
@@ -10,6 +11,7 @@ export function ArticleJsonLd({
   description,
   slug,
   datePublished,
+  dateModified,
 }: ArticleJsonLdProps) {
   const url = `https://www.diegochagas.com/blog/${slug}`;
 
@@ -20,7 +22,7 @@ export function ArticleJsonLd({
     description,
     url,
     datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Person",
       name: "Diego Chagas",
