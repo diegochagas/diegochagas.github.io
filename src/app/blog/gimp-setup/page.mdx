@@ -1,0 +1,156 @@
+import { PostDate } from "../post-date";
+import { ArticleJsonLd } from "../article-json-ld";
+
+export const title = "Turning GIMP Into My Photoshop, One Script at a Time";
+export const description =
+  "Why I built gimp-setup, a one-command installer that turns a fresh GIMP into a Photoshop-like editor with AI plug-ins baked in.";
+export const slug = "gimp-setup";
+export const date = "2026-08-28";
+
+export const metadata = {
+  title,
+  description,
+  keywords: [
+    "GIMP",
+    "GIMP setup",
+    "Photoshop alternative Linux",
+    "PhotoGIMP",
+    "GIMP shortcuts Photoshop",
+    "Flatpak GIMP",
+    "GIMP AI plugins",
+    "Linux photo editing",
+  ],
+  alternates: { canonical: `/blog/${slug}` },
+  openGraph: {
+    type: "article",
+    url: `https://www.diegochagas.com/blog/${slug}`,
+    title,
+    description,
+    publishedTime: date,
+    authors: ["https://www.diegochagas.com"],
+    images: ["https://www.diegochagas.com/blog/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+<ArticleJsonLd
+  title={title}
+  description={description}
+  slug={slug}
+  datePublished={date}
+/>
+
+# Turning GIMP Into My Photoshop, One Script at a Time
+
+<PostDate date={date} />
+
+Every time I set up a new machine, or wipe an old one, the same ritual
+repeats itself: install GIMP, then spend the next hour turning it back into
+something my Photoshop-trained hands can actually use. Menus in the wrong
+place, shortcuts that don't match a decade of muscle memory, no background
+removal, no generative fill. I'd do it, get productive again, and then
+forget every single step until the next fresh install forced me to relearn
+it.
+
+After doing this by hand enough times, I wrote it down as a script instead:
+[gimp-setup](https://github.com/diegochagas/gimp-setup).
+
+## What it does
+
+One command, no `sudo`, and it's safe to run more than once:
+
+```bash
+git clone https://github.com/diegochagas/gimp-setup.git && cd gimp-setup && ./setup.sh
+```
+
+That installs Flatpak GIMP 3, layers a Photoshop-inspired interface on top,
+remaps every shortcut I actually use to match Photoshop, adds a pile of
+brushes and GEGL filters, and wires up three AI plug-ins for background
+removal, generative fill and object removal. Everything lands in Flatpak
+and the user's home — nothing touches the system.
+
+Want to see what it would do before committing to it:
+
+```bash
+./setup.sh --dry-run
+```
+
+It's a companion to [linux-mint-setup](https://github.com/diegochagas/linux-mint-setup),
+which calls it automatically as part of a full machine install, but it also
+runs standalone on anything with Flatpak.
+
+## One file per feature
+
+The thing I cared most about wasn't the individual pieces, it was making
+sure I'd never have to touch `setup.sh` again to add one. Every part of the
+setup — including installing GIMP itself — is a self-contained file under
+`features/`:
+
+```bash
+FEATURE_NAME="My Feature"
+FEATURE_PRIORITY=65     # lower runs first, defaults to 50
+
+feature_install() {
+    # do the work, using setup.sh's helpers:
+    # run, print_info, file_exists, install_flatpak_package, gimp_profile_dirs...
+}
+```
+
+`setup.sh` just discovers everything in `features/` and runs it in priority
+order. Drop a new file in and it's part of the install — nothing else to
+wire up. That ordering matters more than it looks: GIMP has to exist before
+PhotoGIMP can configure it, PhotoGIMP has to run before the Photoshop
+keymap so the keymap's shortcuts win instead of getting overwritten, and
+the AI plug-ins run dead last so their files survive everyone else's
+configuration overwrites.
+
+## The features
+
+- **GIMP itself** — Flatpak GIMP 3 with G'MIC and Resynthesizer, which adds
+  `Filters > Enhance > Heal Selection`.
+- **[PhotoGIMP](https://github.com/Diolinux/PhotoGIMP)** — a Photoshop-style
+  interface and configuration, with the existing GIMP config backed up
+  first, timestamped, before anything is overwritten.
+- **Photoshop keymap** — the community
+  [photoshop-keymap-for-gimp](https://github.com/loloolooo/photoshop-keymap-for-gimp),
+  pinned to a commit, plus a few extras of my own on shortcuts nothing else
+  uses. `Ctrl+Alt+I` Image Size, `Ctrl+L` Levels, `Ctrl+E` Merge Down — the
+  ones my fingers already know.
+- **[SLOS-GIMPainter](https://github.com/SenlinOS/SLOS-GIMPainter)** —
+  brushes, dynamics and tool presets.
+- **[LinuxBeaver](https://github.com/LinuxBeaver/LinuxBeaver) GEGL plug-ins** —
+  a pile of extra filters under `Filters > Text Styling` and
+  `Filters > Render > Fun`.
+- **AI plug-ins** — WithoutBG for one-click background removal, a patched
+  [GIMP AI Plugin](https://github.com/lukaso/gimp-ai) for generative fill,
+  and a Quick-Mask-and-run AI remove-selection tool, all sharing the same
+  API keys written once to both the host and the Flatpak sandbox.
+
+## Getting the AI part right took a few tries
+
+The AI plug-ins are the part I rewrote the most. The first version used an
+"AI Remove Background" plug-in that needed its own API key just for a task
+that shouldn't need one — so I swapped it for WithoutBG, which I already
+self-host, and now background removal needs no key at all. The
+`WITHOUTBG_SERVER_URL` used to be hard-coded to my own server; it now
+resolves from a config value with a sane public default, so the address
+lives in a gitignored `config.sh` instead of the repository. Small fixes,
+but each one made the script something I'd actually trust to run on a
+machine that isn't mine.
+
+## Configuration is optional
+
+Everything works without any setup — no key is required to install GIMP,
+PhotoGIMP, the keymap or the brushes. Copy `config.sh.example` to `config.sh`
+only if you want the AI plug-ins to have API keys, or export the same
+variables from the environment if you're calling `setup.sh` from another
+script — `linux-mint-setup` does exactly that.
+
+It's MIT-licensed and open for anyone who wants their GIMP to feel like
+home. If you try it, or want a `features/` file for something it doesn't
+do yet, [issues and PRs](https://github.com/diegochagas/gimp-setup/issues)
+are welcome.

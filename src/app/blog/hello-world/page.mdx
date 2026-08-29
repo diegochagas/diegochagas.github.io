@@ -1,0 +1,50 @@
+import { PostDate } from "../post-date";
+import { ArticleJsonLd } from "../article-json-ld";
+
+export const title = "Hello, World!";
+export const description =
+  "A quick welcome and what to expect from this blog.";
+export const slug = "hello-world";
+export const date = "2026-08-28";
+
+export const metadata = {
+  title,
+  description,
+  alternates: { canonical: `/blog/${slug}` },
+  openGraph: {
+    type: "article",
+    url: `https://www.diegochagas.com/blog/${slug}`,
+    title,
+    description,
+    publishedTime: date,
+    authors: ["https://www.diegochagas.com"],
+    images: ["https://www.diegochagas.com/blog/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+<ArticleJsonLd
+  title={title}
+  description={description}
+  slug={slug}
+  datePublished={date}
+/>
+
+# Hello, World!
+
+<PostDate date={date} />
+
+I'm Diego, a senior React/Next.js developer, and this is where I'll write
+about whatever I'm into at the moment — mostly code, but also whatever else
+ends up taking over a weekend. Expect notes on React and Next.js, the Linux
+tooling I keep building for myself, my homelab, and side projects that
+don't fit anywhere else on the site.
+
+No fixed schedule, no strict theme — I write when something's worth writing
+down. If any of it is useful to you too, even better.
+
+Thanks for stopping by.

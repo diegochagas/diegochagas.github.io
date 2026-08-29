@@ -1,6 +1,7 @@
 interface MenuProps {
   title: string
   url: string
+  openInNewTab?: boolean
 }
 
 export const menu: MenuProps[] = [
@@ -8,6 +9,7 @@ export const menu: MenuProps[] = [
   { title: 'Portfolio', url: 'portfolio' },
   { title: 'Skills', url: 'skills' },
   { title: 'Contact', url: 'contact' },
-  { title: 'Github', url: 'https://github.com/diegochagas' },
-  { title: 'Linkedin', url: 'https://www.linkedin.com/in/diegorchagas/' },
+  { title: 'Blog', url: '/blog' },
+  { title: 'Github', url: 'https://github.com/diegochagas', openInNewTab: true },
+  { title: 'Linkedin', url: 'https://www.linkedin.com/in/diegorchagas/', openInNewTab: true },
 ]
