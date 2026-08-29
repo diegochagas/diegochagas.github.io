@@ -18,6 +18,6 @@ export const blogPosts: BlogPost[] = [
     title: "Hello, World!",
     slug: "hello-world",
     description: "A quick welcome and what to expect from this blog.",
-    date: "2026-08-28",
+    date: "2026-08-27",
   },
 ];
