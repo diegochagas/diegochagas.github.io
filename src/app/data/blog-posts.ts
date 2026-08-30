@@ -9,7 +9,7 @@ interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     title: "3D&T Made Me a Reader, a Coder, and Got Me Actual Friends",
-    slug: "character-sheet-3dt",
+    slug: "character-sheet-3det",
     description:
       "3D&T was my first RPG as a teenager, and it changed how I read, socialized, and thought about systems. Years later, learning to code, the first real project I wanted to build was a character sheet for it.",
     date: "2026-08-30",
