@@ -49,19 +49,19 @@ export const metadata = {
 <PostDate date={date} />
 
 My first try at Linux was about ten years ago: Ubuntu, dual-booted next to
-Windows, out of curiosity more than need. It didn't stick. I don't
-remember what broke it, only that I was back on Windows within a couple of
-weeks and didn't think about it again for a decade.
+Windows, out of curiosity more than need. Didn't stick. I don't remember
+what broke it, only that I was back on Windows within a couple of weeks
+and didn't think about it again for a decade.
 
 This year I tried again, and it went very differently. The trigger was, of
-all things, a [PewDiePie video](https://youtu.be/pVI_smLgTY0) —
-"I installed Linux (so should you)" — and instead of easing back in with
+all things, a [PewDiePie video](https://youtu.be/pVI_smLgTY0),
+"I installed Linux (so should you)", and instead of easing back in with
 something friendly, I went straight for Arch. Two weeks of installing it
 myself, piece by piece, reading the wiki for everything, breaking things
-and fixing them. It taught me more about how Linux actually works than
-Ubuntu ever did, but it also wanted more day-to-day maintenance than I was
-looking for. So I moved to Linux Mint instead — same Linux underneath,
-none of the assembly required.
+and fixing them. Taught me more about how Linux actually works than Ubuntu
+ever did, but it also wanted more day-to-day maintenance than I was
+looking for. So I moved to Linux Mint instead, same Linux underneath, none
+of the assembly required.
 
 That was the difference. Mint just worked, and it worked well enough that
 a few weeks in I stopped hedging, wiped the Windows partition entirely,
@@ -69,7 +69,7 @@ and never went back.
 
 ## Why the script exists
 
-Erasing Windows meant there was no safety net anymore — if I broke this
+Erasing Windows meant there was no safety net anymore, if I broke this
 install, there'd be no falling back to the other OS while I sorted it out.
 So before I got comfortable, I wrote down every post-install step I cared
 about as a script: [linux-mint-setup](https://github.com/diegochagas/linux-mint-setup).
@@ -86,33 +86,33 @@ two other repositories of mine it pulls in along the way.
 
 ## What it sets up
 
-- **APT packages** — Firefox, Git, Node.js, Python 3, Docker, GParted,
+- **APT packages**: Firefox, Git, Node.js, Python 3, Docker, GParted,
   ShellCheck, the GitHub CLI, and a long tail of everyday tools. Docker
   gets the current user added to the `docker` group so it works without
   `sudo` after a re-login.
-- **Claude Code and Claude Desktop** — installed together, since this
+- **Claude Code and Claude Desktop**: installed together, since this
   machine does most of its work through them now. Browsing goes through
   Claude in Chrome, so there's no Firefox extension to install here.
-- **Snap and Flatpak apps** — VS Code, Insomnia, Surfshark and LocalSend
+- **Snap and Flatpak apps**: VS Code, Insomnia, Surfshark and LocalSend
   from Snap; Chrome, Kdenlive, Telegram and a handful of others from
   Flatpak.
-- **The [GIMP ecosystem](/blog/gimp-setup)** — this script doesn't
+- **The [GIMP ecosystem](/blog/gimp-setup)**: this script doesn't
   duplicate that work, it just clones `gimp-setup` and runs its installer,
   so both repositories stay in sync.
-- **[Homelab Backup](https://github.com/diegochagas/homelab-backup)** — cloned
+- **[Homelab Backup](https://github.com/diegochagas/homelab-backup)**: cloned
   and wired into a systemd user timer that backs up daily at 10 AM.
-- **Desktop configuration** — Cinnamon keyboard shortcuts (`Alt+V` for
+- **Desktop configuration**: Cinnamon keyboard shortcuts (`Alt+V` for
   CopyQ, `Alt+T` for NormCap, and a few more), custom fonts, and
   AntiMicroX controller profiles for the games I actually play on this
   machine.
-- **Retro game libraries** — mGBA and EasyRPG Player get pointed at ROM
+- **Retro game libraries**: mGBA and EasyRPG Player get pointed at ROM
   and save folders synced through Nextcloud, so progress follows me
   between machines instead of living on one disk.
 
 ## One real bug it fixes
 
-Not everything in the script is installation — some of it is a fix I'd
-have had to rediscover on every fresh install otherwise. My Wi-Fi card, a
+Not everything in the script is installation, some of it is a fix I'd have
+had to rediscover on every fresh install otherwise. My Wi-Fi card, a
 MediaTek MT7921, would drop the connection randomly under Mint's default
 power-saving settings. The fix is a two-line NetworkManager config
 (`wifi.powersave = 2`) that disables power saving for good, but finding
@@ -121,9 +121,9 @@ instead of buried in a forum thread I'd have to find again.
 
 ## Try it
 
-It's MIT-licensed, and it assumes Linux Mint specifically rather than
-trying to support every distro — that's what let it stay this
-opinionated and this short. If you're on Mint and want to see exactly
-what a script like this can automate,
+It's MIT-licensed, and it assumes Linux Mint specifically instead of
+trying to support every distro, that's what let it stay this opinionated
+and this short. If you're on Mint and want to see exactly what a script
+like this can automate,
 [the repo](https://github.com/diegochagas/linux-mint-setup) has the full
 script and README.

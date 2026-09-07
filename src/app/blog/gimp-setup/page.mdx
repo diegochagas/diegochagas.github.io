@@ -52,25 +52,23 @@ export const metadata = {
 <PostDate date={date} />
 
 Every time I set up a new machine, or wipe an old one, the same ritual
-repeats itself: install GIMP, then spend the next hour turning it back into
+repeats: install GIMP, then spend the next hour turning it back into
 something my Photoshop-trained hands can actually use. Menus in the wrong
 place, shortcuts that don't match a decade of muscle memory, no background
-removal, no generative fill. I'd do it, get productive again, and then
-forget every single step until the next fresh install forced me to relearn
-it.
+removal, no generative fill. I'd do it, get productive again, and forget
+every step until the next fresh install forced me to relearn it.
 
 After doing this by hand enough times, I wrote it down as a script instead:
 [gimp-setup](https://github.com/diegochagas/gimp-setup).
 
-Before any of that, though, I actually sat down and learned the tool
-properly instead of poking around until something looked right — I
-watched
+Before any of that, I actually sat down and learned the tool properly
+instead of poking around until something looked right. I watched
 [this GIMP tutorials playlist](https://www.youtube.com/watch?v=_wDDqs95TKY&list=PLqazFFzUAPc4vITMJaF3Fnqh3pccSMnC4)
 start to finish before I touched a single shortcut.
 
 ## What it does
 
-One command, no `sudo`, and it's safe to run more than once:
+One command, no `sudo`, safe to run more than once:
 
 ```bash
 git clone https://github.com/diegochagas/gimp-setup.git && cd gimp-setup && ./setup.sh
@@ -80,7 +78,7 @@ That installs Flatpak GIMP 3, layers a Photoshop-inspired interface on top,
 remaps every shortcut I actually use to match Photoshop, adds a pile of
 brushes and GEGL filters, and wires up three AI plug-ins for background
 removal, generative fill and object removal. Everything lands in Flatpak
-and the user's home — nothing touches the system.
+and the user's home, nothing touches the system.
 
 Want to see what it would do before committing to it:
 
@@ -96,7 +94,7 @@ runs standalone on anything with Flatpak.
 
 The thing I cared most about wasn't the individual pieces, it was making
 sure I'd never have to touch `setup.sh` again to add one. Every part of the
-setup — including installing GIMP itself — is a self-contained file under
+setup, including installing GIMP itself, is a self-contained file under
 `features/`:
 
 ```bash
@@ -110,7 +108,7 @@ feature_install() {
 ```
 
 `setup.sh` just discovers everything in `features/` and runs it in priority
-order. Drop a new file in and it's part of the install — nothing else to
+order. Drop a new file in and it's part of the install, nothing else to
 wire up. That ordering matters more than it looks: GIMP has to exist before
 PhotoGIMP can configure it, PhotoGIMP has to run before the Photoshop
 keymap so the keymap's shortcuts win instead of getting overwritten, and
@@ -119,22 +117,22 @@ configuration overwrites.
 
 ## The features
 
-- **GIMP itself** — Flatpak GIMP 3 with G'MIC and Resynthesizer, which adds
+- **GIMP itself**: Flatpak GIMP 3 with G'MIC and Resynthesizer, which adds
   `Filters > Enhance > Heal Selection`.
-- **[PhotoGIMP](https://github.com/Diolinux/PhotoGIMP)** — a Photoshop-style
+- **[PhotoGIMP](https://github.com/Diolinux/PhotoGIMP)**: a Photoshop-style
   interface and configuration, with the existing GIMP config backed up
   first, timestamped, before anything is overwritten.
-- **Photoshop keymap** — the community
+- **Photoshop keymap**: the community
   [photoshop-keymap-for-gimp](https://github.com/loloolooo/photoshop-keymap-for-gimp),
   pinned to a commit, plus a few extras of my own on shortcuts nothing else
-  uses. `Ctrl+Alt+I` Image Size, `Ctrl+L` Levels, `Ctrl+E` Merge Down — the
+  uses. `Ctrl+Alt+I` Image Size, `Ctrl+L` Levels, `Ctrl+E` Merge Down, the
   ones my fingers already know.
-- **[SLOS-GIMPainter](https://github.com/SenlinOS/SLOS-GIMPainter)** —
+- **[SLOS-GIMPainter](https://github.com/SenlinOS/SLOS-GIMPainter)**:
   brushes, dynamics and tool presets.
-- **[LinuxBeaver](https://github.com/LinuxBeaver/LinuxBeaver) GEGL plug-ins** —
+- **[LinuxBeaver](https://github.com/LinuxBeaver/LinuxBeaver) GEGL plug-ins**:
   a pile of extra filters under `Filters > Text Styling` and
   `Filters > Render > Fun`.
-- **AI plug-ins** — WithoutBG for one-click background removal, a patched
+- **AI plug-ins**: WithoutBG for one-click background removal, a patched
   [GIMP AI Plugin](https://github.com/lukaso/gimp-ai) for generative fill,
   and a Quick-Mask-and-run AI remove-selection tool, all sharing the same
   API keys written once to both the host and the Flatpak sandbox.
@@ -143,7 +141,7 @@ configuration overwrites.
 
 The AI plug-ins are the part I rewrote the most. The first version used an
 "AI Remove Background" plug-in that needed its own API key just for a task
-that shouldn't need one — so I swapped it for WithoutBG, which I already
+that shouldn't need one, so I swapped it for WithoutBG, which I already
 self-host, and now background removal needs no key at all. The
 `WITHOUTBG_SERVER_URL` used to be hard-coded to my own server; it now
 resolves from a config value with a sane public default, so the address
@@ -153,26 +151,26 @@ machine that isn't mine.
 
 ## More comfortable in GIMP than I ever was in Photoshop
 
-That's not an exaggeration I expected to be able to make. Between the
-tutorials and having the Photoshop keymap — the community one plus my own
-extras — installed from day one, GIMP stopped feeling like a workaround
-and started feeling like the tool. These days I catch myself reaching for
-GIMP shortcuts out of habit, which is the opposite of how this started.
+Didn't expect to be able to say that. Between the tutorials and having the
+Photoshop keymap, the community one plus my own extras, installed from day
+one, GIMP stopped feeling like a workaround and started feeling like the
+tool. These days I catch myself reaching for GIMP shortcuts out of habit,
+which is the opposite of how this started.
 
-There's still a real gap, though: Generative Fill. The plug-in is in the
-script and it works, but it's not there yet for me — I'm still figuring
-out how to get results I actually want out of it. Right now my workaround
-is generating full images in ChatGPT and cutting out the parts I need with
-GIMP's Clone tool, which works but isn't exactly a workflow. If I land on
-something better, that's probably its own post.
+There's still a real gap: Generative Fill. The plug-in is in the script and
+it works, but it's not there yet for me, I'm still figuring out how to get
+results I actually want out of it. Right now my workaround is generating
+full images in ChatGPT and cutting out the parts I need with GIMP's Clone
+tool, which works but isn't exactly a workflow. If I land on something
+better, that's probably its own post.
 
 ## Configuration is optional
 
-Everything works without any setup — no key is required to install GIMP,
+Everything works without any setup, no key is required to install GIMP,
 PhotoGIMP, the keymap or the brushes. Copy `config.sh.example` to `config.sh`
 only if you want the AI plug-ins to have API keys, or export the same
 variables from the environment if you're calling `setup.sh` from another
-script — `linux-mint-setup` does exactly that.
+script, `linux-mint-setup` does exactly that.
 
 It's MIT-licensed and open for anyone who wants their GIMP to feel like
 home. If you try it, or want a `features/` file for something it doesn't
