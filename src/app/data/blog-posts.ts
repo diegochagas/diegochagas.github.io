@@ -8,6 +8,13 @@ interface BlogPost {
 // Newest first. Add an entry here whenever a new src/app/blog/<slug>/page.mdx is created.
 export const blogPosts: BlogPost[] = [
   {
+    title: "I Tried to Replace Claude With Free AI Models",
+    slug: "free-ai-models",
+    description:
+      "The free, open AI models I run on my own laptop, what they do well in my projects, and why Mini AI and a local agent still couldn't replace Claude for me.",
+    date: "2026-09-25",
+  },
+  {
     title: "3D&T Made Me a Reader, a Coder, and Got Me Actual Friends",
     slug: "character-sheet-3det",
     description:

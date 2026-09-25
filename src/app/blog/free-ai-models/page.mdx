@@ -1,0 +1,334 @@
+import { PostDate } from "../post-date";
+import { ArticleJsonLd } from "../article-json-ld";
+
+export const title = "I Tried to Replace Claude With Free AI Models";
+export const description =
+  "The free, open AI models I run on my own laptop, what they do well in my projects, and why Mini AI and a local agent still couldn't replace Claude for me.";
+export const slug = "free-ai-models";
+export const date = "2026-09-25";
+export const dateModified = "2026-09-25";
+
+export const metadata = {
+  title,
+  description,
+  keywords: [
+    "local AI",
+    "free AI models",
+    "Ollama",
+    "Qwen3",
+    "Llama 3.2",
+    "Gemma 3",
+    "ComfyUI",
+    "FLUX.2 klein",
+    "Qwen-Image-Edit",
+    "GIMP AI plugins",
+    "Goose agent",
+    "Claude alternative",
+  ],
+  alternates: { canonical: `/blog/${slug}` },
+  openGraph: {
+    type: "article",
+    url: `https://www.diegochagas.com/blog/${slug}`,
+    title,
+    description,
+    publishedTime: date,
+    modifiedTime: dateModified,
+    authors: ["https://www.diegochagas.com"],
+    images: ["https://www.diegochagas.com/blog/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+<ArticleJsonLd
+  title={title}
+  description={description}
+  slug={slug}
+  datePublished={date}
+  dateModified={dateModified}
+/>
+
+
+# I Tried to Replace Claude With Free AI Models
+
+<PostDate date={date} />
+
+I use AI every day, and I pay for it. So at some point the question was
+obvious: can free models running on my own laptop do the same job? I spent
+the last month finding out. Short answer: they do a lot of real work in my
+projects, but they didn't replace **Claude**. The long answer is below.
+
+## The machine
+
+Everything here runs on one laptop: an i5-13420H, 62 GB of RAM and an RTX
+3050 with 6 GB of VRAM. That last number decides almost everything. With
+that much RAM a big model loads fine. With 6 GB of VRAM it just doesn't run
+fast.
+
+## The free models I actually use
+
+These are the open models that ended up in my projects. All free, all
+running on my own hardware.
+
+- **qwen3:1.7b**, **llama3.2:3b** and **gemma3:4b**, in Ollama. The small
+  trio behind Mini AI, for chat, shell commands and vision.
+- **qwen3:8b** and **nomic-embed-text**, in Ollama. The brain of Digivice,
+  my Digimon tamagotchi. The Digimon talks in character, remembers things
+  about me and pulls lore from an index of 146 Wikimon pages built with the
+  embedding model. About 10 seconds per reply.
+- **qwen3-vl:4b**, in Ollama. It describes every page of a manga volume as
+  JSON, so later I can search for things like "pages with a computer".
+  Around 5 seconds per page on the GPU. Sometimes it invents an object, so
+  the search looks at the top hits before trusting them. **gemma3:4b** did
+  the same job, but it kept seeing swords and scrolls that weren't there.
+- **qwen3 30B-A3B**, in Ollama and llama.cpp. The biggest one I run, used as
+  the brain of Goose, a local agent. More on that below.
+- **FLUX.2 klein 4B** and **Qwen-Image-Edit-2511**, in ComfyUI. Image
+  editing. They run the generative fill and object removal in my GIMP, the
+  text cleanup in my comic tools, and photo-restore, which repaired 141 old
+  family prints. This is the part that worked best, so it has its own
+  section below.
+- **LaMa** and **rembg**. The old reliable ones, for inpainting flat
+  screentone and cutting out backgrounds.
+
+That's a lot of free AI doing real work. None of it replaced **Claude**.
+
+## The plan: Mini AI
+
+[Mini AI](https://github.com/diegochagas/mini-ai) started on August 29 as a
+one-script install of a local AI stack. Ollama for the models, SearXNG for
+web search, mcpo to expose MCP tools (filesystem, email, browser) and Open
+WebUI as the chat. The first model set was **llama3.1:8b**, **qwen3:8b**
+and **gemma3:12b**. The idea was simple: a private assistant that searches
+the web, reads my PDFs, organizes files and checks my inbox, with no cloud
+and no subscription.
+
+I kept a TEST-LOG.md in the repo from day one and every real test went
+there. That log is pretty much the story of why it didn't work out.
+
+## Test 1: renaming 9 files lost 2 of them
+
+On August 30 I asked **llama3.1:8b**, in Open WebUI with the filesystem
+tool, to rename 9 images in reverse order. The folder went from 9 files to
+7, then back to 9, but with different content. Two of the original images
+were gone for good, I never found them anywhere on disk. My best guess is
+that the model "renamed" them by reading the images as text and writing
+them back under names it half invented.
+
+Then I tried again, watching it this time, with one message listing all 9
+exact source and destination pairs.
+
+- First try, it printed the 9 calls as JSON and never called the tool.
+- Second try, it called the tool 9 times and said everything worked. Zero
+  files changed. It had swapped the real filenames for `file1.txt`,
+  `file2.txt` and so on.
+- Third try, one call per message. 7 of 9 worked. The last 2 failed because
+  Open WebUI's editor turns a typed `1x1` into `1×1`, so the path never
+  matched. Pasting instead of typing fixed it.
+
+Three attempts, a browser console trick and 2 lost images, to rename 9
+files.
+
+## Going smaller, and writing the brain myself
+
+The next day I went the other way. I switched to the small trio,
+**qwen3:1.7b**, **llama3.2:3b** and **gemma3:4b**, about 6.7 GB in total,
+small enough to run even on my 8 GB ZimaOS server. I also dropped Open
+WebUI and wrote `terminal-ai.py`, a terminal client that sends each message
+to chat, web search, vision, file reading, email or shell commands.
+
+The full re-test looked good on paper. Chat, web search, PDF summary,
+Japanese translation, OCR, CSV totals, email and single renames all passed.
+But almost every pass came after a fix in the script, not in the model.
+
+- The CSV total came back 329.40 instead of 330.40, until I added a
+  "calculate step by step" instruction.
+- The search for the latest F1 race had no date in it, until I put today's
+  date in the router prompt.
+- **gemma3:4b**'s own call on "does this image need a web search" was wrong
+  in both directions, so now the script decides with keywords.
+- The Japanese and Chinese OCR came back partly garbled. **gemma3:4b** just
+  can't match **gemma3:12b** there.
+- The 9-file reverse rename still failed. Neither small model wrote a safe
+  command. Nothing broke only because the script asks y/N before running
+  anything.
+
+So I rebuilt batch renames with the model doing the minimum. The script
+lists the real files, the model only returns an old→new JSON mapping, the
+script checks it (no invented files, no collisions, no overwrites) and
+renames one file at a time through a staging folder. That one passed, byte
+for byte.
+
+Web research went the same way. I gave it a Mercado Livre product JSON with
+6 empty fields. The first run filled 0 of 6, because the model put every
+search in quotes and ignored the ISBN. After the script started stripping
+the quotes and forcing an ISBN search, it filled 4 of 6 correctly and said
+"not found" for the other 2 instead of making something up.
+
+Email too. I asked how many unread emails I had in my inbox and it said
+246, which was the total of every folder, with INBOX: 3 right there in the
+data. One more line in the prompt fixed it.
+
+Later I added a fallback to web search when the chat model doesn't know the
+answer, and a build mode that creates a small project. The build test made
+a working calculator web app with the four operations in 1m23s on CPU. But
+the model wrapped every file in markdown fences even after being told not
+to, and the README it wrote was generic boilerplate.
+
+The lesson went into the README: small models can't be trusted with rules.
+Anything that has to hold goes into script code, and the model only handles
+language. That works. But at that point I wasn't building an assistant
+anymore, I was hand-coding every path an assistant would take. **Claude**
+doesn't need me to write a Python guard every time it does something.
+
+## Going bigger: Goose and a 30B model
+
+If small models were the problem, the next step was a bigger one. On
+September 19 I set up Goose, an open-source agent, as a free alternative to
+**Claude**'s Cowork, with Ollama as the provider.
+
+The test task was simple: fix a Python script, sum a CSV (the answer is
+77.4), move some files and write a summary.
+
+- **qwen3:8b** with Ollama's default 4k context failed. Goose's own prompt
+  is about 7k tokens, so the model was working half blind. It never retried
+  a failed edit and wrote a summary with a literal `[total]` in it.
+- **qwen3 30B-A3B**, the thinking version, with 16k context: 4 of 4, in
+  about 12 minutes. Most of that was thinking.
+- **qwen3 30B-A3B Instruct** with 16k context: 4 of 4, in about 5 minutes,
+  and it recovered from its own errors. It used 14k of the 16k, so I moved
+  the default to 32k.
+
+That's where my laptop became the problem. The model is 18 GB and there
+are 6 GB of VRAM. Ollama splits it between GPU and RAM, and I get about 21
+tokens per second. I tried llama.cpp with MoE offload flags to squeeze out
+more. Prompt processing went from about 270 to about 596 tokens per second,
+but generation stayed at about 20, because it's limited by RAM bandwidth.
+No flag fixes that.
+
+Then the real test, a browser task. Goose looped for about an hour asking
+for the page's DOM, got the whole 242k-character GitHub page back, grepped
+it for nothing useful and never tried the simpler JavaScript tool. With
+the 32k context full, speed fell to 0.3 tokens per second.
+
+Something **Claude** does in a minute took an hour and didn't even finish.
+
+## Qwen and FLUX in ComfyUI, for my comics and for GIMP
+
+Image editing is where free models really paid off. The same 6 GB GPU that
+chokes on a 30B chat model handles two image models fine, as long as they
+are the right versions.
+
+- **Qwen-Image-Edit-2511** is 20B, way too big for 6 GB. What makes it run
+  is a 4-bit GGUF of it (through the ComfyUI-GGUF node) plus the 4-step
+  Lightning LoRA. It still spills into RAM, about 23 GB of it, and takes
+  around 100 to 115 seconds per edit. Better detail and better at following
+  instructions.
+- **FLUX.2 klein 4B** in fp8 is small and already distilled to 4 steps.
+  About 30 to 35 seconds per edit. Three times faster than **Qwen**, a bit
+  weaker on detailed art, but its fills look more natural.
+
+Both are Apache 2.0, both keep the parts of the image you didn't ask to
+change.
+
+The install lives in [gimp-setup](https://github.com/diegochagas/gimp-setup),
+as one more file in `features/`. It's opt-in: set `COMFYUI_DIR` in
+`config.sh` and pick the model sets with `COMFYUI_MODEL_SETS` (`qwen` is
+about 22 GB, `klein` about 12 GB). The script installs ComfyUI in its own
+venv, adds the GGUF node, downloads every model from Hugging Face and
+checks each file against its SHA-256. ComfyUI becomes a user service that
+doesn't start at boot, because it holds the GPU. I start it when I need it:
+
+```bash
+systemctl --user start comfyui
+```
+
+### Comic text cleanup
+
+My comic tools erase the text from manga pages so I can letter them in
+Portuguese. Before, that meant a paid model or **LaMa**. The first local
+test, on a Saint Seiya page in Chinese, was bad: giving the whole page to
+**Qwen** turned spiky balloons into ovals, missed text over the art and
+shifted everything a few pixels.
+
+What works is not letting the model decide what to touch. A text detector
+finds the text blocks. Blocks on a plain background just get a solid fill.
+Only blocks over art get model pixels, after the model's output is aligned
+back to the original. Everything else stays the original page.
+
+I tested it on 17 text blocks over art from 6 pages. **FLUX.2 klein** was
+the best at redrawing structure, hair, eyes, armor, but it missed one block
+and left grid artifacts on two screentone areas. **Qwen** never missed, but
+it flattens screentone into smooth gray and once invented an ear. **LaMa**
+was the best on flat screentone and smeared everything else. So the script
+measures the area around each block: flat halftone goes to **LaMa**, the
+rest goes to **Qwen**, and if **Qwen** misses a block it falls back to
+**LaMa**. In comic-skills it's one flag:
+
+```bash
+python clean-texts/scripts/clean_texts.py "<image-or-folder>" --backend local
+```
+
+### GIMP AI tools
+
+The AI plug-ins in my GIMP (Generative Fill, Image Generator and Remove
+Selection) used to call OpenAI or Gemini. I don't have access to those, so
+now they only talk to ComfyUI on localhost, with **FLUX.2 klein** or
+**Qwen** as the choice. Flatpak GIMP shares the host network, so it just
+works, as long as ComfyUI is already running.
+
+The hard part was not the connection, it was what the model gets to see of
+the hole. I measured it on both models:
+
+- A gray hole: fine on small holes in photos, but when the hole was half the
+  crop the model returned it untouched.
+- The original still visible, with a "remove" prompt: excellent for text
+  over halftone and paper texture, but **FLUX.2 klein** redrew the object
+  instead of removing it.
+- The hole hidden under a blurry pre-fill, with "restore the blurry patch":
+  the best for removing objects, but it left a flat patch on halftone
+  scans.
+
+So Remove Selection tries the hidden version first, checks if the result
+came back flat, and if so reruns with the original visible. Fills go the
+other way around, because new content should land on the real texture.
+
+Generative Fill had one more problem: the new object came out cut by the
+selection border. Seeing the real background, the model has no idea where
+the area ends. The fix was cropping tight around the selection, because
+the models do frame an object well inside the picture they get, and adding
+"shown whole and centered" to the prompt. After that, 6 out of 6 seeds
+came out whole. **FLUX.2 klein** does add, replace and erase-text in one
+pass of 12 to 35 seconds. **Qwen** adds instead of replacing (it kept the
+backpack and put a small cat next to it), so with **Qwen** I remove first,
+then fill.
+
+On the way I also found a bug in the upstream GIMP AI plug-in: in Focused
+mode it built an empty mask unless the selection started at the top left
+corner. Online models hid it. A strict local model just returned the image
+unchanged. Patched in my copy.
+
+Not everything moved to local. Restyling a drawing into another artist's
+style failed with both models, **Qwen** gave generic anime and drifted the
+character, so that stays on paid tools.
+
+## Where it ended up
+
+Mini AI is still on GitHub and still works for what the tests say it works
+for: quick questions, searches, translations, reading a PDF, checking an
+inbox. Goose with the 30B model is fine for file and search tasks, if I
+give it time.
+
+But for me the real value of free models turned out to be small jobs inside
+a pipeline, where a script does the thinking and the model does one thing.
+Describe a page, fill a hole in an image, erase the text from a comic, fix
+a scratch on an old photo, give a Digimon a personality. For that they're
+great, and they cost nothing.
+
+For the open-ended work, planning, writing code across a repo, recovering
+from its own mistakes, I still use **Claude**. Small models are too dumb to
+trust, and big models are too slow on a 6 GB GPU. Maybe the next laptop
+changes that.
