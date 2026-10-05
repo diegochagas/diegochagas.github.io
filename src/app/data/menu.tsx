@@ -10,6 +10,4 @@ export const menu: MenuProps[] = [
   { title: 'Skills', url: 'skills' },
   { title: 'Contact', url: 'contact' },
   { title: 'Blog', url: '/blog' },
-  { title: 'Github', url: 'https://github.com/diegochagas', openInNewTab: true },
-  { title: 'Linkedin', url: 'https://www.linkedin.com/in/diegorchagas/', openInNewTab: true },
 ]
