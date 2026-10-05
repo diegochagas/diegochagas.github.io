@@ -14,17 +14,20 @@ export const codeSkills: Skill[] = [
   { title: "CSS", icon: "css" },
   { title: "JavaScript", icon: "javascript" },
   { title: "Tailwind", icon: "tailwind" },
-  { title: "Bootstrap", icon: "bootstrap" },
+  { title: "Docker", icon: "docker" },
   { title: "Node.js", icon: "node" },
   { title: "Python", icon: "python" },
   { title: "Angular", icon: "angular" },
   { title: "SQL", icon: "sql" },
+  { title: "Java", icon: "java" },
 ];
 
 export const designSkills: Skill[] = [
   { title: "Adobe Photoshop", icon: "photoshop" },
   { title: "Adobe Premiere", icon: "premiere" },
   { title: "Adobe After Effects", icon: "after-effects" },
+  { title: "GIMP", icon: "gimp" },
+  { title: "Kdenlive", icon: "kdenlive" },
 ];
 
 export const softSkills: Skill[] = [
