@@ -8,6 +8,41 @@ interface BlogPost {
 // Newest first. Add an entry here whenever a new src/app/blog/<slug>/page.mdx is created.
 export const blogPosts: BlogPost[] = [
   {
+    title: "Download Netflix Video and Audio by Hand With the Browser and ffmpeg",
+    slug: "netflix-download-ffmpeg",
+    description:
+      "A manual method to save a Netflix episode: find the audio and video streams in the browser's network tab, download them, and merge them with subtitles using ffmpeg.",
+    date: "2026-10-28",
+  },
+  {
+    title: "Bitwarden Firefox Extension Not Loading Logins: Update Vaultwarden",
+    slug: "vaultwarden-firefox-fix",
+    description:
+      "When the Bitwarden extension in Firefox stopped loading my logins, the fix was updating my self-hosted Vaultwarden container to the latest image.",
+    date: "2026-10-24",
+  },
+  {
+    title: "Dell P2719H Monitor Setup: Stand, Cables and Pivot, Step by Step",
+    slug: "dell-monitor-setup",
+    description:
+      "The quick setup guide of the Dell P2719H (my box says P2719HE) split into steps: attach the stand, connect HDMI, DisplayPort, USB and power, and how to tilt and rotate it safely.",
+    date: "2026-10-19",
+  },
+  {
+    title: "How to Assemble the Mesa Office 51015 Monitor Desk, Step by Step",
+    slug: "office-desk-assembly",
+    description:
+      "The Mesa Office 51015 comes with one page of drawings. Here is the assembly split into five steps, each with its own image and a plain explanation.",
+    date: "2026-10-13",
+  },
+  {
+    title: "How to Assemble the Pichau Donek Gaming Chair, Step by Step",
+    slug: "gaming-chair-assembly",
+    description:
+      "The paper manual of the Pichau Donek gaming chair is one dense sheet of drawings. Here it is split into six steps, one image and one explanation each.",
+    date: "2026-10-08",
+  },
+  {
     title: "I Tried to Replace Claude With Free AI Models",
     slug: "free-ai-models",
     description:

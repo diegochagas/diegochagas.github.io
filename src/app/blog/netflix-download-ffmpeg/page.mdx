@@ -1,0 +1,144 @@
+import { PostDate } from "../post-date";
+import { ArticleJsonLd } from "../article-json-ld";
+
+export const title = "Download Netflix Video and Audio by Hand With the Browser and ffmpeg";
+export const description =
+  "A manual method to save a Netflix episode: find the audio and video streams in the browser's network tab, download them, and merge them with subtitles using ffmpeg.";
+export const slug = "netflix-download-ffmpeg";
+export const date = "2026-10-28";
+
+export const metadata = {
+  title,
+  description,
+  keywords: [
+    "Netflix download",
+    "ffmpeg merge audio video",
+    "ffmpeg subtitles",
+    "browser network tab",
+    "Subadub Firefox",
+  ],
+  alternates: { canonical: `/blog/${slug}` },
+  openGraph: {
+    type: "article",
+    url: `https://www.diegochagas.com/blog/${slug}`,
+    title,
+    description,
+    publishedTime: date,
+    authors: ["https://www.diegochagas.com"],
+    images: ["https://www.diegochagas.com/blog/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+<ArticleJsonLd
+  title={title}
+  description={description}
+  slug={slug}
+  datePublished={date}
+/>
+
+# Download Netflix Video and Audio by Hand With the Browser and ffmpeg
+
+<PostDate date={date} />
+
+This is a manual way to save a Netflix episode for offline use, with only the
+browser, a download manager and ffmpeg. It's what I use for shows that I
+can't find anywhere else. Use it for your own personal copy of something you
+can already watch, and check what the terms of your subscription and your
+country's law say about it.
+
+## 1. Find the streams in the browser
+
+Start playing the episode. Open the developer tools (`F12`) and go to the
+**Network** tab.
+
+Filter the requests by `/range/0-`. You will see about two URLs that look
+like this:
+
+```text
+https://.../range/0-4095?o=1&v=...
+```
+
+One is the **audio** and the other is the **video**.
+
+## 2. Remove the size limit from the URL
+
+In each URL, replace `range/0-4095?o=` with `range/0-?o=`. The result looks
+like this:
+
+```text
+https://.../range/0-?o=1&v=...
+```
+
+Without the number after the dash, the server sends the whole file and not
+only the first 4 KB. These URLs contain a token that expires, so use them
+right away and don't share them.
+
+## 3. Download both files
+
+Open each URL in the browser, or better, paste them into a download manager
+such as Free Download Manager. You have to download the audio and the video
+**separately**, so you end up with two files.
+
+If you also want subtitles, the **Subadub** extension for Firefox can
+download the subtitles of the episode as `.srt` files, one per language.
+
+## 4. Merge everything with ffmpeg
+
+This command joins the video, the audio, and two subtitle files into one
+`.mp4` and also sets the language names:
+
+```bash
+ffmpeg \
+-i "video.mp4" \
+-i "audio" \
+-i "episode.en.srt" \
+-i "episode.pt-BR.srt" \
+-map 0:v \
+-map 0:a \
+-map 1:a \
+-map 2 \
+-map 3 \
+-c:v copy \
+-c:a copy \
+-c:s mov_text \
+-metadata:s:a:0 language=por \
+-metadata:s:a:0 title="Português (Brasil)" \
+-metadata:s:a:1 language=jpn \
+-metadata:s:a:1 title="日本語" \
+-metadata:s:s:0 language=eng \
+-metadata:s:s:0 title="English" \
+-metadata:s:s:1 language=por \
+-metadata:s:s:1 title="Português (Brasil)" \
+-disposition:a:0 default \
+-disposition:a:1 0 \
+-disposition:s:1 default \
+"Show - S01E13.mp4"
+```
+
+What it does:
+
+- `-i` lists the four inputs: the video file, the extra audio file, and the
+  two subtitle files.
+- `-map` chooses what goes in the output: the video and the audio from the
+  first file, the audio from the second, and the two subtitles.
+- `-c:v copy` and `-c:a copy` copy the video and audio without re-encoding,
+  so it is fast and loses no quality. `-c:s mov_text` converts the subtitles
+  to the format `.mp4` accepts.
+- The `-metadata` lines set the language and the title shown by the player
+  for each track. Here the first audio is Portuguese and the second is
+  Japanese, and the subtitles are English and Portuguese. Change them to the
+  tracks you downloaded.
+- The `-disposition` lines make the Portuguese audio and the Portuguese
+  subtitles the default ones.
+
+## Sources
+
+The method comes from these Reddit threads:
+
+- [How can I download something from Netflix on my...](https://www.reddit.com/r/Piracy/comments/1q82xcu/how_can_i_download_something_from_netflix_on_my/)
+- [How can I download subtitles only from Netflix](https://www.reddit.com/r/Streamfab/comments/1qccxc7/how_can_i_download_subtitles_only_from_netflix/)

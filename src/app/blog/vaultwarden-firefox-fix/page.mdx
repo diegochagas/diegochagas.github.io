@@ -1,0 +1,91 @@
+import { PostDate } from "../post-date";
+import { ArticleJsonLd } from "../article-json-ld";
+
+export const title = "Bitwarden Firefox Extension Not Loading Logins: Update Vaultwarden";
+export const description =
+  "When the Bitwarden extension in Firefox stopped loading my logins, the fix was updating my self-hosted Vaultwarden container to the latest image.";
+export const slug = "vaultwarden-firefox-fix";
+export const date = "2026-10-24";
+
+export const metadata = {
+  title,
+  description,
+  keywords: [
+    "Bitwarden Firefox",
+    "Vaultwarden update",
+    "Bitwarden extension not loading logins",
+    "Docker Vaultwarden",
+    "self-hosted password manager",
+  ],
+  alternates: { canonical: `/blog/${slug}` },
+  openGraph: {
+    type: "article",
+    url: `https://www.diegochagas.com/blog/${slug}`,
+    title,
+    description,
+    publishedTime: date,
+    authors: ["https://www.diegochagas.com"],
+    images: ["https://www.diegochagas.com/blog/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+<ArticleJsonLd
+  title={title}
+  description={description}
+  slug={slug}
+  datePublished={date}
+/>
+
+# Bitwarden Firefox Extension Not Loading Logins: Update Vaultwarden
+
+<PostDate date={date} />
+
+At some point the Bitwarden extension in Firefox stopped loading my logins.
+The vault opened, but the list stayed empty or never finished loading. I use
+**Vaultwarden**, the lightweight Bitwarden-compatible server, running in
+Docker on my home server. In my case the problem was the server being older
+than what the extension expected, and updating it fixed everything. I don't
+know the exact version that changed, but if your self-hosted server hasn't
+been updated in a while, this is the first thing I would try.
+
+## 1. Stop and remove the old container
+
+```bash
+sudo docker stop vaultwarden
+sudo docker rm vaultwarden
+```
+
+Your data is safe, because it lives in a volume on the host and not inside
+the container.
+
+## 2. Recreate it with the latest image
+
+```bash
+sudo docker run -d \
+  --name vaultwarden \
+  --restart unless-stopped \
+  -p 10380:80 \
+  -v /DATA/AppData/vaultwarden/data:/data \
+  vaultwarden/server:latest
+```
+
+Use the same port and the same data folder you used the first time. The port
+and the path above are the ones from my server, so change them to match
+yours. If you start it with a different `-v` path, you get an empty vault.
+Docker pulls the new image if you don't have it.
+
+## 3. Check the version
+
+```bash
+sudo docker exec vaultwarden /vaultwarden --version
+```
+
+## 4. Try the extension again
+
+Open the Bitwarden extension in Firefox. If it still shows nothing, log out
+of the extension and log in again so it syncs from scratch.
