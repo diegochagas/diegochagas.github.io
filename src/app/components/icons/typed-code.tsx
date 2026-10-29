@@ -16,6 +16,7 @@ export function TypedCode({ text, isTyped, startCounter }: TypedCodeProps) {
 
   useEffect(() => {
     if (!startCounter) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- legacy typing animation, kept as-is (react-hooks 7 rule); refactor when this component is next touched
       setNewText(text)
     } else {
       if (isTyped && count < maxCount) {
