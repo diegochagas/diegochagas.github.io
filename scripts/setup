@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# scripts/setup: bootstrap a clean clone (idempotent). Installs deps, the Playwright browser
+# and enables the pre-push hook that runs scripts/check before every push (push = Vercel deploy).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+npm ci
+npx playwright install chromium
+git config core.hooksPath .githooks
+echo "setup done: run scripts/check, npm run dev, npm run e2e"

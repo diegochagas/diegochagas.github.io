@@ -27,6 +27,7 @@ export default function ScrollTitle({ title }: ScrollTitleProps) {
     window.addEventListener('scroll', handleScroll)
 
     if(window.innerHeight > 699 && (title === 'Portfolio')) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- legacy scroll trigger, kept as-is (react-hooks 7 rule); refactor when this component is next touched
       setIsTyped(true)
     }
 
